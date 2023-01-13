@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img_new/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="js_new/shogo/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css_new/shogo/staff_list.css" />
+    <script src="js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "./header.html"
+                }).done( data => $("header").html(data) )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="" class="active">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href=""><span>TOP</span></a>
+                <span>> 営業 スタッフ紹介</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>STAFF</h3>
+                            <p>ゼロホームの営業スタッフ紹介</p>
+                        </div>
+                        <h4>
+                            ゼロホームでは家づくりが大好きなスタッフばかり。<br>
+                            そんな個性豊かなスタッフをご紹介します。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="./img_new/shogo/staff_list/sp_staff_main.jpg" />
+                    <img src="./img_new/shogo/staff_list/staff_main.jpg" width="100%" alt="不動産事業部　営業スタッフ紹介">
+                </picture>
+                <div class="illust">
+                    <figure>
+                        <img src="./img_new/shogo/staff_list/staff_illus.png" width="390" alt="不動産事業部　営業スタッフ紹介">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="description">
+            <div class="description-wrap">
+                <h3>
+                    お客様の立場にたって<br class="is_sp">家づくりをお手伝する<br>
+                    ゼロホームの営業スタッフです。
+                </h3>
+                <p>
+                    家を見ること・創ることが大好きな者ばかり! <br>
+                    お客様目線の気持ちを大切に、<br class="is_sp">情熱をもって家づくりをお手伝いいたします。 <br>
+                    個性豊かなスタッフたちがお待ちしております！ <br>
+                    <span class="space"></span>
+                    各店舗・展示場ごとに営業スタッフを紹介！<br class="is_sp">是非ご覧ください。
+                </p>
+            </div>
+        </section>
+        <section class="division">
+            <div class="division-wrap">
+                <p class="division-title">不動産事業部</p>
+                <ul>
+                    <li>
+                        <a href="./staff_list_honten.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>本店</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./staff_list_saiinshiten.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>西院支店</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./staff_list_kyotominamishiten.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>京都南支店</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./staff_list_hanshinshiten.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>阪神支店</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="division02">
+            <div class="division-wrap">
+                <p class="division-title">ゼロホーム事業部<span>（注文営業）</span></p>
+                <ul>
+                    <li>
+                        <a href="./staff_list_kyotominamiinta.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>京都南インター展示場</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./staff_list_imadegawa.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>今出川支店</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./staff_list_amagasaki.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>尼崎展示場</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./staff_list_moriguchi.html"
+                        onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'"
+                        onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <p>守口展示場</p>
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "./footer.html"
+                }).done( data => $("footer").html(data) )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

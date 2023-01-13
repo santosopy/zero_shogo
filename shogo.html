@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img_new/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="js_new/shogo/common.js"></script>
+    
+    <link rel="stylesheet" href="css_new/shogo/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css_new/shogo/top.css" />
+    <script src="js_new/shogo/top.js"></script>
+    <script src="js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "./header.html"
+                }).done( data => $("header").html(data) )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="main_visual">
+            <picture>
+                <source media="(max-width: 480px)" srcset="./img_new/shogo/top/sp_mainvisual.jpg" />
+                <img src="./img_new/shogo/top/mainvisual.jpg" width="100%" alt="100年安心をかなえる家。">
+            </picture>
+            <h2 class="mv_text"></h2>
+        </section>
+        <section class="pick_up">
+            <div class="title">
+                <h3>PICKUP</h3>
+                <p>おすすめ情報</p>
+            </div>
+            <div class="pickup_content">
+                <div class="first_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./img_new/shogo/top/banner2.jpg" alt="ゼロホームの展示場は安心・安全な空間">
+                                <h4>
+                                    ゼロホームの展示場は安心・安全な空間
+                                </h4>
+                                <p>
+                                    お客様、従業員、関係先等の皆様の安全・安心に配慮し、政府・自治体など行政機関からの指導に基づいた対応を実施しております。
+                                </p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./img_new/shogo/top/banner3.jpg" alt="住宅支援策で賢く家づくり">
+                                <h4>
+                                    住宅支援策で賢く家づくり
+                                </h4>
+                                <p>
+                                    省エネ性能が高い住宅ほど、より大きなメリットが受けられる制度内容になっています。
+                                </p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="./img_new/shogo/top/banner1.jpg" alt="【宮城県×ゼロホーム】苗木を還そうプロジェクト">
+                                <h4>
+                                    【宮城県×ゼロホーム】苗木を還そうプロジェクト
+                                </h4>
+                                <p>
+                                    お客様にゼロホームの家をお引渡しするごとに宮崎の山に木が還ります。
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="alert_message">
+            <div class="alert_wrap">
+                <div class="alert_inner wow fadeInUp">
+                    <h3>新型コロナウイルス感染拡大防止の対応について</h3>
+                    <p class="is_pc is_onlytab">
+                        弊社では、新型コロナウイルスの感染拡大防止の観点から、お客様、従業員、関係先等の皆様の安全・安心に配慮し、<br class="is_pc">
+                        政府・自治体など行政機関からの指導に基づいた対応を実施しております。
+                    </p>
+                    <a href="">
+                        詳しくはこちら
+                        <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="news_wrap">
+                <div class="news_inner wow fadeInUp">
+                    <div class="title">
+                        <div>
+                            <h3>NEWS</h3>
+                            <p>ゼロホームからのお知らせ</p>
+                        </div>
+                        <div class="is_pc is_onlytab">
+                            <a href="" class="news_btn">
+                                お知らせ一覧を見る
+                                <figure>
+                                    <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <p class="category">ニュースリリース</p>
+                                <p class="date">2022.9.30</p>
+                                <p class="content">
+                                    ＜ニュースリリース＞ 子育てサポート企業として『くるみん』認定を取得しました
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <p class="category">ニュースリリース</p>
+                                <p class="date">2022.9.26</p>
+                                <p class="content">
+                                    ＜ニュースリリース＞「健康宣言」を制定しました
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <p class="category">お知らせ</p>
+                                <p class="date">2022.9.15</p>
+                                <p class="content">
+                                    新ＣＭ「絶妙なゼロホーム」篇、9/15（木）より放映開始
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="is_sp news_btn_sp">
+                        <a href="" class="news_btn">
+                            お知らせ一覧を見る
+                            <figure>
+                                <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="choosing">
+            <div class="choosing_wrap">
+                <div class="choosing_inner">
+                    <div class="choosing_inner--box">
+                        <ul>
+                            <li class="wow fadeInUp">
+                                <a href="">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/icon_build.png" width="102" alt="家を建てたい">
+                                    </figure>
+                                    <div class="item_text">
+                                        <div class="caption">
+                                            <h3><span>家を</span>建てたい</h3>
+                                            <p>注文住宅・建て替え</p>
+                                        </div>
+                                        <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s">
+                                <a href="">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/icon_buying.png" width="79" alt="家を買いたい">
+                                    </figure>
+                                    <div class="item_text">
+                                        <div class="caption">
+                                            <h3><span>家を</span>買いたい</h3>
+                                            <p>一戸建て・マンション・土地</p>
+                                        </div>
+                                        <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="1s">
+                                <a href="">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/icon_selling.png" width="118" alt="家を売りたい">
+                                    </figure>
+                                    <div class="item_text">
+                                        <div class="caption">
+                                            <h3><span>家を</span>売りたい</h3>
+                                            <p>不動産買取</p>
+                                        </div>
+                                        <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <section class="reason">
+            <div class="reason_top wow fadeInUp">
+                <div class="reason_top--title">
+                    <h3>REASONS</h3>
+                    <h4>ゼロホームが選ばれる３つの理由</h4>
+                </div>
+                <div class="reason_top--img">
+                    <figure>
+                        <img src="./img_new/shogo/top/reason_img.png" width="431" alt="ゼロホームが選ばれる３つの理由">
+                    </figure>
+                </div>
+            </div>
+            <div class="reason_bottom">
+                <div class="reason_bottom_wrap">
+                    <ul>
+                        <li class="wow fadeInUp">
+                            <div class="reason_bottom--content">
+                                <figure class="point">
+                                    <img src="./img_new/shogo/top/point1_icon.svg" alt="point 1">
+                                </figure>
+                                <h3>100年安心をかなえる家</h3>
+                                <figure>
+                                    <img src="./img_new/shogo/top/reason_point1.jpg" width="100%" alt="震度７クラスの1.5倍の地震力にも倒壊しない性能。">
+                                </figure>
+                                <h4>
+                                    震度７クラスの1.5倍の地震力<br>
+                                    にも倒壊しない性能。
+                                </h4>
+                                <p>
+                                    品質にこだわりながら工法を工夫し、高い施工技術を用いて定期的なアフターメンテナンス体制を構築することで、永く住み継げる家を実現させたのが『ゼロホームの100年住宅』です。100年先、さらにその先の未来へと、確かな安心をつないでいく家づくりに取り組んでいます。
+                                </p>
+                            </div>
+                            <div class="reason_bottom--button">
+                                <a href="" class="reason_btn" 
+                                onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'"
+                                onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
+                                    詳しくを見る
+                                    <figure>
+                                        <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="reason_bottom--content">
+                                <figure class="point">
+                                    <img src="./img_new/shogo/top/point2_icon.svg" alt="point 2">
+                                </figure>
+                                <h3>カスタマーサポート</h3>
+                                <figure>
+                                    <img src="./img_new/shogo/top/reason_point2.jpg" width="100%" alt="いつまでも安心して暮らしていただくために。">
+                                </figure>
+                                <h4>
+                                    いつまでも安心して<br>
+                                    暮らしていただくために。
+                                </h4>
+                                <p>
+                                    構造50年保証を継続する上で、定期点検と日ごろのメンテナンスが非常に重要です。ゼロホームでは、定期点検やアフターサービス専門の「カスタマー事業部」を設置。お住まい頂いた後のお客様からのご連絡に対して、迅速に対応できる体制づくりに努めています。
+                                </p>
+                            </div>
+                            <div class="reason_bottom--button">
+                                <a href="" class="reason_btn" 
+                                onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'"
+                                onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
+                                    詳しくを見る
+                                    <figure>
+                                        <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1s">
+                            <div class="reason_bottom--content">
+                                <figure class="point">
+                                    <img src="./img_new/shogo/top/point3_icon.svg" alt="point 3">
+                                </figure>
+                                <h3>コストパフォーマンス</h3>
+                                <figure>
+                                    <img src="./img_new/shogo/top/reason_point3.jpg" width="100%" alt="ゼロホームは高品質・低コスト">
+                                </figure>
+                                <h4>
+                                    ゼロホームは高品質・低コスト<br>
+                                    を追求します。
+                                </h4>
+                                <p>
+                                    ゼロホームの100年住宅は、国が推進する「長期優良住宅」の認定基準をクリアしています。時代は、スクラップ＆ビルドから良質なストック型の社会へ。品質の高い家を建て、永く住み継げる家は人にも地球にもやさしい暮らしです。
+                                </p>
+                            </div>
+                            <div class="reason_bottom--button">
+                                <a href="" class="reason_btn" 
+                                onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'"
+                                onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
+                                    詳しくを見る
+                                    <figure>
+                                        <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                    </figure>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="lifestyle">
+            <div class="title wow fadeInUp">
+                <h3>LIFESTYLE</h3>
+                <p>暮らし方を探す</p>
+            </div>
+            <div class="lifestyle_content">
+                <div class="second_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <h3>
+                                    IOTで便利に暮らす
+                                    <span>カジラクの家</span>
+                                </h3>
+                                <img src="./img_new/shogo/top/lifestyle_kajiraku.jpg" alt="IOTで便利に暮らす
+                                カジラクの家">
+                                <p>
+                                    キッチンの周りに洗面室・家事室・パントリー・サービスデッキを配置し、回遊できる家事動線としています。
+                                </p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <h3>
+                                    みんなが笑顔に暮らす
+                                    <span>しあわせ二世帯住宅</span>
+                                </h3>
+                                <img src="./img_new/shogo/top/lifestyle_shiawase.jpg" alt="しあわせ二世帯住宅">
+                                <p>
+                                    変化し続ける「家族のカタチ」に合わせ、住み続ける事ができる「ロングライフ二世帯」です。
+                                </p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <h3>
+                                    次世代の快適な暮らし
+                                    <span>SMART HOME</span>
+                                </h3>
+                                <img src="./img_new/shogo/top/lifestyle_smart.jpg" alt="次世代の快適な暮らし">
+                                <p>
+                                    インターネットとつながった家電や住宅設備を操作することで、より快適な暮らしを送ることができます。
+                                </p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <h3>
+                                    満足できる暮らし
+                                    <span>狭小地住宅</span>
+                                </h3>
+                                <img src="./img_new/shogo/top/lifestyle_small.jpg" alt="狭小地住宅">
+                                <p>
+                                    限られた土地で我慢することなく、豊かな暮らしを生み出せるコンパクトハウスです。
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="lifestyle_button">
+                    <div class="lifestyle_button--inner">
+                        <a href="" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            施工事例を見る
+                            <figure>
+                                <img src="./img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                        <a href="" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            物件情報を見る
+                            <figure>
+                                <img src="./img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reserve">
+            <div class="reserve_title">
+                <div class="reserve_title--wrap">
+                    <figure class="wow fadeInUp">
+                        <img src="./img_new/shogo/top/reserve_title.png" alt="平日・土日問わずお気軽にご予約ください！" width="326">
+                    </figure>
+                    <h3 class="wow fadeInUp" data-wow-delay="0.5s">
+                        100年住宅の魅力、<br class="is_tab">それは｢百聞は一見にしかず｣！<br>
+                        ゼロホームのお近くの展示場へ
+                    </h3>
+                    <p class="wow fadeInUp" data-wow-delay="1s">
+                        ゼロホームでは、4つの住宅展示場に15棟の<br class="is_sp">モデルハウスをご用意しています。<br>
+                        ゼロホーム展示場は、<br class="is_sp">抗ウイルスコーティング済の安心・安全な空間。<br>
+                        安心してご来場ください！
+                    </p>
+                </div>
+            </div>
+            <div class="reserve_item">
+                <ul>
+                    <li class="wow fadeInLeft">
+                        <div class="reserve_item--box">
+                            <div class="reserve_item--img">
+                                <img src="./img_new/shogo/top/kyoto.jpg" alt="京都南インター展示場" width="190">
+                            </div>
+                            <div class="reserve_item--text">
+                                <h3>京都南インター展示場</h3>
+                                <div class="place">
+                                    <img src="./img_new/shogo/top/mark_icon.svg" alt="mark">
+                                    <p>京都市伏見区竹田西小屋ノ内町50</p>
+                                </div>
+                                <a href="">
+                                    ご来場予約
+                                    <figure>
+                                        <img src="./img_new/shogo/top/arrow_right_w.png" alt="ご来場予約" width="13">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <div class="reserve_item--box">
+                            <div class="reserve_item--img">
+                                <img src="./img_new/shogo/top/imadegawa.jpg" alt="今出川展示場" width="190">
+                            </div>
+                            <div class="reserve_item--text">
+                                <h3>今出川展示場</h3>
+                                <div class="place">
+                                    <img src="./img_new/shogo/top/mark_icon.svg" alt="mark">
+                                    <p>京都市上京区東今小路町1005</p>
+                                </div>
+                                <a href="">
+                                    ご来場予約
+                                    <figure>
+                                        <img src="./img_new/shogo/top/arrow_right_w.png" alt="ご来場予約" width="13">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <div class="reserve_item--box">
+                            <div class="reserve_item--img">
+                                <img src="./img_new/shogo/top/amagasaki.jpg" alt="尼崎展示場" width="190">
+                            </div>
+                            <div class="reserve_item--text">
+                                <h3>尼崎展示場</h3>
+                                <div class="place">
+                                    <img src="./img_new/shogo/top/mark_icon.svg" alt="mark">
+                                    <p>兵庫県尼崎市水明町4-4</p>
+                                </div>
+                                <a href="">
+                                    ご来場予約
+                                    <figure>
+                                        <img src="./img_new/shogo/top/arrow_right_w.png" alt="ご来場予約" width="13">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInRight">
+                        <div class="reserve_item--box">
+                            <div class="reserve_item--img">
+                                <img src="./img_new/shogo/top/moriguchi.jpg" alt="守口展示場" width="190">
+                            </div>
+                            <div class="reserve_item--text">
+                                <h3>守口展示場</h3>
+                                <div class="place">
+                                    <img src="./img_new/shogo/top/mark_icon.svg" alt="mark">
+                                    <p>大阪府守口市河原町5-10</p>
+                                </div>
+                                <a href="">
+                                    ご来場予約
+                                    <figure>
+                                        <img src="./img_new/shogo/top/arrow_right_w.png" alt="ご来場予約" width="13">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="other">
+            <div class="other_wrap">
+                <div class="other_inner">
+                    <a href="">
+                        <img src="./img_new/shogo/top/catalog_img.png" alt="カタログ無料請求" width="415">
+                    </a>
+                    <a href="">
+                        <img src="./img_new/shogo/top/contact_img.png" alt="各種お問い合せ" width="415">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="shiru">
+            <div class="shiru_inner">
+                <div class="shiru_wrap">
+                    <div class="title wow fadeInUp">
+                        <h3>ZERO HOME</h3>
+                        <p>ゼロホームを知る</p>
+                    </div>
+                    <div class="shiru_content">
+                        <ul>
+                            <li class="wow fadeInUp">
+                                <div class="shiru_text">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/shiru_sdg_capture.png" width="65" alt="">
+                                    </figure>
+                                    <h3>ゼロホームの<br class="is_sp">SDGsへの取り組み</h3>
+                                    <p>
+                                        ゼロホームは、100年先、さらにその先の未来へと、<br>
+                                        確かな安心をつないでいきます。
+                                    </p>
+                                </div>
+                                <div class="shiru_btn">
+                                    <a href="">
+                                        詳しくを見る
+                                        <figure>
+                                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="shiru_text">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/shiru_display.png" width="65" alt="ゼロホームの公開">
+                                    </figure>
+                                    <h3>ゼロホームの<br class="is_sp">公開</h3>
+                                    <p>
+                                        ゼロホームでは「お客様満足度アンケート」や<br>
+                                        「クレーム・メンテナンス記録」、「雨漏り件数」を<br>
+                                        サイト上で公開しています。
+                                    </p>
+                                </div>
+                                <div class="shiru_btn">
+                                    <a href="">
+                                        詳しくを見る
+                                        <figure>
+                                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="1s">
+                                <div class="shiru_text">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/shiru_capture.png" width="65" alt="ゼロホームの取り組み">
+                                    </figure>
+                                    <h3>ゼロホームの<br class="is_sp">取り組み</h3>
+                                    <p>
+                                        ゼロホームがこれまでに行った数々の取り組みを<br>
+                                        ご紹介しています。様々な活動を通して、<br>
+                                        より良い社会の構築に貢献しています。
+                                    </p>
+                                </div>
+                                <div class="shiru_btn">
+                                    <a href="">
+                                        詳しくを見る
+                                        <figure>
+                                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="shiru_text">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/shiru_staff.png" width="110" alt="ゼロホームの営業スタッフ紹介">
+                                    </figure>
+                                    <h3>ゼロホームの<br class="is_sp">営業スタッフ紹介</h3>
+                                    <p>
+                                        お客様目線の気持ちを大切に、<br>
+                                        情熱をもって家づくりをお手伝いいたします。<br>
+                                        個性豊かなスタッフたちがお待ちしております！
+                                    </p>
+                                </div>
+                                <div class="shiru_btn">
+                                    <a href="">
+                                        詳しくを見る
+                                        <figure>
+                                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="shiru_text">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/shiru_company.png" width="43" alt="企業情報">
+                                    </figure>
+                                    <h3>企業情報</h3>
+                                    <p>
+                                        「安心安全のまちづくり、家づくり」は<br>
+                                        私たちの最も重要な責務としている会社です。
+                                    </p>
+                                </div>
+                                <div class="shiru_btn">
+                                    <a href="">
+                                        詳しくを見る
+                                        <figure>
+                                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="wow fadeInUp" data-wow-delay="1s">
+                                <div class="shiru_text">
+                                    <figure>
+                                        <img src="./img_new/shogo/top/shiru_architect.png" width="72" alt="建築用語集">
+                                    </figure>
+                                    <h3>建築用語集</h3>
+                                    <p>
+                                        建築の専門用語は一般の方にはわかりにくい！<br>
+                                        住宅の建築においてよく使われる言葉を<br>
+                                        まとめてみました。
+                                    </p>
+                                </div>
+                                <div class="shiru_btn">
+                                    <a href="">
+                                        詳しくを見る
+                                        <figure>
+                                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                                        </figure>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="column">
+            <div class="column_wrap">
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="./img_new/shogo/top/column0.png" width="236" alt="ゼロホーム住宅
+                            お役立ち情報">
+                        </figure>
+                        <p>
+                            ゼロホーム住宅<br>
+                            お役立ち情報
+                        </p>
+                        <div class="column_btn is_pc is_onlytab">
+                            <a href="" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_b.png'">
+                                コラムをもっと見る
+                                <figure>
+                                    <img src="./img_new/shogo/top/arrow_right_b.png" alt="詳しくを見る" width="13">
+                                </figure>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <img src="./img_new/shogo/top/column1.jpg" width="100%" alt="新築一戸建て購入に必要な諸費用と頭金の相場">
+                            </figure>
+                            <h3 class="date">2022.9.26</h3>
+                            <h4>
+                                新築一戸建て購入に必要な諸費用と頭金の相場
+                            </h4>
+                            <p>
+                                「住宅を購入するなら若いうちにローンを組んだ方が良い」と言われるものの、頭金の準備や毎月の返済額に不安が残りますよね。今回は新築一戸建ての購入を検討している若い世代の方に向けて、住宅購入に必要な諸費用や頭金の相場についてご案内したいと思います。
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <img src="./img_new/shogo/top/column2.jpg" width="100%" alt="家を建てる年齢はいつが最適？平均年齢からわかる費用対策">
+                            </figure>
+                            <h3 class="date">2022.9.12</h3>
+                            <h4>
+                                家を建てる年齢はいつが最適？平均年齢からわかる費用対策
+                            </h4>
+                            <p>
+                                家を建てる時期の目安として、一般的にどのくらいの年齢で家を建てられているのか気になるところですよね。そこで、注文住宅を建てた方と建売住宅を購入した方の年齢をみてみましょう。注文住宅を建てた方の場合、30代が最も多く32.3％、続いて40代が24.6％、20代は9.2％と全体の1割弱です。同様に、
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <img src="./img_new/shogo/top/column3.jpg" width="100%" alt="今の家、どうしますか？ 終活のための「家じまい」">
+                            </figure>
+                            <h3 class="date">2022.8.8</h3>
+                            <h4>
+                                今の家、どうしますか？ 終活のための「家じまい」
+                            </h4>
+                            <p>
+                                かつては子供たちと賑やかに過ごした家も、子供たちが成長してそれぞれ独立していくと気が付けば老夫婦だけ、もしくは高齢者の一人暮らしに・・・。これは決して珍しいことではなく、多くのご家庭で直面する可能性がある話です。現代では核家族化が進み、子供
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <img src="./img_new/shogo/top/column4.jpg" width="100%" alt="家族との関係がギクシャク！二世帯住宅で起こり得るトラブルとそれを回避する方法">
+                            </figure>
+                            <h3 class="date">2022.7.21</h3>
+                            <h4>
+                                家族との関係がギクシャク！二世帯住宅で起こり得るトラブルとそれを回避する方法
+                            </h4>
+                            <p>
+                                二世帯住宅は、何かあったときにお互いに駆けつけることができるため便利な一面もありますが、距離の近さからトラブルが起きるケースもめずらしくありません。
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <figure>
+                                <img src="./img_new/shogo/top/column5.jpg" width="100%" alt="新築一戸建てvs中古一戸建て！それぞれのメリット・デメリット">
+                            </figure>
+                            <h3 class="date">2022.5.23</h3>
+                            <h4>
+                                新築一戸建てvs中古一戸建て！それぞれのメリット・デメリット
+                            </h4>
+                            <p>
+                                一戸建てを購入するとき、新築にするのか、中古にするのかは迷いどころです。今回は、新築一戸建てと中古一戸建て、それぞれのメリットやデメリットをご紹介します。
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="column_btn is_sp">
+                    <a href="" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_b.png'">
+                        コラムをもっと見る
+                        <figure>
+                            <img src="./img_new/shogo/top/arrow_right_b.png" alt="詳しくを見る" width="13">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "./footer.html"
+                }).done( data => $("footer").html(data) )
+            });
+        </script>
+    </footer>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+</body>
+</html>
