@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img_new/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="js_new/shogo/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css_new/shogo/tax.css" />
+    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@1.1.10/css/scroll-hint.css">
+    <script src="https://zerohome.jp/wp-content/themes/zerohome/js/jquery-1.11.1.min.js"></script>
+    <script src="https://unpkg.com/scroll-hint@1.1.10/js/scroll-hint.js"></script>
+    <script>
+        $(window).load(function() {
+            new ScrollHint('.tableWrap', {
+            i18n: {
+              scrollable: 'スクロールできます'
+            }
+          });
+        });
+    </script>
+    <script src="js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "./header.html"
+                }).done( data => $("header").html(data) )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href=""><span>TOP</span></a>
+                <span>> 住宅支援策</span>
+            </div>
+        </section>
+        <div class="tax">
+            <div class="mainImg">
+                <div class="mainTxt tac">
+                    <p class="mainTxt01 ls02 fBold clrZero">ゼロホームにおまかせ！</p>
+                    <h2 class="fBold ls02 mt10 mb10">住宅支援策<small>で</small><br class="spOnlyCont">賢<small>く</small>家<small>づくり</small></h2>
+                    <p class="mainSince ls01 fBold">速報! 2022年最新情報</p>
+                    <p class="ls03 clrWhite mt10 update">最終更新日：2022.12.19</p>
+                </div>
+            </div>
+            <div class="topTxt bgClrGrey">
+                <p class="contBoxTax ls02">2022年度の経済対策として下記の住宅取得支援策が発表されており、省エネ性能が高い住宅ほどより大きなメリットが受けられます。ゼロホームなら、いろんなメリットを最大限に考えた家づくりをご提案いたします！ この機会に住宅取得をぜひご検討ください。<br>※2022年10月1日以降は新築の省エネ性能の認定基準変更に伴い、新基準での認定に変更されています。</p>
+            </div>
+            
+            <div class="newsContTax tac">
+                <p class="newsTtl">NEWS</p>
+                <p class="mt30 newsTxt"><span>2022年11月8日、<br class="spOnlyCont">令和4年度補正予算案が閣議決定<big>「こどもエコすまい支援事業」</big>が新たにスタート！</span></p>
+                <p class="newsTxt02">申請は2023年3月スタートの予定です。</p>
+            </div>
+            
+            <div class="bgClrGrey">
+                <div class="sWhite contBoxTax sptCont01">
+        
+                    <div class="ttlFlex">
+                        <p><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/ico01.png" alt="こどもエコすまい支援事業"></p>
+                        <dl><dt class="mb5"><h3 class="fBold ls02">こどもエコすまい支援事業</h3><span class="spnNew">NEW!</span></dt><dd>子育て世帯・若者夫婦世帯の住宅取得支援制度</dd></dl>
+                    </div>
+                    <div class="sptWrap mt40 mb60">
+                        <p class="tpTxt fBold clrWhite tac">政府の予算<br>がなくなり<br>次第終了</p>
+                        <p class="spt01 bgClrZero tac fBold clrWhite ls01">新築<big class="fBold ml10 mr10">100</big>万円補助</p>
+                        <dl class="bgClrWhite"><dt class="fBold f18 clrZero">【対象】</dt><dd class="clrZero">子育て世帯（18歳未満の子を有する世帯）、若者夫婦世帯（夫婦のいずれかが39歳以下の世帯）による高い省エネ性能を有する住宅の新築、一定のリフォームが対象（事業者が申請）<br>※年齢はいずれも令和4年4月1日時点<br>※<span>令和4年11月8日</span>以降に対象工事に着手したものが対象</dd></dl>
+                    </div>
+                    <p class="fBold clrOrange f18">子育て世帯・若者夫婦世帯による住宅の新築</p>
+                    <div class="tableWrap mb10 scroll-hint" style="position: relative; overflow: auto;">
+                        <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <th class="tBg01">対象住宅</th>
+                                    <th class="tBg03">補助額</th>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">ＺＥＨ住宅レベル･･･長期優良住宅該当物件など<br>（強化外皮基準かつ再エネを除く一次エネルギー消費量▲20％に適合するもの）</td>
+                                    <td class="tBg04 fBold clrOrange"><span class="fBold fs01">100</span>万円／戸</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                    <p class="clrBeige mb600">※対象となる住宅の延べ面積は50㎡以上<br>※土砂災害特別警戒区域における住宅は原則除外とする。<br>※「立地適正化計画区域内の居住誘導区域外」かつ「災害レッドゾーン（災害危険区域、地すべり防止区域、土砂災害特別警戒区域、急傾斜地崩壊危険区域又は浸水被害防止区域）内」で建設されたもののうち、3戸以上の開発又は1戸若しくは2戸で規模1000㎡超の開発によるもので、都市再生特別措置法に基づき立地を適正なものとするために行われた市町村長の勧告に従わなかった旨の公表に係る住宅は除外とする。</p>
+                    <!--<p class="mt50">◎詳細は<a href="https://kodomo-mirai.mlit.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">こどもエコすまい支援事業事務局のHP</a>にてご確認ください。</p>-->
+                </div>
+            </div>
+            <div class="sWhite contBoxTax sptCont01">
+                <div class="ttlFlex">
+                    <p><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/ico01.png" alt="こどもみらい住宅支援事業"></p>
+                    <dl><dt class="mb5"><h3 class="fBold ls02">こどもみらい住宅支援事業</h3></dt><dd>子育て世帯・若者夫婦世帯の住宅取得支援制度</dd></dl>
+                </div>
+                <div class="sptWrap mt40 mb60">
+                    <p class="tpTxt fBold clrWhite tac">予算上限に<br>達したため<br>受付終了</p>
+                    <p class="spt01 bgClrZero tac fBold clrWhite ls01">新築<span class="fBold ml10">最大</span><big class="fBold ml10 mr10">100</big>万円補助</p>
+                    <dl><dt class="fBold f18 clrZero">【対象】</dt><dd class="clrZero">子育て世帯（18歳未満の子を有する世帯）、若者夫婦世帯（夫婦のいずれかが39歳以下の世帯）による高い省エネ性能を有する住宅の新築、一定のリフォームが対象（事業者が申請）<br>※年齢はいずれも令和3年4月1日時点<br>※<span>令和3年11月26日から令和5年3月31日（③については令和4年6月30日）</span>までに契約の締結等を行ったものが対象</dd></dl>
+                </div>
+                <p class="fBold clrOrange f18">子育て世帯・若者夫婦世帯による住宅の新築</p>
+                <div class="tableWrap mb10 scroll-hint" style="position: relative; overflow: auto;">
+                    <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <th class="tBg01">対象住宅</th>
+                                <th class="tBg03">補助額</th>
+                            </tr>
+                            <tr>
+                                <td class="tBg02">① ZEH<sup>※1</sup></td>
+                                <td class="tBg04 fBold clrOrange"><span class="fBold fs01">100</span>万円／戸</td>
+                            </tr>
+                            <tr>
+                                <td class="tBg02">② 認定住宅<sup>※2</sup></td>
+                                <td class="tBg04 fBold clrOrange"><span class="fBold fs01">80</span>万円／戸</td>
+                            </tr>
+                            <tr>
+                                <td class="tBg02">③ 一定の省エネ性<sup>※3</sup></td>
+                                <td class="tBg04 fBold clrOrange"><span class="fBold fs01">60</span>万円／戸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                <p class="clrBeige mb60">※対象となる住宅の延べ面積は50㎡以上<br>※<sup>1</sup>ZEH、Nearly ZEH、ZEH Ready、ZEH Oriented（強化外皮基準かつ再エネを除く一次エネルギー消費量▲20％に適合するもの）<br>&nbsp;　&nbsp;&nbsp;2022年10月1日以降に新基準で認定を受けた「認定長期優良住宅・認定低炭素住宅・性能向上計画認定住宅」「フラット35S（金利Aプラン）」「フラット35S（ZEH）」<br>※<sup>2</sup>2022年9月までに認定を受けた「認定長期優良住宅・認定低炭素建築物・性能向上計画認定住宅」<br>※<sup>3</sup>省エネ基準に適合する住宅（断熱等級４かつ一次エネ等級４以上を満たす住宅）</p>
+                <p class="fBold clrOrange f18 ">子育て世帯・若者夫婦世帯による住宅の新築</p>
+                <p class="clrBeige">リフォーム工事内容に応じて定める額　上限30万円／戸<br>※子育て世帯・若者夫婦世帯は、上限45万円/戸（既存住宅購入を伴う場合は60万円/戸）<br>※安心R住宅の購入を伴う場合は、上限45万円/戸</p>
+                <p class="mt50">◎詳細は<a href="https://kodomo-mirai.mlit.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">こどもみらい住宅支援事業事務局のHP</a>にてご確認ください。</p>
+            </div>
+            <div class="bgClrGrey">
+                <div class="sWhite contBoxTax sptCont02">
+                    <div class="ttlFlex">
+                        <p><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/ico02.png" alt="住宅ローン減税"></p>
+                        <dl><dt class="mb5"><h3 class="fBold ls02">住宅ローン減税</h3></dt><dd>年末のローン残高0.7%を所得税<br class="spOnlyCont">（一部、翌年の住民税）から控除する制度</dd></dl>
+                    </div>
+                    <div class="sptWrap mt40 mb80">
+                        <p class="tpTxt fBold clrWhite tac">適応期限を<br>4年延長</p>
+                        <p class="spt01 bgClrZero tac fBold clrWhite ls01">控除期間が<big class="fBold ml10 mr10">13</big>年間</p>
+                        <dl class="bgClrWhite"><dt class="fBold f18 clrZero">【対象】</dt><dd class="clrZero">住宅の取得等をして2022年から2025年までの間に居住の用に供した方<br>床面積50㎡以上の場合：合計所得金額2,000万円以下<br>床面積40㎡以上の場合：合計所得金額1,000万円以下</dd></dl>
+                    </div>
+                    <div class="spt02top tac mb50">
+                        <p class="spt02topTxt01 tac fBold clrWhite bgClrRed ls02"><big class="fs01 fBold clrWhite">長期優良住宅</big>なら<big class="fs01 fBold clrWhite">最大控除額</big></p>
+                        <p class="spt02topTxt02"><small class="bgClrBeige clrWhite mr5 ls02">借入限度額</small>最大<span class="fBold clrRed"><big class="fs01 fBold mr5 ml5">5,000</big>万円</span>×0.7％</p>
+                        <p class="spt02topTxt03 tac fBold clrWhite bgClrRed ls02">年間<big class="fs01 fBold clrWhite">35</big>万円 / <br class="spOnlyCont">13年の合計<big class="fs01 fBold clrWhite">455</big>万円 の減税</p>
+                    </div>
+                    
+                    <div class="tableWrap scroll-hint" style="position: relative; overflow: auto;">
+                        <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>&nbsp;</th>
+                                    <th class="tBg01">2022年〜2023年のご入居</th>
+                                    <th class="tBg01">2024年〜2025年のご入居</th>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                    <th class="tBg03" colspan="2">借入限度額</th>
+                                </tr>
+                                <tr>
+                                    <th rowspan="4" class="tBg01"><span class="wmrl fBold">新築住宅・買取再販</span></th>
+                                    <td class="tBg02">長期優良住宅・<br class="spTabCont">低炭素住宅</td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">5,000</big>万円</span></p></td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">4,500</big>万円</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">ZEH水準省エネ住宅</td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">4,500</big>万円</span></p></td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">3,500</big>万円</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">省エネ基準適応住宅</td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">4,000</big>万円</span></p></td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">3,000</big>万円</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">その他の住宅</td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">3,000</big>万円</span></p></td>
+                                    <td class="tBg04"><p><span class="fBold clrOrange"><big class="fs01 fBold">0</big>万円</span></p><p class="cmt10 mb5 f14">（2023年までに新築の建築確認:2,000万円）</p></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2" class="tBg01"><span class="wmrl fBold">既存住宅</span></th>
+                                    <td class="tBg02">長期優良住宅・<br class="spTabCont">低炭素住宅<br>ZEH水準省エネ住宅<br>省エネ基準適応住宅</td>
+                                    <td class="tBg04" colspan="2"><p><span class="fBold clrOrange"><big class="fs01 fBold">3,000</big>万円</span></p></td>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">その他の住宅</td>
+                                    <td class="tBg04" colspan="2"><p><span class="fBold clrOrange"><big class="fs01 fBold">2,000</big>万円</span></p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                    <p class="mt50">◎詳細は<a href="https://www.mlit.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国土交通省</a>・<a href="https://www.nta.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国税庁</a>のHPにてご確認ください。</p>
+                </div>
+            </div>
+            <div class="sWhite contBoxTax sptCont03">
+                <div class="ttlFlex">
+                    <p><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/ico02.png" alt="投資型減税（認定住宅新築等特別税額控除）"></p>
+                    <dl><dt class="mb5"><h3 class="fBold ls02">投資型減税<br class="spOnlyCont"><small class="fBold">（認定住宅新築等特別税額控除）</small></h3></dt><dd>認定住宅（長期優良住宅・低炭素住宅）の<br class="spOnlyCont">面積に応じた金額を所得税額から控除する制度<br>一般的な住宅では、住宅ローンを利用しなければ所得税減税を受けることはできませんが、長期優良住宅などの認定住宅の場合は住宅ローンを組まなくても減税を受けられます。</dd></dl>
+                </div>
+                <div class="sptWrap mt40 mb60">
+                    <p class="tpTxt fBold clrWhite tac">適応期限を<br>2年延長</p>
+                    <p class="spt01 bgClrZero tac fBold clrWhite ls01">最大控除額<big class="fBold ml10 mr10">65</big>万円</p>
+                    <dl><dt class="fBold f18 clrZero">【対象】</dt><dd class="clrZero">現金で新築住宅を取得する方（令和5年12月31日までに居住）、控除期間1年間<br>床面積50㎡以上の場合：合計所得金額3,000万円以下</dd></dl>
+                </div>
+                <div class="tableWrap scroll-hint" style="position: relative; overflow: auto;">
+                    <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <th class="tBg01" colspan="4">2022年・2023年入居の場合</th>
+                            </tr>
+                            <tr>
+                                <th class="tBg01" colspan="4">対象住宅</th>
+                            </tr>
+                            <tr>
+                                <td class="tBg02" colspan="4">長期優良住宅・低炭素住宅</td>
+                            </tr>
+                            <tr>
+                                <th class="tBg03">控除対象限度額</th>
+                                <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">650</big>万円</span></td>
+                            </tr>
+                            <tr>
+                                <th class="tBg03">控除期間</th>
+                                <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">1</big>年間</span></td>
+                            </tr>
+                            <tr>
+                                <th class="tBg03">控除率</th>
+                                <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">10</big>%</span></td>
+                            </tr>
+                            <tr>
+                                <th class="tBg03">最大控除額</th>
+                                <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">65</big>万円</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                <p class="mt50">◎詳細は<a href="https://www.mlit.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国土交通省</a>・<a href="https://www.nta.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国税庁</a>のHPにてご確認ください。</p>
+            </div>
+            <div class="bgClrGrey">
+                <div class="sWhite contBoxTax sptCont01 sptCont04">
+                    <div class="ttlFlex">
+                        <p><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/ico01.png" alt="贈与税の非課税枠"></p>
+                        <dl><dt class="mb5"><h3 class="fBold ls02">贈与税の非課税枠</h3></dt><dd>父母や祖父母などから支援が受けやすくなる制度</dd></dl>
+                    </div>
+                    <div class="sptWrap mt40 mb60">
+                        <p class="tpTxt fBold clrWhite tac">適応期限を<br>2年延長</p>
+                        <p class="spt01 spt04 bgClrZero tac fBold clrWhite ls01"><span class="fBold mr10">最大</span>贈与税の上限が<br class="spOnlyCont"><big class="fBold ml10 mr10">1,000</big>万円に</p>
+                        <dl class="bgClrWhite"><dt class="fBold f18 clrZero">【対象】</dt><dd class="clrZero">2023年12月末までに請負契約または売買契約をした方<br>床面積50㎡以上の場合：合計所得金額2,000万円以下<br>床面積40㎡以上50㎡未満の場合：合計所得金額1,000万円以下</dd></dl>
+                    </div>
+                    <div class="tableWrap scroll-hint" style="position: relative; overflow: auto;">
+                        <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <th class="tBg01">対象住宅</th>
+                                    <th class="tBg03">贈与税の上限</th>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">耐震、省エネ又は<br class="spOnlyCont">バリアフリーの<br class="spOnlyCont">住宅用家屋</td>
+                                    <td class="tBg04 fBold clrOrange"><span class="fBold fs01">1,000</span>万円</td>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">上記以外の<br class="spOnlyCont">住宅用家屋</td>
+                                    <td class="tBg04 fBold clrOrange"><span class="fBold fs01">500</span>万円</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                    <p class="mt50">◎詳細は<a href="https://www.mlit.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国土交通省</a>・<a href="https://www.nta.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国税庁</a>のHPにてご確認ください。</p>
+                </div>
+            </div>
+            <div class="sWhite contBoxTax sptCont05">
+                <div class="ttlFlex">
+                    <p><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/ico01.png" alt="認定長期優良住宅に関する特例措置"></p>
+                    <dl><dt class="mb5"><h3 class="fBold ls02">認定長期優良住宅に関する<br class="spOnlyCont">特例措置</h3></dt><dd>長期優良住宅として認定された住宅<br class="spOnlyCont">（認定長期優良住宅）を対象とした税制上の優遇措置<br></dd></dl>
+                </div>
+                <div class="sptWrap mt40 mb60">
+                    <p class="tpTxt fBold clrWhite tac">適応期限を<br>2年延長</p>
+                    <p class="spt01 spt05 bgClrZero tac fBold clrWhite">登録免許税・不動産取得税・<br class="spOnlyCont">固定資産税の軽減</p>
+                    <dl><dt class="fBold f18 clrZero">【対象】</dt><dd class="clrZero">適用期限：2024年3月31日まで</dd></dl>
+                </div>
+                <div class="tac">
+                    <p class="sptTxtSub clrOrange fBold ls01">登録免許税</p>
+                </div>
+                <p class="f20 fBold tac mt10">住宅用家屋の所有権保存登記等に係る<br class="spOnlyCont">税率を引き下げる措置</p>
+                <div class="sptCont05small mb50">
+                    <div class="tableWrap spt0501 scroll-hint" style="position: relative; overflow: auto;">
+                        <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <th class="tBg01">登録の種類</th>
+                                    <th class="tBg01">保存登記</th>
+                                    <th class="tBg01">移転登記</th>
+                                </tr>
+                                <tr>
+                                    <th class="tBg01">本則</th>
+                                    <td class="tBg02">0.4%</td>
+                                    <td class="tBg02">2.0%</td>
+                                </tr>
+                                <tr>
+                                    <th class="tBg01">一般住宅</th>
+                                    <td class="tBg02">0.15%</td>
+                                    <td class="tBg02">0.3%</td>
+                                </tr>
+                                <tr>
+                                    <th class="tBg01">低炭素住宅</th>
+                                    <td class="tBg02" colspan="2">0.1%</td>
+                                </tr>
+                                <tr>
+                                    <th class="tBg03">長期優良住宅</th>
+                                    <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">0.1</big>%</span></td>
+                                    <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">0.2</big>%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                    <p class="clrBeige mt10 tal">※「一般住宅」欄は、住宅用家屋の所有権の保存登記の税率の軽減（租税特別措置法第72条の２）又は住宅用家屋の所有権の移転登記の税率の軽減（租税特別措置法第73条）を適用した場合の登録免許税の税率を参考掲載しています。</p>
+                </div>
+                <div class="tac">
+                    <p class="sptTxtSub clrOrange fBold ls01">不動産取得税</p>
+                </div>
+                <p class="f20 fBold tac mt10">新築住宅に係る不動産取得税について、<br class="spOnlyCont">課税標準額からの控除する措置</p>
+                <div class="sptCont05small mb50">
+                    <div class="tableWrap spt0502 scroll-hint" style="position: relative; overflow: auto;">
+                        <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <th class="tBg01" colspan="2">控除額</th>
+                                </tr>
+                                <tr>
+                                    <th class="tBg01">一般住宅</th>
+                                    <th class="tBg03">長期優良住宅</th>
+                                </tr>
+                                <tr>
+                                    <td class="tBg02">1,200万円</td>
+                                    <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">1,300</big>万円</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                </div>
+                <div class="tac">
+                    <p class="sptTxtSub clrOrange fBold ls01">固定資産税</p>
+                </div>
+                <p class="f20 fBold tac mt10">新築住宅に係る固定資産税の減税措置</p>
+                <p class="clrBeige tac mt10">一般住宅3年間、長期優良住宅5年間 税額1/2減額</p>
+                <div class="sptCont05small mb50">
+                    <div class="tableWrap spt0502 spt0503 scroll-hint" style="position: relative; overflow: auto;">
+                        <table class="sptTable ls02" cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="tBg01">固定資産税</th>
+                                </tr>
+                                <tr>
+                                    <td class="tBg01">税率</td>
+                                    <td class="tBg01">1.4％</td>
+                                </tr>
+                                <tr>
+                                    <td class="tBg01">一般住宅</td>
+                                    <td class="tBg02">3年間税額1/2減額</td>
+                                </tr>
+                                <tr>
+                                    <th class="tBg03">長期優良住宅</th>
+                                    <td class="tBg04"><span class="fBold clrOrange"><big class="fs01 fBold">5</big>年間税額<big class="fs01 fBold">1/2</big>を減額</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <div class="scroll-hint-icon-wrap" data-target="scrollable-icon">
+                <span class="scroll-hint-icon">
+                  <div class="scroll-hint-text">スクロールできます</div>
+                </span>
+              </div></div>
+                </div>
+                <p class="mt50">◎詳細は<a href="https://www.mlit.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国土交通省</a>・<a href="https://www.nta.go.jp/" target="_blank" class="clrZero" rel="noopener noreferrer">国税庁</a>のHPにてご確認ください。</p>
+            </div>
+        </div>
+        <p class="taxTxt05">住宅支援策を活用すれば、長期優良住宅や低炭素住宅の場合は最大控除額がアップしたり、<br>一定の省エネ性・耐震性・バリアフリー性能を満たす住宅は、贈与税の非課税枠の拡充を適用できます。<br>ゼロホームなら、いろんなメリットを最大限に考えた家づくりをご提案いたします。</p>
+        <div class="taxBtm pcCont">
+
+
+            <div class="tax_information">
+                <ul class="clearfix columnBnr">
+                    <li><a href="/kyoto/"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_common/bnr_txtlink_k.jpg" alt="ゼロホーム 京都物件情報" class="w100"></a></li>
+                    <li><a href="/hanshin/"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_common/bnr_txtlink_h.jpg" alt="ゼロホーム 大阪・兵庫物件情報" class="w100"></a></li>
+                    <li><a href="/chumon/"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_common/bnr_txtlink_c.jpg" alt="ゼロホームの注文住宅" class="w100"></a></li>
+                </ul>
+            </div><!-- class="tax_information" -->
+          
+            <ul class="clearfix formBtnBox">
+                <li class="sodan">
+                    <a href="https://zerohome.jp/chumon/seikyu/sodan/form.html" target="_blank" rel="noopener noreferrer"><dl>
+                        <dt><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_chumon/chumon_top01.jpg" alt="注文住宅のご依頼・ご相談" class="w100"></dt>
+                        <dd>
+                            <h2 class="formTitle">注文住宅のご依頼・ご相談</h2>
+                            <h3 class="mb10">ゼロホームの注文建築のご相談は、こちらのフォームからご希望をお送りください。土地からお探しの方やリノベーションをお考えの方もお気軽にご相談ください。</h3>
+                            <p class="btnTenpo">ご依頼・ご相談フォームはこちら</p>
+                        </dd>
+                    </dl></a>
+                </li>
+                <li class="katarogu">
+                    <a href="https://zerohome.jp/chumon/seikyu/katarogu/form.html" target="_blank" rel="noopener noreferrer"><dl>
+                        <dt><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_chumon/chumon_top02.jpg" alt="カタログ無料請求" class="w100"></dt>
+                        <dd>
+                            <h2 class="formTitle">カタログ無料請求</h2>
+                            <h3 class="formTxt">ゼロホームの１００年住宅の<br>魅力がたくさん詰まった<br>カタログをお届けします</h3>
+                            <p class="btnTenpo">カタログ無料請求はこちら</p>
+                        </dd>
+                    </dl></a>
+                </li>
+            </ul>
+              
+            <div class="tax_taxannounce">
+              <!--<div class="tax_announce_background">
+                <h3><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/images_pc/zero_tax_lp_announce.png" alt="住宅購入だけじゃない!?消費税10%" class="tax_announce"></h3>
+              </div>--><!-- class="tax_announce_background" -->
+              
+              
+              <!--<div class="tax_osususume">
+                <h3 class="taxTxt07">少しでも費用を抑えたい方は、<br>早い時期での物件購入をお勧めします。</h3>
+                <p class="taxTxt08">建物価格、物件価格だけでなく、それにかかる手数料、オプション費用や新しく購入する家具、<br />引っ越し代や大切な保険料など、増税対象になるものはたくさん！</p>
+                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/images_pc/zero_tax_lp_osususume02.jpg" class="tax_osususume_img">
+                
+              </div>--><!-- class="tax_osususume" -->
+              <!--<div class="tax_attention">
+               <h3><i class="fa fa-warning"></i>これらの費用も増税対象になります</h3>
+              </div>--><!-- class="attention" -->
+              <h3 class="tax_blog"><span>人気記事コラム</span></h3>
+              <hr class="tax_horizon">
+              <div class="tax_woods_background">
+                <ul class="tax_cf">
+                  <li class="tax_float-left tax_blogcont">
+                    <a href="/shiru/column/column_top/新築一戸建て購入に必要な諸費用と頭金の相場/"><h3><img src="https://zerohome.jp/wp-content/uploads/2019/12/1_1_191226.jpg"></h3>
+                    <h4>新築一戸建て購入に必要な諸費用と頭金の相場</h4>
+                    <p>「住宅を購入するなら若いうちにローンを組んだ方が良い」と言われるものの、頭金の準備や毎月の返済額に不安が残りますよね。今回は新築一戸建ての購入を検討して…</p></a>
+                  </li>
+                  <li class="tax_float-left tax_blogcont">
+                    <a href="/shiru/column/column_top/よく聞く「建築条件付き土地」って何？メリット/"><h3><img src="https://zerohome.jp/wp-content/uploads/2017/12/2018010801.jpg"></h3>
+                    <h4>よく聞く「建築条件付き土地」って何？メリット・デメリットは？</h4>
+                    <p>新築一戸建てを探しているときに目にすることがある「建築条件付き土地」。一体、どのようなものかご存知でしょうか。以下では、「通常の土地と建築条件付き土地で…</p></a>
+                  </li>
+                  <li class="tax_float-left tax_blogcont">
+                    <a href="/shiru/column/column_top/家を建てる年齢はいつが最適？平均年齢からわか/"><h3><img src="https://zerohome.jp/wp-content/uploads/2019/12/1_5m_191223.jpg"></h3>
+                    <h4>家を建てる年齢はいつが最適？平均年齢からわかる費用対策</h4>
+                    <p>家を建てる時期の目安として、一般的にどのくらいの年齢で家を建てられているのか気になるところですよね。そこで、注文住宅を建てた方と建売住宅を購入した方の年…</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div><!-- class="tax_taxannounce" -->   
+          </div>
+          <div class="tax_sp spCont">
+            <div class="tax_sp_information">
+            <ul class="clearfix columnBnr">
+                <li><a href="/kyoto/"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_common/bnr_txtlink_k.jpg" alt="ゼロホーム 京都物件情報" class="w100"></a></li>
+                <li><a href="/hanshin/"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_common/bnr_txtlink_h.jpg" alt="ゼロホーム 大阪・兵庫物件情報" class="w100"></a></li>
+                <li><a href="/chumon/"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_common/bnr_txtlink_c.jpg" alt="ゼロホームの注文住宅" class="w100"></a></li>
+            </ul>
+            <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/images_sp/imageszero_tax_sp_lp_zouzei0.png" class="tax_sp_lp_zouzei0">
+          </div><!-- class="tax_sp_information" -->
+        
+          <ul class="clearfix formBtnBox">
+              <li class="sodan">
+                  <a href="https://zerohome.jp/chumon/seikyu/sodan/form.html" target="_blank" rel="noopener noreferrer"><dl>
+                      <dt><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_chumon/chumon_top01.jpg" alt="注文住宅のご依頼・ご相談" class="w100"></dt>
+                      <dd>
+                          <h2 class="formTitle">注文住宅のご依頼・ご相談</h2>
+                          <h3 class="mb10">ゼロホームの注文建築のご相談は、こちらのフォームからご希望をお送りください。土地からお探しの方やリノベーションをお考えの方もお気軽にご相談ください。</h3>
+                          <p class="btnTenpo">ご依頼・ご相談フォームはこちら</p>
+                      </dd>
+                  </dl></a>
+              </li>
+              <li class="katarogu">
+                  <a href="https://zerohome.jp/chumon/seikyu/katarogu/form.html" target="_blank" rel="noopener noreferrer"><dl>
+                      <dt><img src="https://zerohome.jp/wp-content/themes/zerohome/img/new_chumon/chumon_top02.jpg" alt="カタログ無料請求" class="w100"></dt>
+                      <dd>
+                          <h2 class="formTitle">カタログ無料請求</h2>
+                          <h3 class="formTxt">ゼロホームの１００年住宅の<br>魅力がたくさん詰まった<br>カタログをお届けします</h3>
+                          <p class="btnTenpo">カタログ無料請求はこちら</p>
+                      </dd>
+                  </dl></a>
+              </li>
+          </ul>
+        
+          <div class="tax_sp_taxannounce">
+            <!--<div class="tax_sp_announce_background">
+              <h3><img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/images_sp/zero_tax_sp_lp_announce.png" alt="住宅購入だけじゃない!?消費税10%" class="tax_sp_announce">
+              </h3>
+            </div>--><!-- class="tax_sp_announce_background" -->
+            <!--<div class="tax_sp_osususume">
+              <h3 class="taxTxt07">少しでも費用を抑えたい方は、<br>早い時期での物件購入をお勧めします。</h3>
+              <p class="taxTxt08">建物価格、物件価格だけでなく、<br />それにかかる手数料、<br />オプション費用や新しく購入する家具、<br />引っ越し代や大切な保険料など、<br />増税対象になるものはたくさん！</p>
+              <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/images_sp/zero_tax_sp_lp_osususume02.jpg" class="tax_sp_osususume_img">
+            </div>--><!-- class="tax_sp_osususume" -->
+            <!--<div class="tax_sp_attention">
+             <h3><i class="fa fa-warning tax_sp_warning"></i>これらの費用も増税対象になります</h3>
+            </div>
+            <div class="tax_sp_osususume_text">
+                <p>建物価格、物件価格だけでなく、それにかかる手数料、オプション費用や新しく購入する家具、引っ越し代や大切な保険料など、増税対象になるものはたくさん！</p>
+                <h3>少しでも費用を抑えたい方は、<br>早い時期での物件購入をお勧めします。</h3>
+            </div>--><!-- class="tax_sp_osususume_text" -->  
+            <h3 class="tax_sp_blog"><span>人気記事コラム</span></h3>
+            <div class="tax_sp_woods_background">
+              <ul>
+                <li class="tax_sp_blogcont">
+                  <a href="/shiru/column/column_top/新築一戸建て購入に必要な諸費用と頭金の相場/">
+                  <h4>新築一戸建て購入に必要な諸費用と頭金の相場</h4>
+                  <div class="tax_sp_cf">
+                    <h3 class="tax_sp_float-left"><img src="https://zerohome.jp/wp-content/uploads/2019/12/1_1_191226.jpg"></h3>
+                    <p class="tax_sp_float-left" style="font-size: 3.2vw">「住宅を購入するなら若いうちにローンを組んだ方が良い」と言われるものの、頭金の準備や毎月の返済額に不安が残りますよね。今回は新築一戸建ての購入を検討して…</p>
+                  </div>
+                  </a>
+                </li>
+                <li class="tax_sp_blogcont">
+                  <a href="/shiru/column/column_top/よく聞く「建築条件付き土地」って何？メリッ/">
+                  <h4>よく聞く「建築条件付き土地」って何？メリット・デメリットは？</h4>
+                  <div class="tax_sp_cf">
+                    <h3 class="tax_sp_float-left"><img src="https://zerohome.jp/wp-content/uploads/2017/12/2018010801.jpg"></h3>
+                    <p class="tax_sp_float-left" style="font-size: 3.2vw">新築一戸建てを探しているときに目にすることがある「建築条件付き土地」。一体、どのようなものかご存知でしょうか。以下では、「通常の土地と建築条件付き土地で…</p>
+                  </div>
+                  </a>
+                </li>
+                <li class="tax_sp_blogcont">
+                  <a href="/shiru/column/column_top/家を建てる年齢はいつが最適？平均年齢からわか/">
+                  <h4>家を建てる年齢はいつが最適？平均年齢からわかる費用対策</h4>
+                  <div class="tax_sp_cf">
+                    <h3 class="tax_sp_float-left"><img src="https://zerohome.jp/wp-content/uploads/2019/12/1_5m_191223.jpg"></h3>
+                    <p class="tax_sp_float-left" style="font-size: 3.2vw">家を建てる時期の目安として、一般的にどのくらいの年齢で家を建てられているのか気になるところですよね。そこで、注文住宅を建てた方と建売住宅を購入した方の年…</p>
+                  </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div><!-- class="tax_sp_taxannounce" -->   
+        </div>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "./footer.html"
+                }).done( data => $("footer").html(data) )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

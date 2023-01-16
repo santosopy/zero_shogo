@@ -1,0 +1,658 @@
+@charset "UTF-8";
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .is_sp {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .is_tab {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .is_onlytab {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .is_pc {
+    display: block;
+  }
+}
+main {
+  overflow: hidden;
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap");
+  /*********************mv**********************/
+  /**********************mv**********************/
+  /**********************SDGsとは**********************/
+  /**********************SDGsとは**********************/
+  /**********************GOALS**********************/
+  /**********************GOALS*********************/
+  /**********************SDGsへの取り組み**********************/
+  /*ホバーで画像拡大*/
+  /**********************SDGsへの取り組み*/
+  /*******************************************************/
+  /*********************Media Queries*********************/
+  /*******************************************************/
+  /*アニメーションここから*/
+  /*アニメーションここまで*/
+}
+@media screen and (min-width: 1025px) {
+  main {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+  }
+}
+main .submenu {
+  padding: 20px;
+  background-color: #000000;
+}
+@media screen and (max-width: 480px) {
+  main .submenu {
+    padding: 0;
+  }
+}
+main .submenu .submenu-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 480px) {
+  main .submenu .submenu-wrap {
+    padding: 0;
+  }
+}
+main .submenu .submenu-wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 481px) {
+  main .submenu .submenu-wrap ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+  }
+  main .submenu .submenu-wrap ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: #FFFFFF;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .submenu .submenu-wrap ul li {
+    width: 50%;
+    padding: 14px;
+    text-align: center;
+  }
+  main .submenu .submenu-wrap ul li:nth-child(1), main .submenu .submenu-wrap ul li:nth-child(3), main .submenu .submenu-wrap ul li:nth-child(5) {
+    border-right: 1px solid #FFFFFF;
+  }
+  main .submenu .submenu-wrap ul li:not(:nth-child(6)):not(:nth-child(5)) {
+    border-bottom: 1px solid #FFFFFF;
+  }
+}
+main .submenu .submenu-wrap ul li a {
+  font-family: "notosansbold";
+  font-size: 14px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+main .submenu .submenu-wrap ul li a.active {
+  color: #023A90;
+}
+main .submenu .submenu-wrap ul li a:hover {
+  color: #023A90;
+}
+main .breadcrumb {
+  padding: 14px 0;
+}
+@media screen and (max-width: 480px) {
+  main .breadcrumb {
+    padding: 11px 0;
+  }
+}
+main .breadcrumb .breadcrumb-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 11px;
+  color: #B6B6B6;
+}
+@media screen and (max-width: 480px) {
+  main .breadcrumb .breadcrumb-wrap {
+    font-size: 10px;
+  }
+}
+main .breadcrumb .breadcrumb-wrap a {
+  color: #023A90;
+}
+main .tac {
+  text-align: center !important;
+}
+main .pcCont {
+  display: block;
+}
+main .spCont {
+  display: none;
+}
+main .mb30 {
+  margin-bottom: 30px !important;
+}
+@media screen and (max-width: 767px) {
+  main .pcCont {
+    display: none;
+  }
+  main .spCont {
+    display: block;
+  }
+  main .mb30 {
+    margin-bottom: 20px !important;
+  }
+  main .mb30 {
+    margin-bottom: 10px;
+  }
+  main .w80 {
+    width: 80%;
+  }
+}
+main * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main .ano_inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+main .add_pc {
+  display: block;
+}
+main .add_sp {
+  display: none;
+}
+main a {
+  text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  main .ano_inner {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 640px) {
+  main .add_pc {
+    display: none;
+  }
+  main .add_sp {
+    display: block;
+  }
+}
+main .page_sdgs_main {
+  width: 100%;
+  color: #231815;
+}
+main .page_mainmv {
+  background-image: url("https://zerohome.jp/wp-content/themes/zerohome/img/sdgs/sdgs_mv.jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 0;
+  padding-top: 44.57%;
+  position: relative;
+}
+main .page_mainmv h2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 32%;
+  left: 50%;
+  text-align: center;
+  font-family: "DIN Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 50px;
+}
+main .page_mainmv h2 span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, arial, verdana, sans-serif;
+}
+main .page_mainmv_note {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 49%;
+  left: 50%;
+  text-align: center;
+  font-family: "Noto Serif JP", serif;
+  font-size: 48px;
+  letter-spacing: 2.4px;
+  width: 100%;
+}
+main .about_sdgs .about_sdgs_det {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+main .about_sdgs .about_sdgs_note {
+  font-size: 12px;
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 36px;
+}
+main .sepa_triangle {
+  display: block;
+  width: 100%;
+}
+main .about_goals h3 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+main .about_goals h3 img {
+  width: 460px;
+}
+main .about_goals h4 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .goals_note {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+main .goals_cont {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto 188px;
+  align-items: flex-start;
+}
+main .goals_det {
+  display: block;
+  width: 15%;
+  margin-top: 2%;
+}
+main .about_initiatives {
+  position: relative;
+  background-color: #fff8f1;
+  padding-top: 116px;
+  padding-bottom: 140px;
+}
+main .about_initiatives .sepa_triangle {
+  position: absolute;
+  top: -10.2vw;
+  z-index: 100;
+}
+main .initiatives_cont h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 70px;
+  font-weight: 600;
+}
+main .initiatives_cont h3 span {
+  font-family: "DIN Condensed", sans-serif;
+  font-size: 72px;
+  margin: 0;
+  line-height: 72px;
+}
+main .initiatives_det {
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+}
+main .initiatives_det_l {
+  width: 54.4%;
+  /*height: 356px;*/
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+main .initiatives_det_l h4,
+main .initiatives_det_w h4 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+main .initiatives_det_note {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 6px 0;
+}
+main .initiatives_det_note small {
+  font-size: 90%;
+  padding: 30px 0 20px;
+  display: block;
+}
+main .initiatives_sdgs {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+main .initiatives_sdgs img {
+  display: block;
+  width: 23.5%;
+  margin-top: 2%;
+}
+main .initiatives_sdgs::after,
+main .initiatives_sdgs::before {
+  display: block;
+  content: "";
+  width: 23.5%;
+  height: 0;
+}
+main .initiatives_sdgs::before {
+  order: 1;
+}
+main .initiatives_sdgs.initiatives_sdgs_w {
+  width: 100%;
+  justify-content: flex-start;
+  gap: 0 0.75%;
+}
+main .initiatives_sdgs.initiatives_sdgs_w img {
+  width: 9%;
+}
+main .initiatives_det_r {
+  width: 40%;
+  height: 356px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+}
+main .initiatives_image {
+  width: 100%;
+}
+main .initiatives_image img {
+  width: 100%;
+}
+main a.btn_initiatives_det {
+  background-color: #c3ae95;
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+}
+main a.btn_initiatives_det.miyazaki {
+  width: 50%;
+  margin-top: 15px;
+}
+main a.btn_initiatives_det:hover {
+  background-color: #fff;
+  border: 1px solid #c3ae95;
+  color: #c3ae95;
+  box-sizing: border-box;
+  opacity: 1;
+}
+main .initiatives_image {
+  width: 100%;
+  overflow: hidden;
+}
+main .initiatives_image img {
+  transition: 1s all;
+}
+main .initiatives_image img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 1s all;
+}
+main .imgFlex {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+main .imgFlex img {
+  width: 32%;
+}
+@media screen and (max-width: 1024px) {
+  main {
+    /*********************mv**********************/
+    /**********************mv**********************/
+    /**********************GOALS**********************/
+    /**********************GOALS**********************/
+    /**********************SDGsへの取り組み**********************/
+    /**********************SDGsへの取り組み**********************/
+  }
+  main .page_mainmv h2 {
+    font-size: 60px;
+    line-height: 40px;
+  }
+  main .page_mainmv h2 span {
+    font-size: 16px;
+  }
+  main .page_mainmv_note {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+  main .about_goals h3 {
+    margin-bottom: 40px;
+  }
+  main .about_goals h3 img {
+    width: 46%;
+  }
+  main .about_goals h4 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  main .goals_note {
+    margin-bottom: 40px;
+  }
+  main .initiatives_cont h3 {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+  main .initiatives_cont h3 span {
+    font-size: 68px;
+    line-height: 68px;
+  }
+  main .initiatives_det_l {
+    height: auto;
+    display: block;
+  }
+  main .initiatives_det_l h4,
+main .initiatives_det_w h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  main .initiatives_det_note {
+    font-size: 13px;
+    line-height: 22px;
+    margin: 6px 0;
+  }
+  main .initiatives_sdgs {
+    width: 100%;
+  }
+  main .initiatives_det_r {
+    height: auto;
+    display: block;
+  }
+  main .btn_initiatives_det {
+    margin-top: 16px;
+  }
+  main .initiatives_sdgs.initiatives_sdgs_w {
+    gap: 0 1%;
+  }
+  main .initiatives_sdgs.initiatives_sdgs_w img {
+    width: 13%;
+  }
+}
+@media screen and (max-width: 640px) {
+  main {
+    /*********************mv**********************/
+    /**********************mv**********************/
+    /**********************SDGsとは**********************/
+    /**********************SDGsとは**********************/
+    /**********************GOALS**********************/
+    /**********************GOALS*********************/
+    /**********************SDGsへの取り組み**********************/
+    /**********************SDGsへの取り組み*/
+  }
+  main .page_mainmv {
+    background-image: url("https://zerohome.jp/wp-content/themes/zerohome/img/sdgs/sdgs_mv.jpg_sp.jpg");
+    padding-top: 69.5%;
+  }
+  main .page_mainmv h2 {
+    font-size: 50px;
+    line-height: 32px;
+    top: 34%;
+  }
+  main .page_mainmv h2 span {
+    font-size: 12px;
+  }
+  main .page_mainmv_note {
+    font-size: 28px;
+    letter-spacing: 1.4px;
+    top: 56%;
+  }
+  main .about_sdgs .about_sdgs_det {
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 26px;
+  }
+  main .about_sdgs .about_sdgs_note {
+    font-size: 11px;
+    line-height: 22px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+  }
+  main .about_goals h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  main .about_goals h3 img {
+    width: 100%;
+  }
+  main .about_goals h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  main .goals_note {
+    font-size: 13px;
+    line-height: 22px;
+    margin-bottom: 18px;
+  }
+  main .goals_cont {
+    margin: 0 auto 100px;
+  }
+  main .goals_det {
+    display: block;
+    width: 30%;
+    margin-top: 5%;
+  }
+  main .about_initiatives {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  main .initiatives_cont h3 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  main .initiatives_cont h3 span {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  main .initiatives_det {
+    padding: 20px;
+    display: block;
+  }
+  main .initiatives_det_l {
+    width: 100%;
+  }
+  main .initiatives_det_l h4,
+main .initiatives_det_w h4 {
+    margin: 0;
+  }
+  main .initiatives_sdgs {
+    width: 100%;
+  }
+  main .initiatives_det_r {
+    width: 100%;
+  }
+  main .initiatives_image {
+    margin-top: 24px;
+  }
+  main a.btn_initiatives_det.miyazaki {
+    width: 100%;
+    margin-top: 15px;
+  }
+  main .initiatives_sdgs.initiatives_sdgs_w {
+    justify-content: space-between;
+    gap: 0 0;
+  }
+  main .initiatives_sdgs.initiatives_sdgs_w img {
+    width: 23.5%;
+  }
+  main .imgFlex img {
+    width: 80%;
+    margin: 0 auto 15px;
+  }
+}
+@-webkit-keyframes fadeIn_add {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn_add {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .fadeIn_add {
+  -webkit-animation-name: fadeIn_add;
+  animation-name: fadeIn_add;
+}
+@-webkit-keyframes fadeInUp_add {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp_add {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+main .fadeInUp_add {
+  -webkit-animation-name: fadeInUp_add;
+  animation-name: fadeInUp_add;
+}
+main .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}/*# sourceMappingURL=sdgs.css.map */

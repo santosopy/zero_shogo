@@ -162,7 +162,8 @@ main .main_visual__text .main_visual-wrap .main_visual-inner p {
     font-size: 15px;
   }
 }
-main .main_visual__text .main_visual-wrap .main_visual-inner h3, main .main_visual__text .main_visual-wrap .main_visual-inner p {
+main .main_visual__text .main_visual-wrap .main_visual-inner h3,
+main .main_visual__text .main_visual-wrap .main_visual-inner p {
   line-height: 1;
 }
 @media screen and (max-width: 1024px) {
@@ -247,6 +248,12 @@ main .list .list-wrap {
 }
 main .list .list-wrap ul {
   border-top: 1px solid #000000;
+  padding-bottom: 85px;
+}
+@media screen and (max-width: 480px) {
+  main .list .list-wrap ul {
+    padding-bottom: 50px;
+  }
 }
 main .list .list-wrap ul li {
   padding: 37px 0;
@@ -344,7 +351,13 @@ main .list .list-wrap ul li .list-text dl {
   font-size: 13px;
   display: flex;
   gap: 25px;
-  line-height: 1.8;
+  line-height: 1.6;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  main .list .list-wrap ul li .list-text dl {
+    gap: 22px;
+  }
 }
 main .list .list-wrap ul li .list-text dl dt {
   width: 93px;
@@ -355,6 +368,11 @@ main .list .list-wrap ul li .list-text dl dd {
 main .access {
   background-color: #F5F5F5;
   padding: 78px 0 92px;
+}
+@media screen and (max-width: 480px) {
+  main .access {
+    padding: 43px 0 52px;
+  }
 }
 main .access .access-wrap {
   max-width: calc(1000px + 2rem);
@@ -375,9 +393,130 @@ main .access .access-wrap .title p {
     font-size: 15px;
   }
 }
-main .access .access-wrap .title h3, main .access .access-wrap .title p {
+main .access .access-wrap .title h3,
+main .access .access-wrap .title p {
   line-height: 1;
 }
 main .access .access-wrap .map {
   padding: 32px 0 42px;
+}
+@media screen and (max-width: 480px) {
+  main .access .access-wrap .map {
+    padding: 22px 0 30px;
+  }
+}
+main .access .access-wrap .info h3 {
+  font-family: "notosansbold";
+}
+main .access .access-wrap .info h3:not(:first-of-type) {
+  padding-top: 25px;
+}
+main .access .access-wrap .info table,
+main .access .access-wrap .info th,
+main .access .access-wrap .info td {
+  border: 2px solid #F5F5F5;
+}
+main .access .access-wrap .info table {
+  background-color: #FFFFFF;
+  width: 100%;
+}
+main .access .access-wrap .info table tr th {
+  font-size: 14px;
+  width: 150px;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 11px 18px;
+}
+@media screen and (max-width: 480px) {
+  main .access .access-wrap .info table tr th {
+    width: 100%;
+    display: block;
+  }
+}
+main .access .access-wrap .info table tr td {
+  font-size: 13px;
+  padding: 11px 23px;
+}
+@media screen and (max-width: 480px) {
+  main .access .access-wrap .info table tr td {
+    display: block;
+  }
+}
+main .access .access-wrap .info table tr td .row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+main .access .access-wrap .info table tr td .row figure {
+  display: flex;
+}
+main .access .access-wrap .info table tr td .row p {
+  line-height: 1;
+}
+main .access .access-wrap .info table tr td p.tel {
+  font-size: 18px;
+}
+main .relation {
+  padding: 74px 0 110px;
+}
+@media screen and (max-width: 480px) {
+  main .relation {
+    padding: 39px 0 70px;
+  }
+}
+main .relation .relation-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+main .relation .relation-wrap h3 {
+  font-size: 21px;
+  padding-bottom: 35px;
+}
+@media screen and (max-width: 480px) {
+  main .relation .relation-wrap h3 {
+    padding-bottom: 20px;
+  }
+}
+main .relation .relation-wrap .relation-content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  main .relation .relation-wrap .relation-content {
+    justify-content: space-between;
+  }
+}
+main .relation .relation-wrap .relation-content a {
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  max-width: 238px;
+  width: 100%;
+  font-size: 14px;
+  justify-content: center;
+  position: relative;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  main .relation .relation-wrap .relation-content a {
+    max-width: 158px;
+  }
+}
+main .relation .relation-wrap .relation-content a:hover, main .relation .relation-wrap .relation-content a.active {
+  background-color: #023A90;
+  color: #FFFFFF;
+}
+main .relation .relation-wrap .relation-content a figure {
+  position: absolute;
+  line-height: 1;
+  right: 19px;
 }/*# sourceMappingURL=staff_list_detail.css.map */

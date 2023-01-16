@@ -1,0 +1,858 @@
+$breakpoints: ('sp': (max-width: 480px),
+    'tab': (max-width: 1024px),
+    'pc': (min-width: 1025px)) !default;
+
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+}
+
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp {
+    display: none;
+}
+
+@include media(sp) {
+    .is_sp {
+        display: block;
+    }
+}
+
+@include media(tab) {
+    .is_tab {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .is_onlytab {
+        display: block;
+    }
+}
+
+@include media(pc) {
+    .is_pc {
+        display: block;
+    }
+}
+
+@mixin smooth {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+@mixin wrap {
+    max-width: calc(1000px + 2rem);
+    margin: auto;
+    padding: 0 1rem;
+}
+
+$blue: #023A90;
+$gray: #B6B6B6;
+$gray2: #F5F5F5;
+$gray3: #DCDCDC;
+
+main {
+    overflow: hidden;
+
+    @include media(pc) {
+        width: calc(100% - 300px);
+        margin-left: 300px;
+    }
+
+    .submenu {
+        padding: 20px;
+        background-color: #000000;
+
+        @include media(sp) {
+            padding: 0;
+        }
+
+        .submenu-wrap {
+            @include wrap();
+
+            @include media(sp) {
+                padding: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    @media screen and (min-width: 481px) {
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        position: relative;
+
+                        &:not(:last-child)::after {
+                            content: "|";
+                            position: absolute;
+                            right: 0;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    @include media(sp) {
+                        width: 50%;
+                        padding: 14px;
+                        text-align: center;
+
+                        &:nth-child(1),
+                        &:nth-child(3),
+                        &:nth-child(5) {
+                            border-right: 1px solid #FFFFFF;
+                        }
+
+                        &:not(:nth-child(6)):not(:nth-child(5)) {
+                            border-bottom: 1px solid #FFFFFF;
+                        }
+                    }
+
+                    a {
+                        font-family: "notosansbold";
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        @include smooth();
+
+                        &.active {
+                            color: $blue;
+                        }
+
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .breadcrumb {
+        padding: 14px 0;
+
+        @include media(sp) {
+            padding: 11px 0;
+        }
+
+        .breadcrumb-wrap {
+            @include wrap();
+            font-size: 11px;
+            color: $gray;
+
+            @include media(sp) {
+                font-size: 10px;
+            }
+
+            a {
+                color: $blue;
+            }
+        }
+    }
+
+    // copy from here
+    .tac {
+        text-align: center !important;
+    }
+
+    .pcCont {
+        display: block;
+    }
+
+    .spCont {
+        display: none;
+    }
+
+    .mb30 {
+        margin-bottom: 30px !important;
+    }
+
+    @media screen and (max-width: 767px) {
+        .pcCont {
+            display: none;
+        }
+
+        .spCont {
+            display: block;
+        }
+
+        .mb30 {
+            margin-bottom: 20px !important;
+        }
+
+        .mb30 {
+            margin-bottom: 10px;
+        }
+
+        .w80 {
+            width: 80%;
+        }
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .ano_inner {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .add_pc {
+        display: block;
+    }
+
+    .add_sp {
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .ano_inner {
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+
+        .add_pc {
+            display: none;
+        }
+
+        .add_sp {
+            display: block;
+        }
+    }
+
+
+    .page_sdgs_main {
+        width: 100%;
+        color: #231815;
+    }
+
+    /*********************mv**********************/
+    .page_mainmv {
+        background-image: url("https://zerohome.jp/wp-content/themes/zerohome/img/sdgs/sdgs_mv.jpg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 0;
+        padding-top: 44.57%;
+        position: relative;
+
+    }
+
+    .page_mainmv h2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 32%;
+        left: 50%;
+        text-align: center;
+        font-family: 'DIN Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 72px;
+        line-height: 50px;
+    }
+
+    .page_mainmv h2 span {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", Osaka, arial, verdana, sans-serif;
+    }
+
+    .page_mainmv_note {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 49%;
+        left: 50%;
+        text-align: center;
+        font-family: 'Noto Serif JP', serif;
+        font-size: 48px;
+        letter-spacing: 2.4px;
+        width: 100%;
+    }
+
+    /**********************mv**********************/
+
+    /**********************SDGsとは**********************/
+
+
+    .about_sdgs .about_sdgs_det {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .about_sdgs .about_sdgs_note {
+        font-size: 12px;
+        color: #666666;
+        margin-top: 20px;
+        margin-bottom: 36px;
+    }
+
+    /**********************SDGsとは**********************/
+
+    /**********************GOALS**********************/
+    .sepa_triangle {
+        display: block;
+        width: 100%;
+    }
+
+    .about_goals h3 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .about_goals h3 img {
+        width: 460px;
+    }
+
+    .about_goals h4 {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .goals_note {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+
+
+    .goals_cont {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto 188px;
+        align-items: flex-start;
+    }
+
+    .goals_det {
+        display: block;
+        width: 15%;
+        margin-top: calc((100% - 15% * 6) / 5);
+    }
+
+
+
+    /**********************GOALS*********************/
+
+    /**********************SDGsへの取り組み**********************/
+    .about_initiatives {
+        position: relative;
+        background-color: #fff8f1;
+        padding-top: 116px;
+        padding-bottom: 140px;
+    }
+
+    .about_initiatives .sepa_triangle {
+        position: absolute;
+        top: -10.2vw;
+        z-index: 100;
+    }
+
+    .initiatives_cont {}
+
+    .initiatives_cont h3 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 70px;
+        font-weight: 600;
+    }
+
+    .initiatives_cont h3 span {
+        font-family: 'DIN Condensed', sans-serif;
+        font-size: 72px;
+        margin: 0;
+        line-height: 72px;
+    }
+
+    .initiatives_det {
+        background-color: #fff;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .initiatives_det_l {
+        width: 54.4%;
+        /*height: 356px;*/
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+
+
+    .initiatives_det_l h4,
+    .initiatives_det_w h4 {
+        margin: 0;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 600;
+    }
+
+    .initiatives_det_note {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 6px 0;
+    }
+
+    .initiatives_det_note small {
+        font-size: 90%;
+        padding: 30px 0 20px;
+        display: block;
+    }
+
+    .initiatives_sdgs {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .initiatives_sdgs img {
+        display: block;
+        width: 23.5%;
+        margin-top: calc((100% - 23.5% * 4) / 3);
+    }
+
+    .initiatives_sdgs::after,
+    .initiatives_sdgs::before {
+        display: block;
+        content: "";
+        width: 23.5%;
+        height: 0;
+    }
+
+    .initiatives_sdgs::before {
+        order: 1;
+    }
+
+    .initiatives_sdgs.initiatives_sdgs_w {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 0 0.75%;
+    }
+
+    .initiatives_sdgs.initiatives_sdgs_w img {
+        width: 9%;
+    }
+
+
+
+    .initiatives_det_r {
+        width: 40%;
+        height: 356px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column;
+    }
+
+    .initiatives_image {
+        width: 100%;
+    }
+
+    .initiatives_image img {
+        width: 100%;
+    }
+
+    a.btn_initiatives_det {
+        background-color: #c3ae95;
+        color: #fff;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    a.btn_initiatives_det.miyazaki {
+        width: 50%;
+        margin-top: 15px;
+    }
+
+    a.btn_initiatives_det:hover {
+        background-color: #fff;
+        border: 1px solid #c3ae95;
+        color: #c3ae95;
+        box-sizing: border-box;
+        opacity: 1;
+    }
+
+    /*ホバーで画像拡大*/
+
+    .initiatives_image {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .initiatives_image img {
+        transition: 1s all;
+    }
+
+    .initiatives_image img:hover {
+        transform: scale(1.2, 1.2);
+        transition: 1s all;
+    }
+
+    .imgFlex {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+
+    .imgFlex img {
+        width: 32%;
+    }
+
+    /**********************SDGsへの取り組み*/
+
+
+    /*******************************************************/
+    /*********************Media Queries*********************/
+    /*******************************************************/
+
+    @media screen and (max-width: 1024px) {
+
+
+        /*********************mv**********************/
+
+        .page_mainmv h2 {
+            font-size: 60px;
+            line-height: 40px;
+        }
+
+        .page_mainmv h2 span {
+            font-size: 16px;
+        }
+
+        .page_mainmv_note {
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        /**********************mv**********************/
+
+        /**********************GOALS**********************/
+        .about_goals h3 {
+            margin-bottom: 40px;
+        }
+
+        .about_goals h3 img {
+            width: 46%;
+        }
+
+        .about_goals h4 {
+            font-size: 20px;
+            margin-bottom: 24px;
+        }
+
+        .goals_note {
+            margin-bottom: 40px;
+        }
+
+        /**********************GOALS**********************/
+
+
+        /**********************SDGsへの取り組み**********************/
+        .initiatives_cont h3 {
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+
+        .initiatives_cont h3 span {
+            font-size: 68px;
+            line-height: 68px;
+        }
+
+
+        .initiatives_det_l {
+            height: auto;
+            display: block;
+        }
+
+        .initiatives_det_l h4,
+        .initiatives_det_w h4 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .initiatives_det_note {
+            font-size: 13px;
+            line-height: 22px;
+            margin: 6px 0;
+        }
+
+
+        .initiatives_sdgs {
+            width: 100%;
+        }
+
+
+        .initiatives_det_r {
+            height: auto;
+            display: block;
+        }
+
+
+        .btn_initiatives_det {
+            margin-top: 16px;
+        }
+
+        .initiatives_sdgs.initiatives_sdgs_w {
+            gap: 0 1%;
+        }
+
+        .initiatives_sdgs.initiatives_sdgs_w img {
+            width: 13%;
+        }
+
+        /**********************SDGsへの取り組み**********************/
+    }
+
+
+    @media screen and (max-width: 640px) {
+
+        /*********************mv**********************/
+        .page_mainmv {
+            background-image: url("https://zerohome.jp/wp-content/themes/zerohome/img/sdgs/sdgs_mv.jpg_sp.jpg");
+            padding-top: 69.5%;
+        }
+
+        .page_mainmv h2 {
+            font-size: 50px;
+            line-height: 32px;
+            top: 34%;
+        }
+
+        .page_mainmv h2 span {
+            font-size: 12px;
+        }
+
+        .page_mainmv_note {
+            font-size: 28px;
+            letter-spacing: 1.4px;
+            top: 56%;
+        }
+
+        /**********************mv**********************/
+
+
+        /**********************SDGsとは**********************/
+
+
+        .about_sdgs .about_sdgs_det {
+            font-size: 13px;
+            line-height: 22px;
+            margin-top: 26px;
+        }
+
+        .about_sdgs .about_sdgs_note {
+            font-size: 11px;
+            line-height: 22px;
+            margin-top: 26px;
+            margin-bottom: 30px;
+        }
+
+        /**********************SDGsとは**********************/
+
+
+        /**********************GOALS**********************/
+
+        .about_goals h3 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about_goals h3 img {
+            width: 100%;
+        }
+
+        .about_goals h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .goals_note {
+            font-size: 13px;
+            line-height: 22px;
+            margin-bottom: 18px;
+        }
+
+
+        .goals_cont {
+            margin: 0 auto 100px;
+        }
+
+        .goals_det {
+            display: block;
+            width: 30%;
+            margin-top: calc((100% - 30% * 3) / 2);
+        }
+
+        /**********************GOALS*********************/
+
+        /**********************SDGsへの取り組み**********************/
+
+        .about_initiatives {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .initiatives_cont {}
+
+        .initiatives_cont h3 {
+            font-size: 18px;
+            margin-bottom: 24px;
+        }
+
+        .initiatives_cont h3 span {
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        .initiatives_det {
+            padding: 20px;
+            display: block;
+        }
+
+        .initiatives_det_l {
+            width: 100%;
+        }
+
+        .initiatives_det_l h4,
+        .initiatives_det_w h4 {
+            margin: 0;
+        }
+
+
+        .initiatives_sdgs {
+            width: 100%;
+        }
+
+
+        .initiatives_det_r {
+            width: 100%;
+        }
+
+        .initiatives_image {
+            margin-top: 24px;
+        }
+
+        a.btn_initiatives_det.miyazaki {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+
+        .initiatives_sdgs.initiatives_sdgs_w {
+            justify-content: space-between;
+            gap: 0 0;
+        }
+
+        .initiatives_sdgs.initiatives_sdgs_w img {
+            width: 23.5%;
+        }
+
+        .imgFlex img {
+            width: 80%;
+            margin: 0 auto 15px;
+        }
+
+        /**********************SDGsへの取り組み*/
+
+
+    }
+
+
+    /*アニメーションここから*/
+    @-webkit-keyframes fadeIn_add {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn_add {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .fadeIn_add {
+        -webkit-animation-name: fadeIn_add;
+        animation-name: fadeIn_add;
+    }
+
+
+    @-webkit-keyframes fadeInUp_add {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes fadeInUp_add {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .fadeInUp_add {
+        -webkit-animation-name: fadeInUp_add;
+        animation-name: fadeInUp_add;
+    }
+
+
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    /*アニメーションここまで*/
+}

@@ -1,0 +1,1754 @@
+$breakpoints: ('sp': (max-width: 480px),
+    'tab': (max-width: 1024px),
+    'pc': (min-width: 1025px)) !default;
+
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+}
+
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp {
+    display: none;
+}
+
+@include media(sp) {
+    .is_sp {
+        display: block;
+    }
+}
+
+@include media(tab) {
+    .is_tab {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .is_onlytab {
+        display: block;
+    }
+}
+
+@include media(pc) {
+    .is_pc {
+        display: block;
+    }
+}
+
+@mixin wrap {
+    max-width: calc(1000px + 2rem);
+    margin: auto;
+    padding: 0 1rem;
+}
+
+$blue: #023A90;
+$gray: #B6B6B6;
+$gray2: #F5F5F5;
+$gray3: #DCDCDC;
+
+main {
+    overflow: hidden;
+
+    @include media(pc) {
+        width: calc(100% - 300px);
+        margin-left: 300px;
+    }
+
+    .breadcrumb {
+        padding: 14px 0;
+
+        @include media(sp) {
+            padding: 11px 0;
+        }
+
+        .breadcrumb-wrap {
+            @include wrap();
+            font-size: 11px;
+            color: $gray;
+
+            @include media(sp) {
+                font-size: 10px;
+            }
+
+            a {
+                color: $blue;
+            }
+        }
+    }
+
+    // copy from here
+    .tac {
+        text-align: center !important;
+    }
+    .tax {
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #000;
+        font-size: 16px;
+    }
+
+    .tax a {
+        text-decoration: underline;
+    }
+
+    .fBold {
+        font-weight: bold;
+    }
+
+    .contBoxTax {
+        width: 96%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .clrZero {
+        color: #004da1 !important;
+    }
+
+    .clrWhite {
+        color: #fff !important;
+    }
+
+    .clrOrange {
+        color: #ef5a24 !important;
+    }
+
+    .clrBeige {
+        color: #736357 !important;
+    }
+
+    .clrRed {
+        color: #bb0000 !important;
+    }
+
+    .bgClrZero {
+        background-color: #004da1 !important;
+    }
+
+    .bgClrWhite {
+        background-color: #fff !important;
+    }
+
+    .bgClrOrange {
+        background-color: #ef5a24 !important;
+    }
+
+    .bgClrGrey {
+        background-color: #f5f5f5 !important;
+    }
+
+    .bgClrBeige {
+        background-color: #736357 !important;
+    }
+
+    .bgClrRed {
+        background-color: #bb0000 !important;
+    }
+
+
+
+    .mainImg {
+        background: url("https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/bg_main.jpg") no-repeat center center;
+        background-size: cover;
+        min-height: 500px;
+        position: relative;
+    }
+
+    .mainTxt {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    .mainTxt01 {
+        background-color: rgba(255, 255, 255, .8);
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 34px;
+        border-radius: 100px;
+    }
+
+    .tax h2 {
+        font-size: 65px;
+        color: #fff;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, .60);
+        padding-bottom: 10px;
+    }
+
+    .tax h2 small {
+        font-size: 80%;
+    }
+
+    .mainSince {
+        font-size: 30px;
+        color: #fff;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, .60);
+        padding-bottom: 5px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        display: inline-block;
+        line-height: 1.6;
+    }
+
+    .update {
+        text-shadow: 0 2px 3px rgba(0, 0, 0, .60);
+    }
+
+    @media screen and (max-width: 834px) {
+        .mainTxt01 {
+            font-size: 29px;
+        }
+
+        .tax h2 {
+            font-size: 57px;
+        }
+
+        .mainSince {
+            font-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .tax {
+            line-height: 1.6;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .tax {
+            font-size: 14px;
+        }
+
+        .mainImg {
+            min-height: 60vh;
+        }
+
+        .mainTxt01 {
+            font-size: 20px;
+        }
+
+        .tax h2 {
+            font-size: 48px;
+            line-height: 1.3;
+        }
+
+        .mainSince {
+            font-size: 20px;
+        }
+    }
+
+
+    .topTxt {
+        padding: 50px 0;
+    }
+
+    .sWhite {
+        padding: 80px 0
+    }
+
+    .ttlFlex {
+        display: flex;
+        align-items: center;
+    }
+
+    .ttlFlex p {
+        flex-shrink: 0;
+    }
+
+    .ttlFlex dl {
+        margin-left: 15px;
+    }
+
+    .ttlFlex dt h3 {
+        background: linear-gradient(transparent 70%, #ffff00 70%);
+        font-size: 30px;
+        line-height: 1.2;
+        display: inline;
+    }
+
+    .sptWrap {
+        position: relative;
+    }
+
+    .sptWrap .spt01 {
+        font-size: 27px;
+    }
+
+    .sptWrap .spt01 big {
+        font-size: 190%;
+        color: #ffff00;
+        vertical-align: sub;
+    }
+
+    .sptWrap .spt01 span {
+        background-color: #ef5a24;
+        padding: 0 5px;
+        font-size: 90%;
+    }
+
+    .tpTxt {
+        font-size: 19px;
+        width: 126px;
+        height: 126px;
+        border-radius: 50%;
+        background-color: #ef5a24;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-flow: wrap;
+        justify-content: center;
+        line-height: 1.3;
+        position: absolute;
+        right: 20px;
+        top: -55px;
+    }
+
+    .sptWrap dl {
+        background-color: #ebf4fa;
+        padding: 25px;
+        display: flex;
+    }
+
+    .sptWrap dt {
+        padding-right: 10px;
+        flex-shrink: 0;
+    }
+
+    .sptWrap dd span {
+        color: #dd0000;
+    }
+
+    .tableWrap {
+        overflow: hidden !important;
+    }
+
+    table.sptTable {
+        border-collapse: inherit;
+        border-spacing: 5px;
+        width: 100%;
+    }
+
+    .sptTable th,
+    .sptTable td {
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .sptTable th {
+        font-weight: bold;
+    }
+
+    .tBg01 {
+        border: 1px solid #534741;
+        background-color: #f4f0eb;
+        color: #736357;
+    }
+
+    .tBg02 {
+        border: 1px solid #534741;
+        background-color: #fff;
+        color: #736357;
+    }
+
+    .tBg03 {
+        background-color: #ef5a24;
+        color: #fff;
+    }
+
+    .tBg04 {
+        border: 1px solid #ef5a24;
+        background-color: #fff;
+        color: #736357;
+    }
+
+    .fs01 {
+        font-size: 140%;
+    }
+
+    .sptCont01 .sptTable th,
+    .sptCont01 .sptTable td {
+        width: 50%;
+    }
+
+    .sptCont02 .sptTable th:nth-of-type(1) {
+        width: 5%;
+    }
+
+    .sptCont02 .sptTable th:nth-of-type(2) {
+        width: 25%;
+    }
+
+    .sptCont02 .sptTable th:nth-of-type(3),
+    .sptCont02 .sptTable th:nth-of-type(4) {
+        width: 35%;
+    }
+
+    .sptTable span.wmrl {
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        white-space: nowrap;
+    }
+
+    .ttlBalance {
+        border-bottom: 1px dashed #534741;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+
+    .sptCont03 .sptTable th,
+    .sptCont03 .sptTable td {
+        width: 50%;
+    }
+
+    .sptTxtSub {
+        font-size: 24px;
+        border-bottom: 1px solid #ef5a24;
+        display: inline-block;
+    }
+
+    .sptCont05 .spt05 {
+        padding: 20px 0 20px;
+    }
+
+    .spt0501 .sptTable {
+        width: 700px;
+        margin: auto;
+    }
+
+    .spt0501 .sptTable th,
+    .spt0501 .sptTable td {
+        width: calc(100% / 3);
+    }
+
+    .sptCont05small {
+        border-bottom: 1px solid #ccc;
+        padding: 50px 0 80px;
+    }
+
+    .sptCont05small p {
+        width: 700px;
+        margin: auto;
+    }
+
+    .spt0502 .sptTable {
+        width: 700px;
+        margin: auto;
+    }
+
+    .spt0502 .sptTable th,
+    .spt0502 .sptTable td {
+        width: 50%;
+    }
+
+    /*
+.spt0503 .sptTable {
+    width: 700px;
+    margin: auto;
+}
+
+.spt0503 .sptTable .lastTh {
+    width: 50%;
+}
+*/
+
+    .tax sup {
+        vertical-align: top;
+        font-size: 75%;
+        margin-right: 5px;
+    }
+
+    .spt02top {
+        border: 1px solid #bb0000;
+        background-color: #fff;
+    }
+
+    .spt02topTxt01 {
+        padding: 2px 10px;
+        width: 50%;
+        margin: -20px auto 0;
+        font-size: 18px;
+    }
+
+    .spt02topTxt02 {
+        font-size: 24px;
+        margin: 20px 0 20px;
+    }
+
+    .spt02topTxt02 small {
+        font-size: 90%;
+        padding: 2px 10px;
+    }
+
+    .spt02topTxt03 {
+        font-size: 24px;
+        padding-bottom: 5px;
+    }
+
+    @media screen and (max-width: 834px) {
+        .sptCont02 .sptTable th:nth-of-type(1) {
+            width: 6%;
+        }
+
+        .spt02topTxt01 {
+            font-size: 17px;
+        }
+
+        .spt02topTxt02 {
+            font-size: 21px;
+        }
+
+        .spt02topTxt03 {
+            font-size: 21px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .tpTxt {
+            right: 10px;
+            top: -65px;
+            ;
+        }
+
+        .sptCont02 .sptTable th:nth-of-type(2) {
+            width: 26%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .topTxt {
+            padding: 40px 0;
+        }
+
+        .sWhite {
+            padding: 40px 0
+        }
+
+        .ttlFlex {
+            display: block;
+            text-align: center;
+        }
+
+        .ttlFlex dl {
+            margin-left: 0;
+        }
+
+        .ttlFlex dt h3 {
+            font-size: 1.6rem;
+            line-height: 1.4;
+        }
+
+        .ttlFlex dt h3 small {
+            font-size: 82%;
+        }
+
+        .tpTxt {
+            font-size: 1.1rem;
+            width: 100%;
+            height: inherit;
+            border-radius: 0;
+            background-color: #ef5a24;
+            display: block;
+            line-height: 1.3;
+            position: relative;
+            right: auto;
+            top: auto;
+            padding: 5px 0;
+        }
+
+        .tpTxt br {
+            display: none;
+        }
+
+        .sptWrap .spt01 {
+            font-size: 1.3rem;
+        }
+
+        .sptWrap dl {
+            background-color: #ebf4fa;
+            padding: 20px;
+            display: block;
+        }
+
+        .sptWrap dt {
+            padding-right: 0;
+            margin-bottom: 5px;
+        }
+
+        .sptCont02 .tableWrap {
+            overflow-x: scroll !important;
+        }
+
+        /*.sptCont01 table.sptTable {
+        width: 170%;
+    }
+    .sptCont01 .sptTable td:last-of-type {
+        width: 150px;
+    }*/
+        .sptCont02 table.sptTable {
+            width: 190%;
+        }
+
+        .sptCont02 .sptTable th:nth-of-type(2) {
+            width: 22%;
+        }
+
+        .sptCont02 .sptTable th:nth-of-type(3),
+        .sptCont02 .sptTable th:nth-of-type(4) {
+            width: 28%;
+        }
+
+        /*.sptCont03 table.sptTable {
+        width: 190%;
+    }*/
+        .sptCont04 .spt04 {
+            line-height: 1.2;
+            padding: 20px 0 10px;
+        }
+
+        .spt0501 .sptTable,
+        .spt0502 .sptTable {
+            width: 100%;
+        }
+
+        .spt0501 .sptTable th,
+        .spt0501 .sptTable td {
+            width: auto;
+        }
+
+        .spt0501 .sptTable th:nth-of-type(1) {
+            width: 40%;
+        }
+
+        .spt0501 .sptTable th:nth-of-type(2),
+        .spt0501 .sptTable th:nth-of-type(3) {
+            width: 30%;
+        }
+
+        .sptCont05small {
+            padding: 30px 0 40px;
+        }
+
+        .sptCont05small p {
+            width: 100%;
+        }
+
+        .spt0503 .sptTable th,
+        .spt0503 .sptTable td {
+            width: auto;
+        }
+
+        .spt0503 .sptTable td:nth-of-type(1) {
+            width: 40%;
+        }
+
+        .spt0503 .sptTable td:nth-of-type(2) {
+            width: 60%;
+        }
+
+        .spt02topTxt01 {
+            font-size: 14px;
+            width: 90%;
+            margin: -15px auto 0;
+        }
+
+        .spt02topTxt02 {
+            font-size: 18px;
+        }
+
+        .spt02topTxt03 {
+            font-size: 18px;
+            line-height: 1.2;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    .columnBnr {
+        width: 1000px;
+        margin: 30px auto 50px;
+    }
+
+    .columnBnr li {
+        border: 1px solid #D6D6D6;
+        float: left;
+        width: 326px;
+        margin: 10px 11px 0 0;
+    }
+
+    .columnBnr.bnr1,
+    .columnBnr.bnr2 {
+        width: 975px;
+    }
+
+    .columnBnr.bnr1 li {
+        width: 975px;
+    }
+
+    .columnBnr.bnr2 li {
+        width: 475px;
+        margin-right: 25px;
+    }
+
+    .columnBnr li:last-child {
+        margin: 10px 0 0 0;
+    }
+
+    .columnBnr li img {
+        width: 100%;
+        height: auto;
+    }
+
+    .taxTxt05 {
+        text-align: center;
+        font-size: 18px;
+        margin: 50px auto;
+    }
+
+    .formBtnBox {
+        width: 1000px;
+        margin: 40px auto;
+        padding: 40px 0;
+        border-bottom: 1px dashed #ccc;
+    }
+
+    .formBtnBox li:first-child {
+        width: 445px;
+        float: left;
+    }
+
+    .formBtnBox li:last-child {
+        width: 460px;
+        float: right;
+    }
+
+    .formBtnBox dl {
+        width: 100%;
+        display: table;
+    }
+
+    .formBtnBox dt,
+    .formBtnBox dd {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+
+    .formTitle {
+        margin-bottom: 10px;
+        font-size: 25px !important;
+        font-weight: bold;
+        color: #015B8B;
+        padding-bottom: 0 !important;
+        background: none !important;
+        position: relative !important;
+        padding-bottom: 0 !important;
+    }
+
+    .formBtnBox h3 {
+        margin-bottom: 25px;
+        font-size: 15px;
+        font-weight: normal;
+        color: #000;
+        margin: 0 !important;
+        padding: 0 0 15px 0;
+    }
+
+    .btnTenpo,
+    .btnTenpo:active,
+    .btnTenpo:visited {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        color: #fff;
+        background: url(https://zerohome.jp/wp-content/themes/zerohome/img/new_common/arw02.png) no-repeat 95% 50% #005A8B;
+        display: block;
+        text-align: left;
+    }
+
+
+    .taxBtm .tax_information {
+        text-align: center;
+
+    }
+
+    .taxBtm .tax_information div {
+        display: inline-block;
+        position: relative;
+        padding: 0;
+    }
+
+    /*.taxBtm .tax_information div:nth-child(2) {
+  padding: 90px 0 0 ;
+}
+
+.taxBtm .tax_information div:nth-child(3) {
+  padding: 105px 0 90px ;
+}*/
+
+    .taxBtm .tax_information div.box2 {
+        padding: 50px 0 0;
+    }
+
+    .taxBtm .tax_information div.box3 {
+        padding: 50px 0 90px;
+    }
+
+    .taxBtm .tax_information #tax_orderhouse {
+        display: inline-block;
+
+    }
+
+    .taxBtm .tax_information .tax_orderhouse_text {
+        width: 370px;
+        text-align: left;
+        position: absolute;
+        bottom: 15px;
+        left: 308px;
+    }
+
+    .taxBtm .tax_information .tax_orderhouse_text h3 {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 28.88px;
+        letter-spacing: 0.68px;
+    }
+
+    .taxBtm .tax_information .tax_orderhouse_text p {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.55px;
+        padding: 3px 0 0;
+    }
+
+
+
+
+
+    .taxBtm .tax_information #tax_buildingsales {
+        display: inline-block;
+
+    }
+
+    .taxBtm .tax_information .tax_buildingsales_text {
+        width: 380px;
+        text-align: left;
+        position: absolute;
+        bottom: 10px;
+        left: 303px;
+    }
+
+    .taxBtm .tax_information .tax_buildingsales_text h3 {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 29.37px;
+        letter-spacing: 0.68px;
+    }
+
+    .taxBtm .tax_information .tax_buildingsales_text p {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.11px;
+        padding: 3px 0 0;
+    }
+
+
+
+
+
+    .taxBtm .tax_information #tax_usedhouse_mansion {
+        display: inline-block;
+
+    }
+
+    .taxBtm .tax_information .tax_usedhouse_mansion_text {
+        width: 270px;
+        text-align: left;
+        position: absolute;
+        bottom: 295px;
+        left: 15px;
+    }
+
+    .taxBtm .tax_information .tax_usedhouse_mansion_text h3 {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 28.53px;
+        letter-spacing: 0.68px;
+    }
+
+    .taxBtm .tax_information .tax_usedhouse_mansion_text p {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.11px;
+        padding: 3px 0 0;
+    }
+
+    .taxBtm .tax_information .tax_usedhouse_mansion_text img {
+        position: absolute;
+        bottom: -295px;
+        left: -10px;
+    }
+
+
+    .taxBtm .tax_taxannounce {
+        text-align: center;
+    }
+
+
+
+    .taxBtm .tax_taxannounce .tax_announce_background {
+        text-align: center;
+        background-image: url(../img/shiru/tax/images_pc/zero_tax_lp_announce_background.jpg);
+        background-repeat: repeat-x;
+        height: 190px;
+    }
+
+    .taxBtm .tax_taxannounce .tax_announce_background h3 .tax_announce {
+        text-align: center;
+    }
+
+
+
+
+    .taxBtm .tax_taxannounce .tax_osususume {
+
+        padding: 35px 0 0 0;
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .taxBtm .tax_taxannounce .tax_osususume .tax_osususume_img {
+        display: inline-block;
+    }
+
+    .taxBtm .tax_taxannounce .tax_osususume .tax_osususume_text {
+        width: 429px;
+        position: absolute;
+        top: 35px;
+        left: 40px;
+    }
+
+    .taxBtm .tax_taxannounce .tax_osususume .tax_osususume_text p {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 25px;
+        letter-spacing: 1.12px;
+        text-align: left;
+    }
+
+    .taxBtm .tax_taxannounce .tax_osususume .tax_osususume_text h3 {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 35.79px;
+        letter-spacing: 1.54px;
+        color: #E72800;
+    }
+
+    .taxBtm .tax_taxannounce .tax_attention {
+        width: 770px;
+        margin: 40px auto 95px;
+
+    }
+
+    .taxBtm .tax_taxannounce .tax_attention h3 {
+        background-color: #f17b50;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 27px;
+        letter-spacing: 1.35px;
+        color: #FFFFFF;
+        padding: 13.5px 0;
+
+    }
+
+    .taxBtm .tax_taxannounce .tax_attention h3 i {
+        font-size: 0.9em;
+    }
+
+    .taxBtm .tax_taxannounce .tax_woods_background {
+        background-image: url(https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/images_pc/zero_tax_lp_woods_background.jpg);
+        background-repeat: repeat-x;
+        height: 572px;
+    }
+
+    .taxBtm .tax_taxannounce .tax_blog {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 29.4px;
+    }
+
+    .taxBtm .tax_taxannounce .tax_blog span {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 34.36px;
+    }
+
+    .taxBtm .tax_taxannounce .tax_horizon {
+        border-top: 2px solid #e3e3e3;
+        width: 1000px;
+        margin: 30px auto;
+
+    }
+
+    .taxBtm .tax_woods_background .tax_cf {
+        list-style: none;
+
+        display: inline-block;
+    }
+
+    .taxBtm .tax_woods_background .tax_cf .tax_blogcont {
+        width: 304px;
+        margin: 0px 22px;
+        text-align: left;
+    }
+
+    .taxBtm .tax_woods_background .tax_cf .tax_blogcont h4 {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 29.4px;
+    }
+
+    .taxBtm .tax_woods_background .tax_cf .tax_blogcont p {
+        font-family: ヒラギノ角ゴ Pro;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    .tax_blogcont img {
+        max-width: 100%;
+    }
+
+    .taxBtm .tax_float-left {
+        float: left;
+    }
+
+    /*clear fix*/
+
+    .taxBtm .tax_cf::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+
+    .taxBtm .formBtnBox img {
+        max-width: inherit;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .taxTxt05 {
+            text-align: center;
+            font-size: 14px;
+            margin: 30px auto;
+            width: 90%;
+        }
+
+        .tax_sp .tax_sp_information {
+            text-align: center;
+            background-color: #eeeeee;
+
+        }
+
+        .tax_sp .tax_sp_taxannounce {
+            text-align: center;
+
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_announce_background {
+            text-align: center;
+            background-image: url(../img/shiru/tax/images_sp/zero_tax_sp_lp_announce_background.jpg);
+            background-size: cover;
+            margin: 5.2vh 0 0;
+
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_announce_background h3 .tax_sp_announce {
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_osususume {}
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_osususume .tax_sp_osususume_img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_attention {
+            width: 90vw;
+            margin: 2.2vh auto;
+
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_attention h3 {
+            background-color: #f17b50;
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+            font-size: 4.09vw;
+            letter-spacing: .2vw;
+            color: #FFFFFF;
+            padding: 1.5vh 0;
+
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_attention h3 .tax_sp_warning {
+            font-size: 0.9em;
+            color: #ffffff !important;
+        }
+
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_osususume_text {
+            text-align: center;
+
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_osususume_text p {
+
+            font-size: 4.09vw;
+            /*  14px*/
+            padding: 0 4.8vw 2.3vw;
+            letter-spacing: .2vw;
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+            text-align: left;
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_osususume_text h3 {
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+            font-size: 4.5vw;
+            font-weight: bold;
+            /*  line-height : 6.6vmin;*/
+            letter-spacing: .3vw;
+            color: #E72800;
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_blog {
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+            font-size: 4.8vw;
+            font-weight: bold;
+            /*  line-height : 8min;*/
+            background-color: #eeeeee;
+            margin: 5.7vh 0 3.5vh;
+            padding: 3vh 0;
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_blog span {
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+            font-size: 7.4vw;
+            font-weight: bold;
+            /*  line-height : 5vh;*/
+        }
+
+        .tax_sp .tax_sp_taxannounce .tax_sp_woods_background {
+            background-image: url(https://zerohome.jp/wp-content/themes/zerohome/img/shiru/tax/images_sp/zero_tax_sp_lp_woods_background.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+
+        .tax_sp .tax_sp_woods_background ul {
+            list-style: none;
+            display: inline-block;
+            padding: 0 2.1vw 11.9vh;
+        }
+
+        .tax_sp .tax_sp_woods_background ul .tax_sp_blogcont {
+            text-align: left;
+        }
+
+        .tax_sp .tax_sp_woods_background ul .tax_sp_blogcont h4 {
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+            font-size: 4.09vw;
+            font-weight: bold;
+            /*  line-height : 3.7vh;*/
+        }
+
+        .tax_sp .tax_sp_woods_background ul .tax_sp_blogcont .tax_sp_cf {
+            width: 100%;
+            margin: 1.9vh 0 5.5vh 0;
+
+        }
+
+        .tax_sp .tax_sp_woods_background ul .tax_sp_blogcont .tax_sp_cf h3 {
+            display: inline-block;
+            width: 40%;
+        }
+
+        .tax_sp .tax_sp_woods_background ul .tax_sp_blogcont .tax_sp_cf h3 img {
+            width: 100%;
+        }
+
+        .tax_sp .tax_sp_woods_background ul .tax_sp_blogcont .tax_sp_cf p {
+            font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, arial, verdana, sans-serif;
+            font-size: 3.2wv;
+            /*  line-height : 2.3vh;*/
+            width: 60%;
+            display: inline-block;
+            padding: 0 0 0 2vw;
+        }
+
+        .tax_sp .tax_sp_float-left {
+            float: left;
+        }
+
+        /*clear fix*/
+
+        .tax_sp .tax_sp_cf::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        .columnBnr {
+            width: 96%;
+            margin: 20px auto;
+        }
+
+        .columnBnr li {
+            border: 1px solid #D6D6D6;
+            float: none;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+
+        .columnBnr li:last-child {
+            margin: 0 0 0 0;
+        }
+
+        .columnBnr li img {}
+
+        .formBtnBox {
+            border-bottom: 1px dashed #ccc;
+            width: 96%;
+            margin: 20px auto;
+            padding: 40px 0;
+        }
+
+        .formBtnBox li:first-child {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .formBtnBox li:last-child {
+            width: 100%;
+        }
+
+        .formBtnBox dl {
+            width: 100%;
+            display: table;
+        }
+
+        .formBtnBox dt,
+        .formBtnBox dd {
+            display: table-cell;
+            vertical-align: top;
+        }
+
+        .formBtnBox dt {
+            width: 30%;
+        }
+
+        .formBtnBox dd {
+            padding-left: 3%;
+            width: 67%;
+        }
+
+        .formBtnBox dd p {
+            font-size: 12px;
+        }
+
+        .formTitle {
+            margin-bottom: 10px;
+            font-size: 16px !important;
+            font-weight: bold;
+            color: #015B8B;
+            padding-bottom: 0 !important;
+            background: none !important;
+            position: relative !important;
+            padding-bottom: 0 !important;
+            text-align: left !important;
+        }
+
+        .formBtnBox h3 {
+            margin-bottom: 25px;
+            font-size: 15px;
+            font-weight: normal;
+            color: #000;
+            margin: 0 !important;
+            padding: 0 0 15px 0;
+        }
+
+        .btnTenpo,
+        .btnTenpo:active,
+        .btnTenpo:visited {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            color: #fff;
+            background: url(https://zerohome.jp/wp-content/themes/zerohome/img/new_common/arw02.png) no-repeat 95% 50% #005A8B;
+            display: block;
+            text-align: left;
+        }
+
+        .formTxt {
+            margin-bottom: 10px;
+            font-size: 12px;
+            font-weight: normal;
+            color: #000;
+        }
+
+    }
+
+
+
+    /* 221214追加 */
+    .newsContTax {
+        padding: 80px 0;
+    }
+
+    .newsTtl {
+        background-color: #C80000;
+        color: #fff;
+        font-size: 20px;
+        display: inline;
+        padding: 7px 60px;
+        font-weight: bold;
+        outline: 1px solid rgb(255, 255, 255);
+        outline-offset: -5px;
+    }
+
+    .newsTxt {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .newsTxt span {
+        background: linear-gradient(transparent 70%, #FFCE00 70%);
+        line-height: 1.2;
+        display: inline;
+    }
+
+    .newsTxt big {
+        font-size: 140%;
+    }
+
+    .newsTxt02 {
+        font-size: 20px;
+        color: #cc0000;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+        .newsContTax {
+            padding: 40px 0;
+        }
+
+        .newsTxt big {
+            display: block;
+        }
+    }
+
+
+    .spnNew {
+        font-size: 32px;
+        font-weight: bold;
+        color: #c00;
+        padding-left: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .spnNew {
+            font-size: 28px;
+            padding-left: 0;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    img {
+        max-width: 100%;
+    }
+
+    .tal {
+        text-align: left;
+    }
+
+    .mb5 {
+        margin-bottom: 5px !important;
+    }
+
+    .mb10 {
+        margin-bottom: 10px !important;
+    }
+
+    .mb15 {
+        margin-bottom: 15px !important;
+    }
+
+    .mb20 {
+        margin-bottom: 20px !important;
+    }
+
+    .mb30 {
+        margin-bottom: 30px !important;
+    }
+
+    .mb40 {
+        margin-bottom: 40px !important;
+    }
+
+    .mb50 {
+        margin-bottom: 50px !important;
+    }
+
+    .mb60 {
+        margin-bottom: 60px !important;
+    }
+
+    .mb70 {
+        margin-bottom: 70px !important;
+    }
+
+    .mb80 {
+        margin-bottom: 80px !important;
+    }
+
+    .mt10 {
+        margin-top: 10px !important;
+    }
+
+    .mt15 {
+        margin-top: 15px !important;
+    }
+
+    .mt20 {
+        margin-top: 20px !important;
+    }
+
+    .mt30 {
+        margin-top: 30px !important;
+    }
+
+    .mt40 {
+        margin-top: 40px !important;
+    }
+
+    .mt50 {
+        margin-top: 50px !important;
+    }
+
+    .mt60 {
+        margin-top: 60px !important;
+    }
+
+    .mt70 {
+        margin-top: 70px !important;
+    }
+
+    .mt80 {
+        margin-top: 80px !important;
+    }
+
+    .mt100 {
+        margin-top: 100px !important;
+    }
+
+    .mr5 {
+        margin-right: 5px !important;
+    }
+
+    .mr10 {
+        margin-right: 10px !important;
+    }
+
+    .mr20 {
+        margin-right: 20px !important;
+    }
+
+    .mr30 {
+        margin-right: 30px !important;
+    }
+
+    .ml0 {
+        margin-left: 0px !important;
+    }
+
+    .ml5 {
+        margin-left: 5px !important;
+    }
+
+    .ml10 {
+        margin-left: 10px !important;
+    }
+
+    .ml20 {
+        margin-left: 20px !important;
+    }
+
+    .ml30 {
+        margin-left: 30px !important;
+    }
+
+    .pcCont {
+        display: block;
+    }
+
+    .pcTabCont {
+        display: block;
+    }
+
+    .tabOnlyCont {
+        display: none;
+    }
+
+    .spCont {
+        display: none;
+    }
+
+    .spTabCont {
+        display: none;
+    }
+
+    .spOnlyCont {
+        display: none;
+    }
+
+    .ls01 {
+        letter-spacing: 0.1em;
+    }
+
+    .ls02 {
+        letter-spacing: 0.075em;
+    }
+
+    .ls03 {
+        letter-spacing: 0.05em;
+    }
+
+    .ls04 {
+        letter-spacing: 0.2em;
+    }
+
+    .ls05 {
+        letter-spacing: -0.05em;
+    }
+
+    .lh22 {
+        line-height: 2.2;
+    }
+
+    .lh20 {
+        line-height: 2.0;
+    }
+
+    .lh18 {
+        line-height: 1.8;
+    }
+
+    .f24 {
+        font-size: 24px;
+    }
+
+    .f22 {
+        font-size: 22px;
+    }
+
+    .f20 {
+        font-size: 20px;
+    }
+
+    .f18 {
+        font-size: 18px;
+    }
+
+    .f16 {
+        font-size: 16px;
+    }
+
+    .f14 {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 834px) {
+        .pcCont {
+            display: none;
+        }
+
+        .pcTabCont {
+            display: block;
+        }
+
+        .tabOnlyCont {
+            display: block;
+        }
+
+        .spTabCont {
+            display: block;
+        }
+
+        .spOnlyCont {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .spCont {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .spOnlyCont {
+            display: block;
+        }
+
+        .pcTabCont {
+            display: none;
+        }
+
+        .tabOnlyCont {
+            display: none;
+        }
+
+        .mb10 {
+            margin-bottom: 10px !important;
+        }
+
+        .mb15 {
+            margin-bottom: 10px !important;
+        }
+
+        .mb20 {
+            margin-bottom: 10px !important;
+        }
+
+        .mb30 {
+            margin-bottom: 20px !important;
+        }
+
+        .mb40 {
+            margin-bottom: 20px !important;
+        }
+
+        .mb50 {
+            margin-bottom: 30px !important;
+        }
+
+        .mb60 {
+            margin-bottom: 30px !important;
+        }
+
+        .mb70 {
+            margin-bottom: 30px !important;
+        }
+
+        .mb80 {
+            margin-bottom: 30px !important;
+        }
+
+        .mt5 {
+            margin-top: 7px !important;
+        }
+
+        .mt10 {
+            margin-top: 10px !important;
+        }
+
+        .mt15 {
+            margin-top: 10px !important;
+        }
+
+        .mt20 {
+            margin-top: 10px !important;
+        }
+
+        .mt30 {
+            margin-top: 20px !important;
+        }
+
+        .mt40 {
+            margin-top: 20px !important;
+        }
+
+        .mt50 {
+            margin-top: 30px !important;
+        }
+
+        .mt60 {
+            margin-top: 30px !important;
+        }
+
+        .mt70 {
+            margin-top: 40px !important;
+        }
+
+        .mt80 {
+            margin-top: 40px !important;
+        }
+
+        .mt100 {
+            margin-top: 60px !important;
+        }
+
+        .f24 {
+            font-size: 18px;
+        }
+
+        .f22 {
+            font-size: 18px;
+        }
+
+        .f20 {
+            font-size: 18px;
+        }
+
+        .f18 {
+            font-size: 16px;
+        }
+
+        .f16 {
+            font-size: 14px;
+        }
+
+        .f14 {
+            font-size: 12px;
+        }
+    }
+}

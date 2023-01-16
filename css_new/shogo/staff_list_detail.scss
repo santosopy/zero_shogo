@@ -1,8 +1,7 @@
-$breakpoints: (
-'sp': (max-width: 480px),
-'tab': (max-width: 1024px),
-'pc': (min-width: 1025px)
-) !default;
+$breakpoints: ('sp': (max-width: 480px),
+    'tab': (max-width: 1024px),
+    'pc': (min-width: 1025px)) !default;
+
 @mixin media($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
@@ -14,55 +13,65 @@ $breakpoints: (
 .is_pc,
 .is_tab,
 .is_onlytab,
-.is_sp{
+.is_sp {
     display: none;
 }
-@include media(sp){
-    .is_sp{
-        display: block;
-    }
-}
-@include media(tab){
-    .is_tab{
-        display: block;
-    }
-}
-@media screen and (min-width: 481px) and (max-width: 1024px){
-    .is_onlytab{
-        display: block;
-    }
-}
-@include media(pc){
-    .is_pc{
+
+@include media(sp) {
+    .is_sp {
         display: block;
     }
 }
 
-@mixin smooth{
+@include media(tab) {
+    .is_tab {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .is_onlytab {
+        display: block;
+    }
+}
+
+@include media(pc) {
+    .is_pc {
+        display: block;
+    }
+}
+
+@mixin smooth {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-@mixin wrap{
+
+@mixin wrap {
     max-width: calc(1000px + 2rem);
     margin: auto;
     padding: 0 1rem;
 }
+
 @mixin title {
-    h3{
+    h3 {
         font-family: 'montserratmedium';
         font-size: 30px;
         letter-spacing: 3px;
         padding-bottom: 1rem;
     }
-    p{
+
+    p {
         font-size: 18px;
-        @include media(sp){
+
+        @include media(sp) {
             font-size: 15px;
         }
     }
-    h3,p{
+
+    h3,
+    p {
         line-height: 1;
     }
 }
@@ -71,6 +80,7 @@ $breakpoints: (
     font-family: 'notosansbold';
     src: url('../font/NotoSansJP-Bold.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'montserratmedium';
     src: url('../font/Montserrat-Medium.ttf') format('opentype');
@@ -82,36 +92,39 @@ $gray2: #F5F5F5;
 $gray3: #DCDCDC;
 $gray4: #E1E1E1;
 
-main{
+main {
     overflow: hidden;
-    @include media(pc){
+
+    @include media(pc) {
         width: calc(100% - 300px);
         margin-left: 300px;
     }
 
-    .submenu{
+    .submenu {
         padding: 20px;
         background-color: #000000;
-        @include media(sp){
+
+        @include media(sp) {
             padding: 0;
         }
 
-        .submenu-wrap{
+        .submenu-wrap {
             @include wrap();
-            @include media(sp){
+
+            @include media(sp) {
                 padding: 0;
             }
 
-            ul{
+            ul {
                 display: flex;
                 flex-wrap: wrap;
 
-                li{
-                    @media screen and (min-width: 481px){
+                li {
+                    @media screen and (min-width: 481px) {
                         padding-left: 1rem;
                         padding-right: 1rem;
                         position: relative;
-                        
+
                         &:not(:last-child)::after {
                             content: "|";
                             position: absolute;
@@ -119,29 +132,34 @@ main{
                             color: #FFFFFF;
                         }
                     }
-                    @include media(sp){
+
+                    @include media(sp) {
                         width: 50%;
                         padding: 14px;
                         text-align: center;
-                        
-                        &:nth-child(1), &:nth-child(3), &:nth-child(5){
+
+                        &:nth-child(1),
+                        &:nth-child(3),
+                        &:nth-child(5) {
                             border-right: 1px solid #FFFFFF;
                         }
-                         &:not(:nth-child(6)):not(:nth-child(5)){
+
+                        &:not(:nth-child(6)):not(:nth-child(5)) {
                             border-bottom: 1px solid #FFFFFF;
                         }
                     }
-                    
-                    a{
+
+                    a {
                         font-family: "notosansbold";
                         font-size: 14px;
                         color: #FFFFFF;
                         @include smooth();
-                        
-                        &.active{
+
+                        &.active {
                             color: $blue;
                         }
-                        &:hover{
+
+                        &:hover {
                             color: $blue;
                         }
                     }
@@ -149,62 +167,72 @@ main{
             }
         }
     }
-    .breadcrumb{
+
+    .breadcrumb {
         padding: 14px 0;
-        @include media(sp){
+
+        @include media(sp) {
             padding: 11px 0;
         }
 
-        .breadcrumb-wrap{
+        .breadcrumb-wrap {
             @include wrap();
             font-size: 11px;
             color: $gray;
-            @include media(sp){
+
+            @include media(sp) {
                 font-size: 10px;
             }
 
-            a{
+            a {
                 color: $blue;
             }
         }
     }
-    .main_visual{
-        &__text{
+
+    .main_visual {
+        &__text {
             background-color: $gray2;
             padding: 40px 0;
-            @include media(sp){
+
+            @include media(sp) {
                 padding: 27px 0;
             }
 
-            .main_visual-wrap{
+            .main_visual-wrap {
                 @include wrap();
 
-                .main_visual-inner{
+                .main_visual-inner {
                     @include title();
                     display: flex;
                     align-items: center;
                     gap: 50px;
-                    @include media(tab){
+
+                    @include media(tab) {
                         flex-direction: column;
                         gap: 1rem;
                         align-items: flex-start;
                     }
 
-                    &:before{
+                    &:before {
                         content: "";
                         border: 1px solid #000000;
                         align-self: stretch;
-                        @include media(tab){
+
+                        @include media(tab) {
                             align-self: auto;
                             width: 3.5rem;
                         }
                     }
-                    > div{
+
+                    >div {
                         order: -1;
                     }
-                    h4{
+
+                    h4 {
                         font-size: 14px;
-                        @include media(sp){
+
+                        @include media(sp) {
                             font-size: 13px;
                         }
                     }
@@ -212,79 +240,96 @@ main{
             }
         }
     }
-    .description{
+
+    .description {
         padding: 95px 0 85px;
-        @include media(sp){
+
+        @include media(sp) {
             padding: 55px 0 50px;
         }
 
-        .description-wrap{
+        .description-wrap {
             text-align: center;
             @include wrap();
 
-            h3{
+            h3 {
                 font-family: "notosansbold";
                 font-size: 28px;
                 line-height: 1.8;
                 padding-bottom: 33px;
-                @include media(sp){
+
+                @include media(sp) {
                     font-size: 20px;
                     line-height: 1.6;
                     padding-bottom: 28px;
                 }
             }
-            p{
+
+            p {
                 font-size: 14px;
                 line-height: 1.8;
-                @include media(sp){
+
+                @include media(sp) {
                     font-size: 13px;
                     text-align: left;
                 }
 
-                .space{
+                .space {
                     display: block;
                     padding-bottom: 28px;
-                    @include media(sp){
+
+                    @include media(sp) {
                         padding-bottom: 25px;
                     }
                 }
             }
         }
     }
-    .list{
-        .list-wrap{
+
+    .list {
+        .list-wrap {
             @include wrap();
 
-            ul{
+            ul {
                 border-top: 1px solid #000000;
+                padding-bottom: 85px;
 
-                li{
+                @include media(sp) {
+                    padding-bottom: 50px;
+                }
+
+                li {
                     padding: 37px 0;
                     display: flex;
                     gap: 47px;
                     border-bottom: 1px solid #000000;
-                    @include media(tab){
+
+                    @include media(tab) {
                         flex-wrap: wrap;
                         justify-content: center;
                     }
-                    @include media(sp){
+
+                    @include media(sp) {
                         padding: 26px 0;
                         gap: 29px;
                     }
 
-                    &.reverse{
+                    &.reverse {
                         flex-direction: row-reverse;
                     }
-                    .list-img{
-                        figure{
+
+                    .list-img {
+                        figure {
                             position: relative;
-                            img{
+
+                            img {
                                 transition: opacity 1s ease-out;
-    
-                                &:hover:first-of-type{
+
+                                &:hover:first-of-type {
                                     opacity: 0;
                                 }
-                                &:last-of-type{
+
+                                &:last-of-type {
                                     position: absolute;
                                     left: 0;
                                     z-index: -1;
@@ -292,45 +337,53 @@ main{
                             }
                         }
                     }
-                    .list-text{
+
+                    .list-text {
                         width: 600px;
 
-                        h3{
+                        h3 {
                             font-size: 13px;
-                            @include media(sp){
+
+                            @include media(sp) {
                                 font-size: 12px;
                             }
                         }
-                        h4{
+
+                        h4 {
                             font-family: "notosansbold";
                             font-size: 24px;
                             line-height: 1.8;
-                            @include media(sp){
+
+                            @include media(sp) {
                                 font-size: 21px;
                             }
 
-                            span{
+                            span {
                                 font-family: initial;
                                 font-size: 11px;
                                 padding-left: 19px;
-                                @include media(sp){
+
+                                @include media(sp) {
                                     font-size: 12px;
                                 }
                             }
                         }
-                        h5{
+
+                        h5 {
                             font-size: 12px;
                         }
-                        .tag{
+
+                        .tag {
                             display: flex;
                             flex-wrap: wrap;
                             gap: 9px;
                             padding-top: 18px;
-                            @include media(sp){
+
+                            @include media(sp) {
                                 padding-top: 15px;
                             }
 
-                            p{
+                            p {
                                 line-height: 1;
                                 padding: 5px 7px;
                                 background-color: #000000;
@@ -338,21 +391,28 @@ main{
                                 font-size: 13px;
                             }
                         }
-                        .separator{
+
+                        .separator {
                             margin: 23px 0;
                             height: 1px;
                             background: $gray4;
                         }
-                        dl{
+
+                        dl {
                             font-size: 13px;
                             display: flex;
                             gap: 25px;
-                            line-height: 1.8;
+                            line-height: 1.6;
+                            padding-bottom: 10px;
+                            @include media(sp){
+                                gap: 22px;
+                            }
 
-                            dt{
+                            dt {
                                 width: 93px;
                             }
-                            dd{
+
+                            dd {
                                 flex: 1;
                             }
                         }
@@ -361,18 +421,152 @@ main{
             }
         }
     }
-    .access{
+
+    .access {
         background-color: $gray2;
         padding: 78px 0 92px;
 
-        .access-wrap{
+        @include media(sp) {
+            padding: 43px 0 52px;
+        }
+
+        .access-wrap {
             @include wrap();
 
-            .title{
+            .title {
                 @include title();
             }
-            .map{
+
+            .map {
                 padding: 32px 0 42px;
+
+                @include media(sp) {
+                    padding: 22px 0 30px;
+                }
+            }
+
+            .info {
+                h3{
+                    font-family: "notosansbold";
+                    &:not(:first-of-type){
+                        padding-top: 25px;
+                    }
+                }
+                table,
+                th,
+                td {
+                    border: 2px solid $gray2;
+                }
+                table {
+                    background-color: #FFFFFF;
+                    width: 100%;
+
+                    tr {
+                        th {
+                            font-size: 14px;
+                            width: 150px;
+                            color: #FFFFFF;
+                            background-color: #000000;
+                            padding: 11px 18px;
+
+                            @include media(sp) {
+                                width: 100%;
+                                display: block;
+                            }
+                        }
+
+                        td {
+                            font-size: 13px;
+                            padding: 11px 23px;
+
+                            @include media(sp) {
+                                display: block;
+                            }
+
+                            .row {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+
+                                figure {
+                                    display: flex;
+                                }
+
+                                p {
+                                    line-height: 1;
+                                }
+                            }
+
+                            p {
+                                &.tel {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .relation {
+        padding: 74px 0 110px;
+        @include media(sp){
+            padding: 39px 0 70px;
+        }
+
+        .relation-wrap {
+            @include wrap();
+
+            h3 {
+                font-size: 21px;
+                padding-bottom: 35px;
+                @include media(sp){
+                    padding-bottom: 20px;
+                }
+            }
+
+            .relation-content {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+                @include media(sp){
+                    justify-content: space-between;
+                }
+
+                a {
+                    color: #000000;
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 12px;
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    max-width: 238px;
+                    width: 100%;
+                    font-size: 14px;
+                    justify-content: center;
+                    position: relative;
+                    -webkit-transition: ease-out 0.4s;
+                    -moz-transition: ease-out 0.4s;
+                    transition: ease-out 0.4s;
+                    text-align: center;
+                    @include media(sp){
+                        max-width: 158px;
+                    }
+
+                    &:hover,
+                    &.active {
+                        background-color: $blue;
+                        color: #FFFFFF;
+                    }
+
+                    figure {
+                        position: absolute;
+                        line-height: 1;
+                        right: 19px;
+                    }
+                }
             }
         }
     }

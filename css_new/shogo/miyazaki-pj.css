@@ -1,0 +1,643 @@
+@charset "UTF-8";
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .is_sp {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .is_tab {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .is_onlytab {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .is_pc {
+    display: block;
+  }
+}
+main {
+  overflow: hidden;
+}
+@media screen and (min-width: 1025px) {
+  main {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+  }
+}
+main .breadcrumb {
+  padding: 14px 0;
+}
+@media screen and (max-width: 480px) {
+  main .breadcrumb {
+    padding: 11px 0;
+  }
+}
+main .breadcrumb .breadcrumb-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 11px;
+  color: #B6B6B6;
+}
+@media screen and (max-width: 480px) {
+  main .breadcrumb .breadcrumb-wrap {
+    font-size: 10px;
+  }
+}
+main .breadcrumb .breadcrumb-wrap a {
+  color: #023A90;
+}
+main .tac {
+  text-align: center !important;
+}
+main .EBGaramond {
+  font-family: "EB Garamond", serif;
+}
+main .mincho {
+  font-family: "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "游明朝", YuMincho, serif;
+}
+main .fBold {
+  font-weight: bold;
+}
+main .contBoxPj {
+  width: 96%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main .pjGreen {
+  color: #008d54;
+}
+main .pjGreenLight {
+  color: #3CB46E;
+}
+main .pjWhite {
+  color: #fff;
+}
+main .bgPjGreen {
+  background-color: #008d54;
+}
+main .txtShadow {
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+main .mainImg {
+  background: url("https://zerohome.jp/wp-content/themes/zerohome/img/shiru/miyazaki-pj/bg_main.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+}
+main .mainTxt {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+main .mainImg h2 {
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+main .mainImg h2 big {
+  display: block;
+  font-size: 130%;
+  margin-top: 10px;
+}
+main .mainSince {
+  font-size: 40px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+@media screen and (max-width: 480px) {
+  main .mainImg {
+    min-height: 60vh;
+  }
+  main .mainImg h2 {
+    font-size: 24px;
+  }
+  main .mainImg h2 big {
+    font-size: 120%;
+    letter-spacing: -0.05em;
+  }
+  main .mainSince {
+    font-size: 26px;
+  }
+}
+main .s1 {
+  padding: 80px 0;
+}
+main .mPj {
+  font-size: 30px;
+  position: relative;
+}
+main .mPj.pjWhite {
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+main .mPj::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #008d54;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+main .mPj.pjWhite::after {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6);
+}
+main .s1Flex {
+  display: flex;
+  gap: 0 30px;
+}
+main .flexImg {
+  flex-shrink: 0;
+}
+@media screen and (max-width: 834px) {
+  main .s1 .flexImg {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  main .s1Flex {
+    flex-flow: wrap;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .s1 {
+    padding: 40px 0;
+  }
+  main .mPj {
+    font-size: 22px;
+  }
+  main .mPj::after {
+    width: 130px;
+  }
+  main .lh22 {
+    line-height: 1.8;
+  }
+  main .flexImg {
+    width: 100%;
+  }
+}
+main .s2 {
+  padding: 80px 0;
+  background: url("https://zerohome.jp/wp-content/themes/zerohome/img/shiru/miyazaki-pj/bg_s2.jpg") no-repeat center center;
+  background-size: cover;
+}
+main .s2txtWrap {
+  background-color: #fff;
+  padding-bottom: 30px;
+}
+main .s2txt01 {
+  background-color: #ececec;
+  padding: 5px 0;
+}
+main .s2txt02 {
+  font-size: 40px;
+  border-bottom: 2px solid #008d54;
+  display: inline;
+  padding-bottom: 5px;
+}
+main .s2txt02 small {
+  font-size: 60%;
+}
+main .s2imgFlex {
+  display: flex;
+  justify-content: center;
+  gap: 0 20px;
+}
+main .btnNews {
+  background-color: #fff;
+  border-radius: 50px;
+  display: inline-block;
+}
+main .btnNews a {
+  display: block;
+  padding: 10px 20px;
+  color: #004DA1;
+  font-size: 18px;
+}
+main .btnNews a i {
+  padding-left: 15px;
+}
+main .btnNews big {
+  font-size: 110%;
+}
+@media screen and (max-width: 480px) {
+  main .s2 {
+    padding: 40px 0;
+  }
+  main .s2txtWrap {
+    padding-bottom: 20px;
+  }
+  main .s2txt02 {
+    font-size: 28px;
+  }
+  main .s2imgFlex {
+    padding: 0 2%;
+    gap: 0 10px;
+  }
+  main .s2imgFlex p {
+    width: 49%;
+  }
+  main .btnNews a {
+    padding: 10px 20px;
+    font-size: 4.5vw;
+    line-height: 1.5;
+  }
+  main .btnNews a i {
+    padding-left: 15px;
+  }
+  main .btnNews big {
+    display: block;
+  }
+}
+main .s4 {
+  padding: 80px 0;
+  background-color: #f2f2f2;
+}
+main .s4wrap .s4bg img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+main .s4txtWrap {
+  background-color: #fff;
+  outline: 1px solid #ccc;
+  outline-offset: -25px;
+  padding: 75px;
+  margin-top: -150px;
+  position: relative;
+  z-index: 10;
+}
+main .s4txtWrap h4 {
+  border-bottom: 1px solid #00743f;
+  display: inline;
+}
+main .co2 small {
+  font-size: 80%;
+}
+main .s4Flex {
+  display: flex;
+  justify-content: space-between;
+}
+main .s4Flex div {
+  width: 49%;
+}
+main .s4txt01 {
+  padding: 5px 0;
+}
+main .s4Flex dl {
+  background-color: #f2f2f2;
+}
+main .s4Flex dt,
+main .s4Flex dd {
+  padding: 10px 0;
+}
+main .s4Flex dt {
+  border-bottom: 2px solid #fff;
+}
+main .s4Flex dd {
+  font-size: 30px;
+}
+main .sdgsImg {
+  width: calc(12.5% - 5px);
+}
+main .kbpFlex {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+main .kbpFlex p:first-child {
+  width: 80%;
+}
+main .kbpFlex p big {
+  display: block;
+}
+@media screen and (max-width: 834px) {
+  main .s4Flex {
+    flex-flow: wrap;
+  }
+  main .s4Flex div {
+    width: 100%;
+  }
+  main .s4Flex div:last-child {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .s4txtWrap {
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .s4 {
+    padding: 40px 0;
+  }
+  main .s4wrap .s4bg img {
+    height: 300px;
+  }
+  main .s4txtWrap {
+    padding: 30px;
+    outline-offset: -10px;
+  }
+  main .co2 small {
+    display: block;
+    line-height: 2.4;
+  }
+  main .s4Flex::after {
+    display: block;
+    content: "";
+    width: calc(33.3333333333% - 5px);
+  }
+  main .sdgsImg {
+    width: calc(33.3333333333% - 5px);
+  }
+  main .sdgsImg:nth-of-type(n+4) {
+    margin-top: 7px;
+  }
+}
+main .movieWrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+main .movieWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main img {
+  max-width: 100%;
+}
+main .tal {
+  text-align: left;
+}
+main .mb5 {
+  margin-bottom: 5px !important;
+}
+main .mb10 {
+  margin-bottom: 10px !important;
+}
+main .mb15 {
+  margin-bottom: 15px !important;
+}
+main .mb20 {
+  margin-bottom: 20px !important;
+}
+main .mb30 {
+  margin-bottom: 30px !important;
+}
+main .mb40 {
+  margin-bottom: 40px !important;
+}
+main .mb50 {
+  margin-bottom: 50px !important;
+}
+main .mb60 {
+  margin-bottom: 60px !important;
+}
+main .mb70 {
+  margin-bottom: 70px !important;
+}
+main .mb80 {
+  margin-bottom: 80px !important;
+}
+main .mt10 {
+  margin-top: 10px !important;
+}
+main .mt15 {
+  margin-top: 15px !important;
+}
+main .mt20 {
+  margin-top: 20px !important;
+}
+main .mt30 {
+  margin-top: 30px !important;
+}
+main .mt40 {
+  margin-top: 40px !important;
+}
+main .mt50 {
+  margin-top: 50px !important;
+}
+main .mt60 {
+  margin-top: 60px !important;
+}
+main .mt70 {
+  margin-top: 70px !important;
+}
+main .mt80 {
+  margin-top: 80px !important;
+}
+main .mt100 {
+  margin-top: 100px !important;
+}
+main .mr10 {
+  margin-right: 10px !important;
+}
+main .mr20 {
+  margin-right: 20px !important;
+}
+main .mr30 {
+  margin-right: 30px !important;
+}
+main .ml0 {
+  margin-left: 0px !important;
+}
+main .ml10 {
+  margin-left: 10px !important;
+}
+main .ml20 {
+  margin-left: 20px !important;
+}
+main .ml30 {
+  margin-left: 30px !important;
+}
+main .pcCont {
+  display: block;
+}
+main .pcTabCont {
+  display: block;
+}
+main .tabOnlyCont {
+  display: none;
+}
+main .spCont {
+  display: none;
+}
+main .spTabCont {
+  display: none;
+}
+main .spOnlyCont {
+  display: none;
+}
+main .ls01 {
+  letter-spacing: 0.1em;
+}
+main .ls02 {
+  letter-spacing: 0.075em;
+}
+main .ls03 {
+  letter-spacing: 0.05em;
+}
+main .ls04 {
+  letter-spacing: 0.2em;
+}
+main .ls05 {
+  letter-spacing: -0.05em;
+}
+main .lh22 {
+  line-height: 2.2;
+}
+main .lh20 {
+  line-height: 2;
+}
+main .lh18 {
+  line-height: 1.8;
+}
+main .f24 {
+  font-size: 24px;
+}
+main .f22 {
+  font-size: 22px;
+}
+main .f20 {
+  font-size: 20px;
+}
+main .f18 {
+  font-size: 18px;
+}
+main .f16 {
+  font-size: 16px;
+}
+@media screen and (max-width: 834px) {
+  main .pcCont {
+    display: none;
+  }
+  main .pcTabCont {
+    display: block;
+  }
+  main .tabOnlyCont {
+    display: block;
+  }
+  main .spTabCont {
+    display: block;
+  }
+  main .spOnlyCont {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .spCont {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .spOnlyCont {
+    display: block;
+  }
+  main .pcTabCont {
+    display: none;
+  }
+  main .tabOnlyCont {
+    display: none;
+  }
+  main .mb10 {
+    margin-bottom: 10px !important;
+  }
+  main .mb15 {
+    margin-bottom: 10px !important;
+  }
+  main .mb20 {
+    margin-bottom: 10px !important;
+  }
+  main .mb30 {
+    margin-bottom: 20px !important;
+  }
+  main .mb40 {
+    margin-bottom: 20px !important;
+  }
+  main .mb50 {
+    margin-bottom: 30px !important;
+  }
+  main .mb60 {
+    margin-bottom: 30px !important;
+  }
+  main .mb70 {
+    margin-bottom: 30px !important;
+  }
+  main .mb80 {
+    margin-bottom: 30px !important;
+  }
+  main .mt5 {
+    margin-top: 7px !important;
+  }
+  main .mt10 {
+    margin-top: 10px !important;
+  }
+  main .mt15 {
+    margin-top: 10px !important;
+  }
+  main .mt20 {
+    margin-top: 10px !important;
+  }
+  main .mt30 {
+    margin-top: 20px !important;
+  }
+  main .mt40 {
+    margin-top: 20px !important;
+  }
+  main .mt50 {
+    margin-top: 30px !important;
+  }
+  main .mt60 {
+    margin-top: 30px !important;
+  }
+  main .mt70 {
+    margin-top: 40px !important;
+  }
+  main .mt80 {
+    margin-top: 40px !important;
+  }
+  main .mt100 {
+    margin-top: 60px !important;
+  }
+  main .f24 {
+    font-size: 18px;
+  }
+  main .f22 {
+    font-size: 18px;
+  }
+  main .f20 {
+    font-size: 18px;
+  }
+  main .f18 {
+    font-size: 16px;
+  }
+  main .f16 {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=miyazaki-pj.css.map */
