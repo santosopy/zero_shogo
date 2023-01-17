@@ -293,6 +293,21 @@ main .about_initiatives .sepa_triangle {
   top: -10.2vw;
   z-index: 100;
 }
+@media screen and (min-width: 1025px) {
+  main .about_initiatives .sepa_triangle {
+    top: -7.2vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  main .about_initiatives .sepa_triangle {
+    top: -8.2vw;
+  }
+}
+@media screen and (min-width: 2180px) {
+  main .about_initiatives .sepa_triangle {
+    top: -9.2vw;
+  }
+}
 main .initiatives_cont h3 {
   text-align: center;
   font-size: 24px;

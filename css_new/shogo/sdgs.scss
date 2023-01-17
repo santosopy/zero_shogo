@@ -367,9 +367,17 @@ main {
         position: absolute;
         top: -10.2vw;
         z-index: 100;
-    }
 
-    .initiatives_cont {}
+        @media screen and(min-width:1025px){
+            top: -7.2vw;
+        }
+        @media screen and(min-width:1280px){
+            top: -8.2vw;
+        }
+        @media screen and(min-width:2180px){
+            top: -9.2vw;
+        }
+    }
 
     .initiatives_cont h3 {
         text-align: center;
