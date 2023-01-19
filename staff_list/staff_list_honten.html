@@ -6,16 +6,16 @@
     <title>無題ドキュメント</title>
     <link
     rel="shortcut icon"
-    href="https://zerohome.jp/wp-content/themes/zerohome/img_new/favicon.ico"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css_new/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css_new/shogo/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script src="js_new/shogo/common.js"></script>
+    <script src="../js_new/shogo/common.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="css_new/shogo/staff_list_detail.css" />
-    <script src="js_new/shogo/wow.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/staff_list_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -27,8 +27,11 @@
             $(function(){
                 $.ajax({
                     type: "GET",
-                    url: "./header.html"
-                }).done( data => $("header").html(data) )
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
             });
         </script>
     </header>
@@ -60,9 +63,10 @@
         </section>
         <section class="breadcrumb">
             <div class="breadcrumb-wrap">
-                <a href=""><span>TOP</span></a> >
-                <a href="./staff_list.html"><span>営業 スタッフ紹介</span></a>
-                <span>> 西院支店スタッフ紹介</span>
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span>> ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/staff_list/"><span>> 営業 スタッフ紹介</span></a>
+                <span>> 本店スタッフ紹介</span>
             </div>
         </section>
         <section class="main_visual">
@@ -84,13 +88,12 @@
         <section class="description">
             <div class="description-wrap wow fadeInUp">
                 <h3>
-                    株式会社ゼロ・コーポレーション <br class="is_sp">西院支店
+                    株式会社ゼロ・コーポレーション <br class="is_sp">本店
                 </h3>
                 <p>
-                    西院支店はゼロ ･コーポレーションの支店の中でも最も古く、歴史と伝統のあるお店です。<br>
-                    個性あるメンバーで毎日エネルギッシュに仕事をこなしています。<br>
-                    「明るくて、親切で丁寧な、安心できる不動産屋さん」をお探しのお客様！<br>
-                    私どもゼロ ･コーポレーション西院支店にご連絡下さい！ご期待以上の仕事をして見せます！ 
+                    我が営業部は安川店長を筆頭にまとまりのある部署です。<br>
+                    まずは、お客様の立場で物事を考えるというのが店長の口癖なので、お客様に無理強いしないというのが基本になります。<br>
+                    なにはさておき、のびのび元気な部署です。よろしくお願い致します。
                 </p>
             </div>
         </section>
@@ -106,7 +109,7 @@
                         </div>
                         <div class="list-text">
                             <div>
-                                <h3>不動産事業部長 / 店長</h3>
+                                <h3>店長</h3>
                                 <h4>安川 聡明<span>TOSHIAKI YASUKAWA</span></h4>
                                 <h5>京都府京都市出身</h5>
                                 <div class="tag">
@@ -146,15 +149,60 @@
                     <li class="reverse wow fadeInRight" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/motokawa.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/motokawa2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/shinji_nakanishi.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/shinji_nakanishi2.jpg" width="350" alt="">
+                            </figure>
+                        </div>
+                        <div class="list-text">
+                            <div>
+                                <h3>副店長</h3>
+                                <h4>中西 眞次<span>SHINJI NAKANISHI</span></h4>
+                                <h5>京都府京都市出身</h5>
+                                <div class="tag">
+                                    <p>宅地建物取引士</p>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <dl>
+                                    <dt>● 趣味</dt>
+                                    <dd>
+                                        旅行・フットサル                                        
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 性格</dt>
+                                    <dd>
+                                        マイペース
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 得意なこと</dt>
+                                    <dd>
+                                        継続すること
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● コメント</dt>
+                                    <dd>
+                                        不動産とは全く違う業種から転職し、気が付けば20年以上経過しておりました。“不動産＝買わされる”、“営業が強い”といったイメージがありがちですが、そうならないようにお客様のペースに合わせた提案を心掛けております。若い者には無い知識と経験を活かして、不動産以外のこともご提案することでお客様に喜んでいただければと思っております。色々な営業がおりますが、全員前向きに日々頑張っておりますので、お気軽に何でもご相談ください。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="2s">
+                        <div class="list-img">
+                            <figure>
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yoshinobu_miyabe.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yoshinobu_miyabe2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
                                 <h3>店長代理</h3>
-                                <h4>本川　 新<span>ARATA MOTOKAWA</span></h4>
-                                <h5>京都府京都市出身</h5>
+                                <h4>宮部 義信<span>YOSHINOBU MIYABE</span></h4>
+                                <h5>大阪府出身</h5>
                                 <div class="tag">
                                     <p>宅地建物取引士</p>
                                 </div>
@@ -164,72 +212,27 @@
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        車・バイク・キャンプ                                        
+                                        ドライブ・ゴルフ・息子と公園で遊ぶこと
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 性格</dt>
                                     <dd>
-                                        繊細・責任感が強い
+                                        一言で言うとまじめ
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        早起き・節約・保険・家計管理
+                                        物件探し
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        不動産購入時の資金計画には不安がつきものです。<br>
-                                        住宅ローンのシミュレーションはもちろんですが、住宅購入は人生の節目でもありますので、各種保険や資金管理など、総合的にご検討されることと思います。<br>
-                                        お金のこともお気軽にご相談ください。
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="wow fadeInLeft" data-wow-duration="2s">
-                        <div class="list-img">
-                            <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kimiyasu_hayase.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kimiyasu_hayase2.jpg" width="350" alt="">
-                            </figure>
-                        </div>
-                        <div class="list-text">
-                            <div>
-                                <h4>早瀬 公康<span>KIMIYASU HAYASE</span></h4>
-                                <h5>京都府京都市出身</h5>
-                                <div class="tag">
-                                    <p>地建物取引士</p>
-                                </div>
-                            </div>
-                            <div class="separator"></div>
-                            <div>
-                                <dl>
-                                    <dt>● 趣味</dt>
-                                    <dd>
-                                        釣り・スノーボード・ウェイクボード・ゴルフ・キャンプなど（多趣味です）
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 性格</dt>
-                                    <dd>
-                                        おおらか・前向き
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 得意なこと</dt>
-                                    <dd>
-                                        早寝・早起き・世間話
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● コメント</dt>
-                                    <dd>
-                                        不動産全般の仲介業、新築マンション分譲事業、新築一戸建て分譲事業と、これまでの多岐にわたる不動産の経験を活かし「お客様にとって一番良いご提案」をさせて頂く事をいつも最優先に考えています。<br>
-                                        売却相談、お家探しはもちろん、「こんな場合どうすれば良いの？」といったこともお気軽にご相談下さい！！
+                                        不動産業界に携わって25年になりました。<br>
+                                        不動産とは人生の中で一番高額な買い物です。その不動産をお客様が喜んでいただける物件を色々な角度からご提案させていただきます。<br>
+                                        不動産売買に関する事なら何でも経験豊富な私にお任せ下さい。
                                     </dd>
                                 </dl>
                             </div>
@@ -238,16 +241,17 @@
                     <li class="reverse wow fadeInRight" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/naofumi_hirata.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/naofumi_hirata2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yamakawa.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yamakawa2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
-                                <h4>平田 尚史<span>NAOFUMI HIRATA</span></h4>
-                                <h5>京都府出身</h5>
+                                <h4>山河 喜宏<span>YOSHIHIRO YAMAKAWA</span></h4>
+                                <h5>京都府京都市出身</h5>
                                 <div class="tag">
                                     <p>宅地建物取引士</p>
+                                    <p>公認 不動産コンサルティングマスター</p>
                                 </div>
                             </div>
                             <div class="separator"></div>
@@ -255,26 +259,26 @@
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        スポーツ観戦・旅行・少年野球のお手伝い               
+                                        カメラ（キャラ・パレード撮影 etc）                                        
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 性格</dt>
                                     <dd>
-                                        良くも悪くもプラス思考・のんびり・穏やか
+                                        几帳面
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        早寝
+                                        たこ焼き作り
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        お客様との出会いに感謝し、より良い提案ができるよう、一生懸命、真剣にご対応致します。TVを観ていて、感銘を受けた言葉がありましたので、ご紹介したいと思います。「良心に従って、損得を超えた価値基準で仕事をする」<br>
-                                        企業人として、損得は大事なところではありますが、その前に人としてその行いが正しいかを考えて、お客様皆様とお付き合い出来れば考えておりますので、どうぞ宜しくお願い致します。
+                                        「明るく・楽しく」をモットーに、不動産の情報等を広く見ながら、日々活動しています。<br>
+                                        50年お住まい頂ける、次世代に引き継いで頂けるお住まいをご提案できるように頑張ります。ぜひ、お気軽にご相談下さい。
                                     </dd>
                                 </dl>
                             </div>
@@ -283,16 +287,18 @@
                     <li class="wow fadeInLeft" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kosuke_tokuyama.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kosuke_tokuyama2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/miyoshi.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/miyoshi2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
-                                <h4>徳山 孝輔<span>KOSUKE TOKUYAMA</span></h4>
-                                <h5>京都府出身</h5>
+                                <h3>店長代理</h3>
+                                <h4>三好　 晃<span>HIKARU MIYOSHI</span></h4>
+                                <h5>京都府京都市出身</h5>
                                 <div class="tag">
                                     <p>宅地建物取引士</p>
+                                    <p>不動産キャリアパーソン</p>
                                 </div>
                             </div>
                             <div class="separator"></div>
@@ -300,26 +306,26 @@
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        サッカー・フットサル
+                                        漫才の賞レースの順位予想・読書
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 性格</dt>
                                     <dd>
-                                        明るく社交的
+                                        今日出来る事は今日に終わらせたい性格
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        パソコン・ボウリング
+                                        人の名前を覚えること
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        入社から10年、戸建てからマンションまで幅広く取り扱ってきました。その経験を活かし、お客様の住まい探しに最適なご提案をさせていただきます。<br>
-                                        また、京都に住んで30年以上になりますので、京都の地域柄や利便性といった目に見えない部分のご質問にもお応え致します。現在当社で建てた新築にも住んでおりますので、ユーザー目線でのゼロホームの建物の良さをお伝えできればと思います。
+                                        高校生の時に、全国インターハイを見に、友人と2人で青春18きっぷで山梨県まで行きました。日帰りの予定でしたがもう一日見学したくなり、その時夕食を食べた飲食店の店主にお願いしてお店に泊めて頂き、2日目を満喫したという思い出があります。その時、戸惑いながらも「前に踏み出す一歩」の大切さを学びました。<br>
+                                        夢のマイホーム購入で、不安に思われているお客様の一歩を踏み出すお手伝いをさせて頂ければと思います。
                                     </dd>
                                 </dl>
                             </div>
@@ -328,14 +334,14 @@
                     <li class="reverse wow fadeInRight" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/seiji_katafuchi.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/seiji_katafuchi2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yuto_kitamura.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yuto_kitamura2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
-                                <h4>片渕 清治<span>SEIJI KATAFUCHI</span></h4>
-                                <h5>京都府出身</h5>
+                                <h4>北村 祐人<span>YUTO KITAMURA</span></h4>
+                                <h5>大阪府大阪市出身</h5>
                                 <div class="tag">
                                     <p>宅地建物取引士</p>
                                 </div>
@@ -345,27 +351,26 @@
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        音楽・映画鑑賞・植栽いじり                                        
+                                        犬の世話・ジム通い                                        
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 性格</dt>
                                     <dd>
-                                        明るい
+                                        温厚
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        ギター演奏
+                                        料理
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        畑仕事やガーデニングしたり、ランニングや趣味のギターをしたりとアクティブな生活を楽しんでいます。<br>
-                                        年齢は５０歳を超えましたが、不動産の仕事も２０年を超え、その経験を十分に生かして、ご売却・ご購入、相続対策など、わかりやすくアドバイスさせて頂きます。<br>
-                                        気軽にお声かけて頂ければお役に立てると思います。
+                                        不動産売買は、「十人十色」で皆様様々なご事情がございます。私とご縁のありましたお客様にとって、出来るだけ最適な不動産のお取引が出来るように、深くお付き合いをさせていただき、精一杯頑張らせていただきます。<br>
+                                        些細な事からなんでもご遠慮なくご相談ください。
                                     </dd>
                                 </dl>
                             </div>
@@ -378,10 +383,10 @@
             <div class="access-wrap">
                 <div class="title wow fadeInUp">
                     <h3>ACCESS</h3>
-                    <p>株式会社ゼロ・コーポレーション 西院支店</p>
+                    <p>株式会社ゼロ・コーポレーション 本店</p>
                 </div>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13072.402170893336!2d135.7308232!3d35.0041882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe727aad52b9d0915!2z77yI5qCq77yJ44K844Ot772l44Kz44O844Od44Os44O844K344On44OzIOilv-mZouaUr-W6lw!5e0!3m2!1sja!2sjp!4v1622525597805!5m2!1sja!2sjp" style="border:0" width="100%" height="375" frameborder="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13065.610362967835!2d135.7442248!3d35.0466725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea01f4b951b17dda!2z77yI5qCq77yJ44K844Ot44O744Kz44O844Od44Os44O844K344On44OzIOacrOW6lw!5e0!3m2!1sja!2sjp!4v1622525168170!5m2!1sja!2sjp" style="border:0" width="100%" height="375" frameborder="0"></iframe>
                 </div>
                 <div class="info wow fadeInUp">
                     <table>
@@ -392,28 +397,28 @@
                                     <figure>
                                         <img src="./img_new/shogo/staff_list/tel.png" width="18" alt="tel">
                                     </figure>
-                                    <p class="tel">0120-031-046</p>
+                                    <p class="tel">0120-099-046</p>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <th>所在地</th>
                             <td>
-                                <p>〒615-0016 京都市右京区西院西淳和院町52-11</p>
+                                <p>〒603-8242 京都市北区紫野上野町108-1</p>
                             </td>
                         </tr>
                         <tr>
                             <th>交通アクセス</th>
                             <td>
                                 <p>
-                                    阪急京都線 西院駅①番出口より歩いてすぐ
+                                    京都市営地下鉄 烏丸線 北大路駅まで徒歩15分 / 京都市営バス 46号系統 バス停「紫野上野町」下車すぐ
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <th>カーナビ</th>
                             <td>
-                                <p>マップコード 7613091*83 / 駐車場有り</p>
+                                <p>マップコード 7764199*81 / 駐車場有り</p>
                             </td>
                         </tr>
                         <tr>
@@ -430,16 +435,16 @@
             <div class="relation-wrap">
                 <h3>他の営業スタッフを見る</h3>
                 <div class="relation-content">
-                    <a href="./staff_list_honten.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                    <a href="./staff_list_honten.html" class="active">
                         本店
                         <figure>
-                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13">
+                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="" width="13">
                         </figure>
                     </a>
-                    <a href="./staff_list_saiinshiten.html" class="active">
+                    <a href="./staff_list_saiinshiten.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
                         西院支店
                         <figure>
-                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="" width="13">
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13">
                         </figure>
                     </a>
                     <a href="./staff_list_kyotominamishiten.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
@@ -488,8 +493,11 @@
             $(function(){
                 $.ajax({
                     type: "GET",
-                    url: "./footer.html"
-                }).done( data => $("footer").html(data) )
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
             });
         </script>
     </footer>

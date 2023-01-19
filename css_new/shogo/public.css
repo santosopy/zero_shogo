@@ -132,6 +132,15 @@ main .breadcrumb .breadcrumb-wrap {
 }
 main .breadcrumb .breadcrumb-wrap a {
   color: #023A90;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+main .breadcrumb .breadcrumb-wrap a:hover {
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
 }
 main .main_visual__text {
   background-color: #F5F5F5;
@@ -166,7 +175,8 @@ main .main_visual__text .main_visual-wrap .main_visual-inner p {
     font-size: 15px;
   }
 }
-main .main_visual__text .main_visual-wrap .main_visual-inner h3, main .main_visual__text .main_visual-wrap .main_visual-inner p {
+main .main_visual__text .main_visual-wrap .main_visual-inner h3,
+main .main_visual__text .main_visual-wrap .main_visual-inner p {
   line-height: 1;
 }
 @media screen and (max-width: 1024px) {
@@ -577,7 +587,8 @@ main .second-row .row-box__content .btn__second:nth-of-type(4):after {
   width: 143px;
   right: 0;
 }
-main .second-row .row-box__content .btn__second h3, main .second-row .row-box__content .btn__second p {
+main .second-row .row-box__content .btn__second h3,
+main .second-row .row-box__content .btn__second p {
   color: #FFFFFF;
   padding: 0;
   position: relative;

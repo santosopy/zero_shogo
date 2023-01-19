@@ -1,8 +1,7 @@
-$breakpoints: (
-'sp': (max-width: 480px),
-'tab': (max-width: 1024px),
-'pc': (min-width: 1025px)
-) !default;
+$breakpoints: ('sp': (max-width: 480px),
+    'tab': (max-width: 1024px),
+    'pc': (min-width: 1025px)) !default;
+
 @mixin media($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
@@ -14,55 +13,65 @@ $breakpoints: (
 .is_pc,
 .is_tab,
 .is_onlytab,
-.is_sp{
+.is_sp {
     display: none;
 }
-@include media(sp){
-    .is_sp{
-        display: block;
-    }
-}
-@include media(tab){
-    .is_tab{
-        display: block;
-    }
-}
-@media screen and (min-width: 481px) and (max-width: 1024px){
-    .is_onlytab{
-        display: block;
-    }
-}
-@include media(pc){
-    .is_pc{
+
+@include media(sp) {
+    .is_sp {
         display: block;
     }
 }
 
-@mixin smooth{
+@include media(tab) {
+    .is_tab {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .is_onlytab {
+        display: block;
+    }
+}
+
+@include media(pc) {
+    .is_pc {
+        display: block;
+    }
+}
+
+@mixin smooth {
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-@mixin wrap{
+
+@mixin wrap {
     max-width: calc(1000px + 2rem);
     margin: auto;
     padding: 0 1rem;
 }
+
 @mixin title {
-    h3{
+    h3 {
         font-family: 'montserratmedium';
         font-size: 30px;
         letter-spacing: 3px;
         padding-bottom: 1rem;
     }
-    p{
+
+    p {
         font-size: 18px;
-        @include media(sp){
+
+        @include media(sp) {
             font-size: 15px;
         }
     }
-    h3,p{
+
+    h3,
+    p {
         line-height: 1;
     }
 }
@@ -71,6 +80,7 @@ $breakpoints: (
     font-family: 'notosansbold';
     src: url('../font/NotoSansJP-Bold.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'montserratmedium';
     src: url('../font/Montserrat-Medium.ttf') format('opentype');
@@ -81,36 +91,39 @@ $gray: #B6B6B6;
 $gray2: #F5F5F5;
 $gray3: #DCDCDC;
 
-main{
+main {
     overflow: hidden;
-    @include media(pc){
+
+    @include media(pc) {
         width: calc(100% - 300px);
         margin-left: 300px;
     }
 
-    .submenu{
+    .submenu {
         padding: 20px;
         background-color: #000000;
-        @include media(sp){
+
+        @include media(sp) {
             padding: 0;
         }
 
-        .submenu-wrap{
+        .submenu-wrap {
             @include wrap();
-            @include media(sp){
+
+            @include media(sp) {
                 padding: 0;
             }
 
-            ul{
+            ul {
                 display: flex;
                 flex-wrap: wrap;
 
-                li{
-                    @media screen and (min-width: 481px){
+                li {
+                    @media screen and (min-width: 481px) {
                         padding-left: 1rem;
                         padding-right: 1rem;
                         position: relative;
-                        
+
                         &:not(:last-child)::after {
                             content: "|";
                             position: absolute;
@@ -118,29 +131,34 @@ main{
                             color: #FFFFFF;
                         }
                     }
-                    @include media(sp){
+
+                    @include media(sp) {
                         width: 50%;
                         padding: 14px;
                         text-align: center;
-                        
-                        &:nth-child(1), &:nth-child(3), &:nth-child(5){
+
+                        &:nth-child(1),
+                        &:nth-child(3),
+                        &:nth-child(5) {
                             border-right: 1px solid #FFFFFF;
                         }
-                         &:not(:nth-child(6)):not(:nth-child(5)){
+
+                        &:not(:nth-child(6)):not(:nth-child(5)) {
                             border-bottom: 1px solid #FFFFFF;
                         }
                     }
-                    
-                    a{
+
+                    a {
                         font-family: "notosansbold";
                         font-size: 14px;
                         color: #FFFFFF;
                         @include smooth();
-                        
-                        &.active{
+
+                        &.active {
                             color: $blue;
                         }
-                        &:hover{
+
+                        &:hover {
                             color: $blue;
                         }
                     }
@@ -148,69 +166,90 @@ main{
             }
         }
     }
-    .breadcrumb{
+
+    .breadcrumb {
         padding: 14px 0;
-        @include media(sp){
+
+        @include media(sp) {
             padding: 11px 0;
         }
 
-        .breadcrumb-wrap{
+        .breadcrumb-wrap {
             @include wrap();
             font-size: 11px;
             color: $gray;
-            @include media(sp){
+
+            @include media(sp) {
                 font-size: 10px;
             }
 
-            a{
+            a {
                 color: $blue;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+
+                &:hover {
+                    filter: alpha(opacity=60);
+                    -moz-opacity: 0.60;
+                    opacity: 0.60;
+                }
             }
         }
     }
-    .main_visual{
-        &__text{
+
+    .main_visual {
+        &__text {
             background-color: $gray2;
             padding: 40px 0;
-            @include media(sp){
+
+            @include media(sp) {
                 padding: 27px 0;
             }
 
-            .main_visual-wrap{
+            .main_visual-wrap {
                 @include wrap();
 
-                .main_visual-inner{
+                .main_visual-inner {
                     @include title();
                     display: flex;
                     align-items: center;
                     gap: 50px;
-                    @include media(tab){
+
+                    @include media(tab) {
                         flex-direction: column;
                         gap: 1rem;
                         align-items: flex-start;
                     }
 
-                    &:before{
+                    &:before {
                         content: "";
                         border: 1px solid #000000;
                         align-self: stretch;
-                        @include media(tab){
+
+                        @include media(tab) {
                             align-self: auto;
                             width: 3.5rem;
                         }
                     }
-                    > div{
+
+                    >div {
                         order: -1;
                     }
-                    h4{
+
+                    h4 {
                         font-size: 14px;
-                        @include media(sp){
+
+                        @include media(sp) {
                             font-size: 13px;
                         }
                     }
                 }
             }
         }
-        &__img{
+
+        &__img {
             position: relative;
 
             &:before {
@@ -222,7 +261,8 @@ main{
                 height: 100%;
                 background: url(../../img_new/shogo/staff_list/bgMask.png);
             }
-            .illust{
+
+            .illust {
                 position: absolute;
                 bottom: 0;
                 left: 50%;
@@ -230,83 +270,95 @@ main{
             }
         }
     }
-    .description{
+
+    .description {
         padding: 95px 0 85px;
-        @include media(sp){
+
+        @include media(sp) {
             padding: 55px 0 50px;
         }
 
-        .description-wrap{
+        .description-wrap {
             text-align: center;
             @include wrap();
 
-            h3{
+            h3 {
                 font-family: "notosansbold";
                 font-size: 28px;
                 line-height: 1.8;
                 padding-bottom: 33px;
-                @include media(sp){
+
+                @include media(sp) {
                     font-size: 20px;
                     line-height: 1.6;
                     padding-bottom: 28px;
                 }
             }
-            p{
+
+            p {
                 font-size: 14px;
                 line-height: 1.8;
-                @include media(sp){
+
+                @include media(sp) {
                     font-size: 13px;
                 }
 
-                .space{
+                .space {
                     display: block;
                     padding-bottom: 28px;
-                    @include media(sp){
+
+                    @include media(sp) {
                         padding-bottom: 25px;
                     }
                 }
             }
         }
     }
-    .division{
+
+    .division {
         padding: 94px 0 88px;
         background-color: $gray2;
-        @include media(sp){
+
+        @include media(sp) {
             padding: 55px 0 52px;
         }
-        
-        .division-wrap{
+
+        .division-wrap {
             @include wrap();
 
-            .division-title{
+            .division-title {
                 font-size: 24px;
                 font-family: "notosansbold";
                 padding: 1rem;
                 color: #FFFFFF;
                 background-color: #000000;
-                @include media(sp){
+
+                @include media(sp) {
                     font-size: 21px;
                 }
             }
-            ul{
+
+            ul {
                 padding-top: 40px;
                 display: flex;
                 gap: 30px;
                 flex-wrap: wrap;
-                @include media(sp){
+
+                @include media(sp) {
                     padding-top: 26px;
                     gap: 22px;
                 }
 
-                li{
+                li {
                     width: 224px;
                     height: 140px;
-                    @include media(sp){
+
+                    @include media(sp) {
                         width: 100%;
                         height: 90px;
                     }
 
-                    a{
+                    a {
                         border: 1px solid;
                         display: flex;
                         flex-direction: column;
@@ -315,25 +367,28 @@ main{
                         border-radius: 10px;
                         height: 100%;
                         @include smooth();
-                        @include media(sp){
+
+                        @include media(sp) {
                             flex-direction: row;
                             align-items: center;
                             justify-content: space-between;
                             padding: 1rem;
                         }
 
-                        &:hover{
+                        &:hover {
                             background-color: $blue;
 
-                            p{
+                            p {
                                 color: #FFFFFF;
                             }
                         }
-                        p{
+
+                        p {
                             font-size: 18px;
                             font-family: "notosansbold";
                             padding-bottom: 1rem;
-                            @include media(sp){
+
+                            @include media(sp) {
                                 padding: 0;
                             }
                         }
@@ -343,11 +398,13 @@ main{
         }
 
     }
-    .division02{
+
+    .division02 {
         @extend .division;
         background-color: transparent;
         padding-bottom: 118px;
-        @include media(sp){
+
+        @include media(sp) {
             padding-bottom: 79px;
         }
     }

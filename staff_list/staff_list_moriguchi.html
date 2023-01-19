@@ -6,16 +6,16 @@
     <title>無題ドキュメント</title>
     <link
     rel="shortcut icon"
-    href="https://zerohome.jp/wp-content/themes/zerohome/img_new/favicon.ico"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css_new/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css_new/shogo/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <script src="js_new/shogo/common.js"></script>
+    <script src="../js_new/shogo/common.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="css_new/shogo/staff_list_detail.css" />
-    <script src="js_new/shogo/wow.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/staff_list_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -27,8 +27,11 @@
             $(function(){
                 $.ajax({
                     type: "GET",
-                    url: "./header.html"
-                }).done( data => $("header").html(data) )
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
             });
         </script>
     </header>
@@ -60,9 +63,10 @@
         </section>
         <section class="breadcrumb">
             <div class="breadcrumb-wrap">
-                <a href=""><span>TOP</span></a> >
-                <a href="./staff_list.html"><span>営業 スタッフ紹介</span></a>
-                <span>> 尼崎展示場スタッフ紹介</span>
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span>> ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/staff_list/"><span>> 営業 スタッフ紹介</span></a>
+                <span>> 守口展示場スタッフ紹介</span>
             </div>
         </section>
         <section class="main_visual">
@@ -84,14 +88,18 @@
         <section class="description">
             <div class="description-wrap wow fadeInUp">
                 <h3>
-                    100年住宅のゼロホーム <br class="is_sp">尼崎展示場
+                    100年住宅のゼロホーム <br class="is_sp">守口展示場
                 </h3>
                 <p>
-                    尼崎展示場は尼崎市競艇場北側にあり、モデルハウス棟４棟とショールームをご覧いただけます。<br>
-                    2021年4月新しいモデルハウス「FRAMIUM　FRAME-２」がオープンしました。<br>
-                    スカイバスコート＋スカイテラスなど、ご自宅でありながらリゾート気分を味わえるモデルハウスになっております。<br>
-                    ゼロホームでは機能的で開放的な空間もご提案させていただきます。<br>
-                    この機会にぜひ尼崎展示場にお越しください。お待ちしております。  
+                    世代、家族構成、敷地状況、異なるコンセプトのモデルハウス3棟が揃った守口展示場。<br>
+                    機能的な家事動線を意識した「カジラクの家」<br>
+                    自然素材を使用し落ち着きのある心地良い空間の「ツナガリの家」<br>
+                    採風採光を確保し都会的でシンプルモダンデザインの「ソトノマの家」<br>
+                    すべてリアリティのある原寸サイズで造られています。<br>
+                    <br>
+                    今までの展示場にはない細かいこだわりや最新デザインを詰め込みました。<br>
+                    私たちと一緒に家づくりをワクワク楽しみませんか。<br>
+                    京阪電車「守口市駅」すぐ、京阪百貨店駐車場内でお待ちしております。
                 </p>
             </div>
         </section>
@@ -101,42 +109,45 @@
                     <li class="wow fadeInLeft" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/takamichi_tani.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/takamichi_tani2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kenichi_ichihashi.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kenichi_ichihashi2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
                                 <h3>所長</h3>
-                                <h4>谷　 卓道<span>TAKAMICHI TANI</span></h4>
+                                <h4>市橋 賢一<span>KENICHI ICHIHASHI</span></h4>
                                 <h5>兵庫県出身</h5>
+                                <div class="tag">
+                                    <p>住宅ローンアドバイザー</p>
+                                </div>
                             </div>
                             <div class="separator"></div>
                             <div>
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        釣り・バイク
+                                        読書・映画鑑賞
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 性格</dt>
                                     <dd>
-                                        マイペース
+                                        真面目・温厚
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        釣り
+                                        人の話しを聴くこと
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        この度は弊社のホームページをご覧いただき誠にありがとうございます。<br>
-                                        家に関することなら、なんでもお気軽にお問い合わせください！ お客様にご満足頂けるように、全力で対応させて頂きます。<br>
-                                        どうぞよろしくお願いします！！ 
+                                        ゼロホーム守口展示場は、ゼロホームが今まで培ってきた１００年住宅の性能と洗練されたデザインを融合させた全く新しい展示場です。<br>
+                                        土地探しのお手伝いや建替えのご相談、４階建て・５階建てなどの大型木造建築での収益物件まで幅広くご対応させて頂きますので、お気軽にご相談下さい。<br>
+                                        ご来場お待ちいたしております。 
                                     </dd>
                                 </dl>
                             </div>
@@ -145,16 +156,20 @@
                     <li class="reverse wow fadeInRight" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yamada_katsuya.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yamada_katsuya2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/ichiro_kawamoto.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/ichiro_kawamoto2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
-                                <h4>山田 勝弥<span>KATSUYA YAMADA</span></h4>
-                                <h5>愛媛県出身</h5>
+                                <h4>河本 一郎<span>ICHIRO KAWAMOTO</span></h4>
+                                <h5>大阪府出身</h5>
                                 <div class="tag">
-                                    <p>木造建築士</p>
+                                    <p>宅地建物取引士</p>
+                                    <p>簿記2級</p>
+                                    <p>2級管工事施工管理</p>
+                                    <p>2級ファイナンシャル・プランニング技能士</p>
+                                    <p>第2種電気工事士</p>
                                 </div>
                             </div>
                             <div class="separator"></div>
@@ -162,7 +177,186 @@
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        休日こどもと遊ぶ                                        
+                                        温泉・サイクリング                                        
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 性格</dt>
+                                    <dd>
+                                        まじめだけどマイペース
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 得意なこと</dt>
+                                    <dd>
+                                        日曜大工
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● コメント</dt>
+                                    <dd>
+                                        お客様が新しい家にお住まいになり、ふとした時に「ゼロホームで新築をしてよかった！」と実感していただけると、何よりも嬉しいです。ゼロホームの家の基本性能の良さに、機能性とデザインの良さをプラスした家作りを、お客様とご一緒にさせていただくことを楽しみながら営業しております。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="2s">
+                        <div class="list-img">
+                            <figure>
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/noriyuki_kitamura.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/noriyuki_kitamura2.jpg" width="350" alt="">
+                            </figure>
+                        </div>
+                        <div class="list-text">
+                            <div>
+                                <h4>北村 範行<span>NORIYUKI KITAMURA</span></h4>
+                                <h5>京都府出身</h5>
+                                <div class="tag">
+                                    <p>宅地建物取引士</p>
+                                    <p>インテリアコーディネーター</p>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <dl>
+                                    <dt>● 趣味</dt>
+                                    <dd>
+                                        運動・晩酌
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 性格</dt>
+                                    <dd>
+                                        几帳面
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 得意なこと</dt>
+                                    <dd>
+                                        デザインの提案
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● コメント</dt>
+                                    <dd>
+                                        社歴１０年以上の経験と知識により様々な提案をさせて頂きます。プランの提案力・レスポンスの速さに自信があります。大事にしていることは、お客様と一緒になって、一から創り上げてご満足いただける家づくりをすることです。満足いただけるように全力でサポートさせて頂きます。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reverse wow fadeInRight" data-wow-duration="2s">
+                        <div class="list-img">
+                            <figure>
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/junichi_nishi.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/junichi_nishi2.jpg" width="350" alt="">
+                            </figure>
+                        </div>
+                        <div class="list-text">
+                            <div>
+                                <h4>西 　純一<span>JUNICHI NISHI</span></h4>
+                                <h5>大阪府出身</h5>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <dl>
+                                    <dt>● 趣味</dt>
+                                    <dd>
+                                        旅行・DIY・買い物               
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 性格</dt>
+                                    <dd>
+                                        ポジティブ・温厚
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 得意なこと</dt>
+                                    <dd>
+                                        サッカー
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● コメント</dt>
+                                    <dd>
+                                        人は見た目も中身も良いと言えば理想的と言えますが、それはなかなか難しいように思えます。ですが、建築に関してはその理想に近づけることは可能だと思います。デザインも性能も良い建物のご提案をしていきたいと思います。<br>
+                                        ゼロホームはいつでも見て頂ける注文建築のモデルハウスがたくさんございます。展示場にお気軽にお越し下さいませ。
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="wow fadeInLeft" data-wow-duration="2s">
+                        <div class="list-img">
+                            <figure>
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/makoto_inagaki.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/makoto_inagaki2.jpg" width="350" alt="">
+                            </figure>
+                        </div>
+                        <div class="list-text">
+                            <div>
+                                <h4>稲垣 　誠<span>MAKOTO INAGAKI</span></h4>
+                                <h5>兵庫県出身</h5>
+                                <div class="tag">
+                                    <p>一級建築士</p>
+                                    <p>二級施工管理技士</p>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <dl>
+                                    <dt>● 趣味</dt>
+                                    <dd>
+                                        drumming・swimming
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 性格</dt>
+                                    <dd>
+                                        ポジティブ
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 得意なこと</dt>
+                                    <dd>
+                                        デザイン
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● コメント</dt>
+                                    <dd>
+                                        これまでデザインをメインとした設計事務所で住宅や店舗などを手掛けてきましたが、「住宅性能」と「デザイン」の両立を目指しゼロホームへ入社致しました。<br>
+                                        楽しみながらステキなお家づくりが出来るようお手伝いさせていただきます！<br>
+                                        GOOD DESIGN AWARD 2014　受賞（前職）<br>
+                                        GOOD DESIGN AWARD 2017　受賞（前職）
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reverse wow fadeInRight" data-wow-duration="2s">
+                        <div class="list-img">
+                            <figure>
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/atsushi_nakatani.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/atsushi_nakatani2.jpg" width="350" alt="">
+                            </figure>
+                        </div>
+                        <div class="list-text">
+                            <div>
+                                <h4>中谷 篤司<span>ATSUSHI NAKATANI</span></h4>
+                                <h5>奈良県出身</h5>
+                                <div class="tag">
+                                    <p>損害保険募集人資格</p>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <dl>
+                                    <dt>● 趣味</dt>
+                                    <dd>
+                                        バスケ・旅行                                        
                                     </dd>
                                 </dl>
                                 <dl>
@@ -174,13 +368,14 @@
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        掃除
+                                        思い立ったら即行動！
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        私の仕事は総合的な家づくりのアドバイザーです。展示場の案内からプランの作成や住宅購入の資金計画まで、家づくりの全てにおいてお客様をサポートします。完成後もアフターサービス等でお客様宅を訪問させて頂くこともあり、建てて終わりではなく、住まわれてからも長きに渡り住宅に関わる全てをサポートさせて頂けるのがゼロの100年住宅の魅力です。
+                                        お客様に寄り添うことを意識しており、思い描かれたお家のプラン、生活を実現してみせます！また、これまでの知識と経験でさらによりよいご提案もご期待ください。<br>
+                                        どうぞ宜しくお願い致します。
                                     </dd>
                                 </dl>
                             </div>
@@ -189,16 +384,60 @@
                     <li class="wow fadeInLeft" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/masanobu_matsumoto.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/masanobu_matsumoto2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/ryota_takamoto.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/ryota_takamoto2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
-                                <h4>松本 匡央<span>MASANOBU MATSUMOTO</span></h4>
-                                <h5>大阪府出身</h5>
+                                <h4>髙本 良太<span>RYOTA TAKAMOTO</span></h4>
+                                <h5>奈良県出身</h5>
                                 <div class="tag">
-                                    <p>二級土木施工管理</p>
+                                    <p>色彩コーディネーター</p>
+                                </div>
+                            </div>
+                            <div class="separator"></div>
+                            <div>
+                                <dl>
+                                    <dt>● 趣味</dt>
+                                    <dd>
+                                        トレイルラン・ボルダリング
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 性格</dt>
+                                    <dd>
+                                        人に優しく
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● 得意なこと</dt>
+                                    <dd>
+                                        配色・装飾・DIY
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>● コメント</dt>
+                                    <dd>
+                                        生まれは大阪、育ちは奈良。学生の頃は水泳に励んでおりました。体力には自信あります。生涯現役で、人生のお手伝いをさせて頂くことを目標に、建てたら終わりではなく、そこがスタートになる家作りをご提案させて頂きます！それはそうと、ゼロホームのインスタをやっていますので、是非フォローして下さいね！<a href="https://www.instagram.com/zerohome_design/" target="_blank" style="color: #004DA1" rel="noopener noreferrer">@zerohome_design</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reverse wow fadeInRight" data-wow-duration="2s">
+                        <div class="list-img">
+                            <figure>
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kosuke_oshita.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kosuke_oshita2.jpg" width="350" alt="">
+                            </figure>
+                        </div>
+                        <div class="list-text">
+                            <div>
+                                <h4>大下 功将<span>KOSUKE OSHITA</span></h4>
+                                <h5>香川県出身</h5>
+                                <div class="tag">
+                                    <p>1級ファイナンシャル・プランニング技能士</p>
                                     <p>住宅ローンアドバイザー</p>
                                 </div>
                             </div>
@@ -207,72 +446,25 @@
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        ドライブ・車弄り
+                                        ドライブ・スポーツ観戦
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 性格</dt>
                                     <dd>
-                                        何事も前向きに考えるタイプ
+                                        マイペース・頑固
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        時間通りに起きること・早起き・剣道二段
+                                        やると決めたことは継続すること
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        お客様の笑顔を一番に考え、ご計画段階からお引渡し、その後の新居での生活まで、ずっと笑顔でお過ごし頂けるよう常に心掛けております。<br>
-                                        長年培った経験を活かしつつ、お客様目線でより良い物をご提案致しますので、まずはお気軽にご希望、ご要望をお伝えください。
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="reverse wow fadeInRight" data-wow-duration="2s">
-                        <div class="list-img">
-                            <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yasuo_hosomi.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/yasuo_hosomi2.jpg" width="350" alt="">
-                            </figure>
-                        </div>
-                        <div class="list-text">
-                            <div>
-                                <h4>細見 康雄<span>YASUO HOSOMI</span></h4>
-                                <h5>兵庫県神戸市出身</h5>
-                                <div class="tag">
-                                    <p>3級ファイナンシャル・プランニング技能士</p>
-                                </div>
-                            </div>
-                            <div class="separator"></div>
-                            <div>
-                                <dl>
-                                    <dt>● 趣味</dt>
-                                    <dd>
-                                        料理・野球、サッカーなどのスポーツ               
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 性格</dt>
-                                    <dd>
-                                        いつも明るく楽しく、何事にもポジティブ
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 得意なこと</dt>
-                                    <dd>
-                                        料理・スポーツ全般・すぐに仲良くなれます
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● コメント</dt>
-                                    <dd>
-                                        お客様にとって、人生の一大イベントでもあるマイホーム建築。<br>
-                                        その家づくりが最高の想い出になって頂けるようにと、今まで100棟以上のお客様の家づくりをお手伝いさせて頂いてきました。<br>
-                                        一期一会を大切に、ただ単に営業担当としてではなく、何でも話せるパートナーやご家族のようにお付き合いできる担当でありたいと思っています。
+                                        前職は銀行で勤務しており、ローンやライフプランに関するご相談は私にお任せください。私は「お客様のためになる営業」をモットーにしています。マイホームの購入は人生に何度とあるものではなく、不安も多いと思いますが、一緒に理想のマイホームを作り上げていきましょう。ご来場をお持ちしています。
                                     </dd>
                                 </dl>
                             </div>
@@ -281,57 +473,13 @@
                     <li class="wow fadeInLeft" data-wow-duration="2s">
                         <div class="list-img">
                             <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/tatsuya_naito.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/tatsuya_naito2.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/etsuki_ogino.jpg" width="350" alt="">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/etsuki_ogino2.jpg" width="350" alt="">
                             </figure>
                         </div>
                         <div class="list-text">
                             <div>
-                                <h4>内藤 達也<span>TATSUYA NAITO</span></h4>
-                                <h5>兵庫県出身</h5>
-                                <div class="tag">
-                                    <p>宅地建物取引士</p>
-                                </div>
-                            </div>
-                            <div class="separator"></div>
-                            <div>
-                                <dl>
-                                    <dt>● 趣味</dt>
-                                    <dd>
-                                        ジグソーパズル
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 性格</dt>
-                                    <dd>
-                                        話し好き、聞き好き
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 得意なこと</dt>
-                                    <dd>
-                                        整理整頓、テニス
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● コメント</dt>
-                                    <dd>
-                                        お客様のご希望に対し「+α」のご提案ができるように、いつも心がけています。お客様のご希望は千差万別ですから、当然お客様ごとにベストな家の形も変わります。家のこと、ご家族のこと、趣味や好きなこと、どんな暮らしがしたいのか…会話の中にあった些細な一言が、家づくりの大事なポイントになることも数多くありました。お客様のお話をしっかりと受け止めて、整理して、「+α」のご提案でお応え致します。たくさんお話できるのを楽しみに、展示場でお待ちしております。
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="reverse wow fadeInRight" data-wow-duration="2s">
-                        <div class="list-img">
-                            <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/tomoaki_ueda.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/tomoaki_ueda2.jpg" width="350" alt="">
-                            </figure>
-                        </div>
-                        <div class="list-text">
-                            <div>
-                                <h4>上田 智諒<span>TOMOAKI UEDA</span></h4>
+                                <h4>荻野 悦輝<span>ETSUKI OGINO</span></h4>
                                 <h5>京都府出身</h5>
                             </div>
                             <div class="separator"></div>
@@ -339,156 +487,25 @@
                                 <dl>
                                     <dt>● 趣味</dt>
                                     <dd>
-                                        スポーツ観戦・旅行・釣り                                        
+                                        サッカー・料理
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 性格</dt>
                                     <dd>
-                                        マイペース
+                                        素直・几帳面
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● 得意なこと</dt>
                                     <dd>
-                                        野球・テニス・ボウリング
+                                        ボードゲーム作り
                                     </dd>
                                 </dl>
                                 <dl>
                                     <dt>● コメント</dt>
                                     <dd>
-                                        お客様が望まれる住まい方は多種多様です。<br>
-                                        注文住宅の営業として、お客様に合わせた近すぎず遠すぎない最適な距離感での接客・ご提案を心掛けております。夢のマイホームの実現に向けて、私と一緒に進めてみませんか？<br>
-                                        ほんの些細な事でも結構ですので、お気軽にご相談ください！
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="wow fadeInLeft" data-wow-duration="2s">
-                        <div class="list-img">
-                            <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/tomoki_okamoto.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/tomoki_okamoto2.jpg" width="350" alt="">
-                            </figure>
-                        </div>
-                        <div class="list-text">
-                            <div>
-                                <h4>岡本 智貴<span>TOMOKI OKAMOTO</span></h4>
-                                <h5>兵庫県出身</h5>
-                                <div class="tag">
-                                    <p>3級ファイナンシャル・プランニング技能士</p>
-                                </div>
-                            </div>
-                            <div class="separator"></div>
-                            <div>
-                                <dl>
-                                    <dt>● 趣味</dt>
-                                    <dd>
-                                        野球・スポーツ観戦
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 性格</dt>
-                                    <dd>
-                                        優しい・明るい
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 得意なこと</dt>
-                                    <dd>
-                                        プランニング・提案力
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● コメント</dt>
-                                    <dd>
-                                        営業っぽさがなく話がしやすいとお客様からのお声をいただきます。【笑顔を大切に、親しみを持っていただける営業マン】を心がけております。どんな小さな疑問にも誠心誠意お答えしますのでお気軽にご相談ください。一緒に楽しく最高の家づくりをしていきましょう！！
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="reverse wow fadeInRight" data-wow-duration="2s">
-                        <div class="list-img">
-                            <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kento_yamamoto.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/kento_yamamoto2.jpg" width="350" alt="">
-                            </figure>
-                        </div>
-                        <div class="list-text">
-                            <div>
-                                <h4>山本 健人<span>KENTO YAMAMOTO</span></h4>
-                                <h5>京都府京都市出身</h5>
-                            </div>
-                            <div class="separator"></div>
-                            <div>
-                                <dl>
-                                    <dt>● 趣味</dt>
-                                    <dd>
-                                        カフェ巡り・ドライブ・キャンプなど
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 性格</dt>
-                                    <dd>
-                                        いつでも笑顔、ポジティブの塊です！
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 得意なこと</dt>
-                                    <dd>
-                                        サックス演奏（ジャズをやっていました！）
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● コメント</dt>
-                                    <dd>
-                                        多くのお客様にとって、家づくりは一生に一度の経験となりますので、期待とともに不安を感じられることもあると思います。そういった不安や疑問点を一つでも解消し、お客様に全力で家づくりを楽しんでいただくことを、一番大切にしています。<br>
-                                        ぜひ私に、ゼロホームに、あなたの夢を形にするお手伝いをさせてください！
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="wow fadeInLeft" data-wow-duration="2s">
-                        <div class="list-img">
-                            <figure>
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/toshio_murakami.jpg" width="350" alt="">
-                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/staff/toshio_murakami2.jpg" width="350" alt="">
-                            </figure>
-                        </div>
-                        <div class="list-text">
-                            <div>
-                                <h4>村上 斗志雄<span>TOSHIO MURAKAMI</span></h4>
-                                <h5>兵庫県神戸市出身</h5>
-                            </div>
-                            <div class="separator"></div>
-                            <div>
-                                <dl>
-                                    <dt>● 趣味</dt>
-                                    <dd>
-                                        ジム・フットサル・映画鑑賞
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 性格</dt>
-                                    <dd>
-                                        地道にコツコツやり遂げる
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● 得意なこと</dt>
-                                    <dd>
-                                        スポーツ全般
-                                    </dd>
-                                </dl>
-                                <dl>
-                                    <dt>● コメント</dt>
-                                    <dd>
-                                        お客様に合った注文住宅をご提案させて頂きます。<br>
-                                        デザイン、動線、生活感等、お客様のご要望に合わせて最大限お客様に寄り添った内容でのプランニングを行い、ご契約までに納得頂けるお住まいをご提案致します。<br>
-                                        ゼロホームはご契約からお引渡しまで同じ営業担当が窓口となり対応致しますので、安心してお任せ下さい。
+                                        「笑顔×安心」これをお家づくりのテーマとして、日々精進しております。ただ住める家ではなく、その住まいの中に笑顔があふれ、安心できることこそが家の本質であると私は感じています。仕事や旅行、学校から帰り、少しほっとできるような、そして思わず「いい家だな」と笑みがこぼれる、そんな家をつくるお手伝いをさせていただけたらと思います。 ぜひお気軽に展示場へお越しくださいませ。
                                     </dd>
                                 </dl>
                             </div>
@@ -501,10 +518,10 @@
             <div class="access-wrap">
                 <div class="title wow fadeInUp">
                     <h3>ACCESS</h3>
-                    <p>株式会社ゼロ・コーポレーション 尼崎展示場</p>
+                    <p>株式会社ゼロ・コーポレーション 守口展示場</p>
                 </div>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13117.49083656462!2d135.3960885!3d34.7209986!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x14dbda381f89197!2z44K844Ot44Ob44O844Og5bC85bSO5bGV56S65aC0!5e0!3m2!1sja!2sjp!4v1622527493091!5m2!1sja!2sjp" style="border:0" width="100%" height="375" frameborder="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13114.99412576808!2d135.5681017!3d34.7367325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x99672c838ae362e8!2z44K844Ot44Ob44O844Og5a6I5Y-j5bGV56S65aC0!5e0!3m2!1sja!2sjp!4v1622527519908!5m2!1sja!2sjp" style="border:0" width="100%" height="375" frameborder="0"></iframe>
                 </div>
                 <div class="info wow fadeInUp">
                     <table>
@@ -515,28 +532,30 @@
                                     <figure>
                                         <img src="./img_new/shogo/staff_list/tel.png" width="18" alt="tel">
                                     </figure>
-                                    <p class="tel">0120-066-046</p>
+                                    <p class="tel">0120-004-046</p>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <th>所在地</th>
                             <td>
-                                <p>〒660-0082 兵庫県尼崎市水明町4-4</p>
+                                <p>〒570-0038　大阪府守口市河原町5-10</p>
                             </td>
                         </tr>
                         <tr>
                             <th>交通アクセス</th>
                             <td>
                                 <p>
-                                    阪神電鉄「尼崎センタープール前」駅　徒歩5分 / JR東海道本線「立花」駅 徒歩24分 / 阪神バス「琴浦神社」停スグ、「尼崎競艇場」停 徒歩1分
+                                    京阪電車「守口市」駅　東口スグ / Osaka Metro谷町線「守口」駅　徒歩5分
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <th>カーナビ</th>
                             <td>
-                                <p>マップコード 1482115*15 / 駐車場有り</p>
+                                <p>
+                                    マップコード 1533857*52 / 京阪百貨店駐車場内へ（駐車場ご利用の方は、入庫の際に発行される駐車券をご持参いただき、スタッフにお申し出下さい。駐車サービス券をお渡しさせていただきます。）
+                                </p>
                             </td>
                         </tr>
                         <tr>
@@ -589,16 +608,16 @@
                             <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13">
                         </figure>
                     </a>
-                    <a href="./staff_list_amagasaki.html" class="active">
+                    <a href="./staff_list_amagasaki.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
                         尼崎展示場
                         <figure>
-                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="" width="13">
+                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13">
                         </figure>
                     </a>
-                    <a href="./staff_list_moriguchi.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                    <a href="./staff_list_moriguchi.html" class="active">
                         守口展示場
                         <figure>
-                            <img src="./img_new/shogo/top/arrow_right.png" alt="" width="13">
+                            <img src="./img_new/shogo/top/arrow_right_w.png" alt="" width="13">
                         </figure>
                     </a>
                 </div>
@@ -611,8 +630,11 @@
             $(function(){
                 $.ajax({
                     type: "GET",
-                    url: "./footer.html"
-                }).done( data => $("footer").html(data) )
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
             });
         </script>
     </footer>

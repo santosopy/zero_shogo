@@ -76,6 +76,15 @@ main .breadcrumb .breadcrumb-wrap {
 }
 main .breadcrumb .breadcrumb-wrap a {
   color: #023A90;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+main .breadcrumb .breadcrumb-wrap a:hover {
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
 }
 main .tac {
   text-align: center !important;

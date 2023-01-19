@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/public_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="./sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./public.html" class="active">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span>> ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/public/"><span>> ゼロホームの公開</span></a>
+                <span>> 2008年4月発生雨漏り事例に対する検証記録</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>PUBLIC</h3>
+                            <p>ゼロホームの公開</p>
+                        </div>
+                        <h4>
+                            ゼロホームでは「お客様満足度アンケート」や「クレーム・メンテナンス記録」、<br class="is_pc">「雨漏り件数」をサイト上で公開しています。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/public/sp_public_mv.jpg" />
+                    <img src="../img_new/shogo/public/public_mv.jpg" width="100%" alt="ゼロホームの公開">
+                </picture>
+            </div>
+        </section>
+        <section class="first-row a_201804">
+            <div class="row-wrap">
+                <div class="row-title">
+                    <p>2008年4月発生雨漏り事例に対する検証記録</p>
+                </div>
+                <h4 class="wow fadeInUp">
+                    雨漏りカウント期間から外れた検証記録です。
+                </h4>
+                <div class="row-step">
+                    <h5>【2004年12月19日お引渡し物件】</h5>
+                    <h6>
+                        ★下記の日時をクリックしていただくと、詳細をご覧いただけます。
+                    </h6>
+                    <div class="row-step__item wow fadeInUp">
+                        <a href="#first">
+                            <p>
+                                08.04.18 <br>
+                                お客様からのご連絡・現場確認
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#second">
+                            <p>
+                                08.04.22 <br class="is_pc">
+                                ルーフテラス水掛検証・水張実験
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#third">
+                            <p>
+                                08.05.16 <br class="is_pc">
+                                ルーフテラス床面の検証
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#fourth">
+                            <p>
+                                08.05.29 <br class="is_pc">
+                                営繕ミーティングにて検証
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#fifth">
+                            <p>
+                                08.06.09 <br class="is_pc">
+                                工事ミーティングにて最終検証
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#sixth">
+                            <p>
+                                まとめ
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <li id="first">
+                        <h5 class="wow fadeInUp">08.04.18　<br class="is_sp">お客様からのご連絡、現場確認</h5>
+                        <p class="wow fadeInUp">
+                            ３階ルーフテラス直下のリビング照明の内部に色のついた水が溜まっているが、雨漏りではないかとのお客様からの連絡を受け、営繕担当者による現場確認。<br>
+                            <br>
+                            雨漏りの可能性が高いとの判断により、検証の準備にとりかかる。                        </p>
+                        <div class="item">
+                            <figure class="wow fadeInUp">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200804/002.jpg" width="320" alt="">
+                            </figure>
+                        </div>
+                    </li>
+                    <li id="second">
+                        <h5 class="wow fadeInUp">08.04.22　<br class="is_sp">ルーフテラス水掛検証および水張り実験</h5>
+                        <p class="wow fadeInUp">
+                            ルーフテラスの内壁および水切り部分等、原因箇所として考えられる部分から水掛けを行うが浸水を確認できなかった。<br>
+                            <br>
+                            そこで、テラスに水を張り、時間をおいてみたところ、下階への水の浸入を確認。<br>
+                            <br>
+                            テラス床面から浸水した可能性ありと推測。
+                        </p>
+                        <div class="item">
+                            <figure class="wow fadeInUp">
+                                <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200804/004.jpg" width="320" alt="">
+                            </figure>
+                        </div>
+                    </li>
+                    <li id="third">
+                        <h5 class="wow fadeInUp">08.05.16　<br class="is_sp">ルーフテラス床面の検証</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                雨漏り箇所の特定、および原因究明のため、ルーフテラス床面をめくり検証を行う。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200804/006.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                ＦＲＰをめくり、明らかな浸水の跡を確認。<br>
+                                <br>
+                                サッシまわりや水きりからの浸水であれば合板周囲に腐食・変色が見られる傾向にあるが、今回の場合は端には変色が少なくフラット部分（中央付近）が大きく変色しており、平面部からの浸水であることは明らか。<br>
+                                <br>
+                                ただし、明確な傷、亀裂等は目視できず。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200804/008.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                さらに合板をめくると、4月の水張り実験時に浸水したと思われる水が乾かずに残留しているのを確認。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200804/010.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="fourth">
+                        <h5 class="wow fadeInUp">08.05.29　<br class="is_sp">営繕ミーティングにて検証</h5>
+                        <p class="wow fadeInUp">
+                            これまでのデータをもとに、営繕関係者による検証。<br>
+                            <br>
+                            傷として目視確認はできないものの、ルーフテラス床面からの浸水は明らかであることから、<span>FRP部分に目に見えない程度の微細な亀裂等があるもの</span>と判断。<span>当社施工範囲での雨漏り</span>と断定。
+                        </p>
+                    </li>
+                    <li id="fifth">
+                        <h5 class="wow fadeInUp"> 08.06.09　<br class="is_sp">工事ミーティングにて最終検証</h5>
+                        <p class="wow fadeInUp">
+                            これまでの経緯、および検証内容をもとに、工事関係者による最終検証、原因についての議論を行う。<br>
+                            <br>
+                            結果、ＦＲＰ施工後、何らかの事情で<span>テラス床面に強い衝撃がかかり（重いものを落とした等）</span>、ＦＲＰに微細な亀裂が起こったものとの判断にいたる。目視では全く変化がなく、その後のタイル施工時等で発見できなかったと思われる。<br>
+                        </p>
+                    </li>
+                    <li id="sixth">
+                        <h5 class="wow fadeInUp"> まとめ</h5>
+                        <p class="wow fadeInUp">
+                            今回発生した雨漏りは、ＦＲＰ施工業者もこれまでに事例をみない、非常に珍しいケースの浸水。<br>
+                            <br>
+                            今回のようなテラス平面部からの雨漏りの場合、同様の事故が起こっても事前に問題点を発見することは困難であり、<span>事故の予防が最善の対策</span>と思われるため、ＦＲＰ施工後からタイルを張るまでの間にテラスの上に乗る可能性のある関係者（タイル、サイディング、板金、足場等の業者）に、定例会および現場での徹底した注意喚起および啓発を行うこととして、検証を終了。<br>
+                            <br>
+                            以上、今回の雨漏り報告といたします。<br>
+                            <br>
+                            ゼロホームの公開TOP<br>
+                            メンテナンス記録の公開<br>
+                            お客様アンケートの公開<br>
+                            雨漏り軒数のご報告
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>
