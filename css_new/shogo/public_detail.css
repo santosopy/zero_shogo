@@ -725,21 +725,25 @@ main .first-row.amamori2 .row-wrap ul li a .item p {
     font-size: 12px;
   }
 }
-main .second-row.mainte, main .first-row.mainte {
+main .second-row.mainte,
+main .first-row.mainte {
   padding: 94px 0 0;
 }
 @media screen and (max-width: 480px) {
-  main .second-row.mainte, main .first-row.mainte {
+  main .second-row.mainte,
+main .first-row.mainte {
     padding: 55px 0 0;
   }
 }
-main .second-row.mainte .row-wrap, main .first-row.mainte .row-wrap {
+main .second-row.mainte .row-wrap,
+main .first-row.mainte .row-wrap {
   max-width: calc(1000px + 2rem);
   margin: auto;
   padding: 0 1rem;
   line-height: 1.8;
 }
-main .second-row.mainte .row-wrap .row-title, main .first-row.mainte .row-wrap .row-title {
+main .second-row.mainte .row-wrap .row-title,
+main .first-row.mainte .row-wrap .row-title {
   font-size: 24px;
   font-family: "notosansbold";
   padding: 1rem;
@@ -747,18 +751,148 @@ main .second-row.mainte .row-wrap .row-title, main .first-row.mainte .row-wrap .
   background-color: #000000;
 }
 @media screen and (max-width: 480px) {
-  main .second-row.mainte .row-wrap .row-title, main .first-row.mainte .row-wrap .row-title {
+  main .second-row.mainte .row-wrap .row-title,
+main .first-row.mainte .row-wrap .row-title {
     font-size: 21px;
     line-height: 1.5;
   }
 }
-main .second-row.mainte .row-wrap h4, main .first-row.mainte .row-wrap h4 {
-  font-size: 14px;
+main .second-row.mainte .row-wrap .row-detail, main .second-row.mainte .row-wrap .row-detail02,
+main .first-row.mainte .row-wrap .row-detail,
+main .first-row.mainte .row-wrap .row-detail02 {
   padding: 38px 0;
 }
 @media screen and (max-width: 480px) {
-  main .second-row.mainte .row-wrap h4, main .first-row.mainte .row-wrap h4 {
-    font-size: 13px;
+  main .second-row.mainte .row-wrap .row-detail, main .second-row.mainte .row-wrap .row-detail02,
+main .first-row.mainte .row-wrap .row-detail,
+main .first-row.mainte .row-wrap .row-detail02 {
     padding: 19px 0;
+  }
+}
+main .second-row.mainte .row-wrap .row-detail > div, main .second-row.mainte .row-wrap .row-detail02 > div,
+main .first-row.mainte .row-wrap .row-detail > div,
+main .first-row.mainte .row-wrap .row-detail02 > div {
+  display: flex;
+  gap: 30px;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+main .second-row.mainte .row-wrap .row-detail > div > figure, main .second-row.mainte .row-wrap .row-detail02 > div > figure,
+main .first-row.mainte .row-wrap .row-detail > div > figure,
+main .first-row.mainte .row-wrap .row-detail02 > div > figure {
+  width: 314px;
+}
+@media screen and (max-width: 1024px) {
+  main .second-row.mainte .row-wrap .row-detail > div > figure, main .second-row.mainte .row-wrap .row-detail02 > div > figure,
+main .first-row.mainte .row-wrap .row-detail > div > figure,
+main .first-row.mainte .row-wrap .row-detail02 > div > figure {
+    width: 264px;
+  }
+}
+main .second-row.mainte .row-wrap .row-detail > div h4, main .second-row.mainte .row-wrap .row-detail02 > div h4,
+main .first-row.mainte .row-wrap .row-detail > div h4,
+main .first-row.mainte .row-wrap .row-detail02 > div h4 {
+  flex: 1;
+}
+main .second-row.mainte .row-wrap .row-detail > div h4 figure, main .second-row.mainte .row-wrap .row-detail02 > div h4 figure,
+main .first-row.mainte .row-wrap .row-detail > div h4 figure,
+main .first-row.mainte .row-wrap .row-detail02 > div h4 figure {
+  padding-bottom: 28px;
+}
+@media screen and (max-width: 480px) {
+  main .second-row.mainte .row-wrap .row-detail > div h4 figure, main .second-row.mainte .row-wrap .row-detail02 > div h4 figure,
+main .first-row.mainte .row-wrap .row-detail > div h4 figure,
+main .first-row.mainte .row-wrap .row-detail02 > div h4 figure {
+    text-align: center;
+  }
+}
+main .second-row.mainte .row-wrap .row-detail h4, main .second-row.mainte .row-wrap .row-detail02 h4,
+main .first-row.mainte .row-wrap .row-detail h4,
+main .first-row.mainte .row-wrap .row-detail02 h4 {
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  main .second-row.mainte .row-wrap .row-detail h4, main .second-row.mainte .row-wrap .row-detail02 h4,
+main .first-row.mainte .row-wrap .row-detail h4,
+main .first-row.mainte .row-wrap .row-detail02 h4 {
+    font-size: 13px;
+  }
+}
+main .second-row.mainte .row-wrap .row-detail02,
+main .first-row.mainte .row-wrap .row-detail02 {
+  background-color: #F3F2ED;
+  padding: 49px;
+}
+@media screen and (max-width: 1024px) {
+  main .second-row.mainte .row-wrap .row-detail02,
+main .first-row.mainte .row-wrap .row-detail02 {
+    padding: 27px 16px;
+  }
+}
+main .second-row.mainte .row-wrap .row-detail02 > div > figure,
+main .first-row.mainte .row-wrap .row-detail02 > div > figure {
+  width: 344px;
+}
+@media screen and (max-width: 1024px) {
+  main .second-row.mainte .row-wrap .row-detail02 > div > figure,
+main .first-row.mainte .row-wrap .row-detail02 > div > figure {
+    width: 294px;
+  }
+}
+main .second-row.mainte {
+  padding: 94px 0 88px;
+}
+@media screen and (max-width: 480px) {
+  main .second-row.mainte {
+    padding: 55px 0 52px;
+  }
+}
+main .second-row.mainte ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+@media screen and (max-width: 480px) {
+  main .second-row.mainte ul {
+    gap: 15px;
+  }
+}
+main .second-row.mainte ul li {
+  max-width: 180px;
+}
+@media screen and (max-width: 480px) {
+  main .second-row.mainte ul li {
+    max-width: 170px;
+  }
+}
+main .second-row.mainte ul li a:hover .item {
+  transform: translate3d(2px, 2px, 0);
+}
+main .second-row.mainte ul li a .item {
+  padding: 24px;
+  background-color: #F5F5F5;
+  height: 100%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+@media screen and (max-width: 480px) {
+  main .second-row.mainte ul li a .item {
+    padding: 16px;
+  }
+}
+main .second-row.mainte ul li a .item figure {
+  text-align: center;
+}
+main .second-row.mainte ul li a .item p {
+  padding-top: 21px;
+  text-align: center;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  main .second-row.mainte ul li a .item p {
+    padding-top: 13px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=public_detail.css.map */

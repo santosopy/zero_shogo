@@ -102,10 +102,10 @@ $breakpoints: ('sp': (max-width: 480px),
     }
 }
 
-@mixin floatRight{
+@mixin floatRight {
     float: right;
     margin-left: 30px;
-    
+
     @include media(sp) {
         margin: 0;
         display: block;
@@ -823,7 +823,8 @@ main {
 
     }
 
-    %first-row-mainte, .first-row.mainte {
+    %first-row-mainte,
+    .first-row.mainte {
         padding: 94px 0 0;
 
         @include media(sp) {
@@ -847,21 +848,121 @@ main {
                 }
             }
 
-            h4 {
-                font-size: 14px;
+            .row-detail {
                 padding: 38px 0;
-
                 @include media(sp) {
-                    font-size: 13px;
                     padding: 19px 0;
                 }
-            }
 
+                > div{
+                    display: flex;
+                    gap: 30px;
+                    flex-direction: row-reverse;
+                    align-items: center;
+
+                    > figure{
+                        width: 314px;
+                        @include media(tab) {
+                            width: 264px;
+                        }
+                    }
+                    h4{
+                        flex: 1;
+
+                        figure{
+                            padding-bottom: 28px;
+                            @include media(sp) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                h4 {
+                    font-size: 14px;
+
+                    @include media(sp) {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .row-detail02{
+                background-color: #F3F2ED;
+                padding: 49px;
+                @include media(tab){
+                    padding: 27px 16px;
+                }
+                @extend .row-detail;
+
+                > div{
+                    > figure{
+                        width: 344px;
+                        @include media(tab){
+                            width: 294px;
+                        }
+                    }
+                }
+            }
         }
 
     }
 
     .second-row.mainte {
         @extend %first-row-mainte;
+        padding: 94px 0 88px;
+
+        @include media(sp) {
+            padding: 55px 0 52px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 33px;
+
+            @include media(sp) {
+                gap: 15px;
+            }
+
+            li {
+                max-width: 180px;
+
+                @include media(sp) {
+                    max-width: 170px;
+                }
+
+                a {
+                    &:hover {
+                        .item {
+                            transform: translate3d(2px, 2px, 0);
+                        }
+                    }
+
+                    .item {
+                        padding: 24px;
+                        background-color: $gray2;
+                        height: 100%;
+                        @include smooth();
+
+                        @include media(sp) {
+                            padding: 16px;
+                        }
+
+                        figure{
+                            text-align: center;
+                        }
+                        p {
+                            padding-top: 21px;
+                            text-align: center;
+                            font-size: 14px;
+
+                            @include media(sp) {
+                                padding-top: 13px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
