@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    <script src="../js_new/shogo/publicDetail.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/public_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="./sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./public.html" class="active">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span class="space">></span><span>ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/public/"><span class="space">></span><span>ゼロホームの公開</span></a>
+                <span class="space">></span><span>2009年10月発生雨漏り事例に対する検証記録</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>PUBLIC</h3>
+                            <p>ゼロホームの公開</p>
+                        </div>
+                        <h4>
+                            ゼロホームでは「お客様満足度アンケート」や「クレーム・メンテナンス記録」、<br class="is_pc">「雨漏り件数」をサイト上で公開しています。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/public/sp_public_mv.jpg" />
+                    <img src="../img_new/shogo/public/public_mv.jpg" width="100%" alt="ゼロホームの公開">
+                </picture>
+            </div>
+        </section>
+        <section class="first-row a_201804">
+            <div class="row-wrap">
+                <div class="row-title">
+                    <p>2009年10月発生雨漏り事例に対する検証記録</p>
+                </div>
+                <h4 class="wow fadeInUp">
+                    雨漏りカウント期間から外れた検証記録です。
+                </h4>
+                <div class="row-step">
+                    <h5>【2006年4月18日お引渡し物件】</h5>
+                    <h6>
+                        ★下記の日時をクリックしていただくと、詳細をご覧いただけます。
+                    </h6>
+                    <div class="row-step__item wow fadeInUp">
+                        <a href="#first">
+                            <p>
+                                09.10.27 <br class="is_pc">
+                                雨漏り発生連絡
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#second">
+                            <p>
+                                09.11.06 <br class="is_pc">
+                                水掛け試験
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#third">
+                            <p>
+                                09.11.09～23 <br class="is_pc">
+                                各部署での検証
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#fourth">
+                            <p>
+                                09.11.24 <br class="is_pc">
+                                修繕工事
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#fifth">
+                            <p>
+                                まとめ
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <li id="first">
+                        <h5 class="wow fadeInUp">09.10.27　<br class="is_sp">お客様よりご連絡、現場確認</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                10/22、お客様より、天井にシミが発生している、雨漏りではないかとのご連絡がある。<br>
+                                <br>
+                                現場に伺い、天井のシミを確認したため、点検口より天井裏を確認したところ、雨漏りと思われる形跡を発見する。<br>
+                                <br>
+                                雨水の流れた跡から、屋根からの雨漏りではないかと推測する。
+                            </p>
+                            <div class="item with-note">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910/photo1.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="second">
+                        <h5 class="wow fadeInUp"> 09.11.06　<br class="is_sp">水掛け試験の実施</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                雨水の浸入箇所、原因を確認するため、屋根の上にあがり、浸入箇所と思われる部分に水掛け試験を実施。<br>
+                                <br>
+                                本物件は屋根材として瓦を使用しているが、棟違い部分への水掛けをしたところ、すぐに屋内への浸入が確認された。<br>
+                                <br>
+                                瓦を一部取り外し、瓦と板金の納まりに不備ありとおおよその原因を推測。
+                            </p>
+                            <div class="item with-note">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910/photo2.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="third">
+                        <h5 class="wow fadeInUp"> 09.11.09～09.11.23　<br class="is_sp">各部署での検証</h5>
+                        <p class="wow fadeInUp">
+                            水掛け試験時の報告および写真等をもとに、工事課ミーティング、営繕課ミーティングで検証を行う。 模型も作成し、施工業者も交えた関係者にて議論した結果、以下4点が要因となり、雨漏りを引き起こしたとの結論にいたる。（重要なものより列挙）
+                        </p>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                <span class="orange"><原因1></span><br>
+                                瓦と野地板の間に敷きつめるルーフィングに隙間があった
+                            </p>
+                            <div class="item with-note">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910/cause1.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                <span class="orange"><原因2></span><br>
+                                板金と瓦端部の取り合いが正しく施工されていなかった （隙間が不足）
+                            </p>
+                            <div class="item with-note">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910/cause2.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                <span class="orange"><原因3></span><br>
+                                谷トユの板金が一部折れ曲がっており、雨水が正しく流れなかった
+                            </p>
+                            <div class="item with-note">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910/cause3.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                <span class="orange"><原因4></span><br>
+                                本来あるべきはずの雨水の流れ止め（シール材）が施工されていなかった
+                            </p>
+                            <div class="item with-note">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910/cause4.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="fourth">
+                        <h5 class="wow fadeInUp">09.11.24　<br class="is_sp">修繕工事～完了確認</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                原因特定の検証結果を踏まえ、<br>
+                                <br>
+                                <span class="black">ルーフィングの隙間を防水テープで貼り直し</span><span class="orange">(原因1)</span><br>
+                                <span class="black">瓦端部の谷トユを入れ替え</span><span class="orange">(原因3)</span><br>
+                                <span class="black">瓦と板金の取り合いを正しく施工し</span><span class="orange">(原因2)</span><br>
+                                <span class="black">瓦端部の隙間にシール材を施工し</span><span class="orange">(原因4)</span><br>
+                                <br>
+                                修繕完了。
+                            </p>
+                            <div class="item with-note">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910/photo3.jpg" width="320" alt="">
+                                </figure>
+                                <p>荒破風の隙間をコーキング補修</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="fifth">
+                        <h5 class="wow fadeInUp">まとめ</h5>
+                        <p class="wow fadeInUp">
+                            屋根部は雨水を直接受ける場所なので、本来であれば、万一施工に何か一つ不備があっても、雨水が屋内まで浸入することのないよう二重三重の安全対策がなされているが、今回の雨漏りは<span class="black">それぞれに少しずつ不備があり、いくつもの原因が重なって起こったもの。</span><br>
+                            <br>
+                            本物件屋根部の施工業者に徹底指導を行うとともに、ゼロ社員および他屋根業者においても<span class="black">技術情報の共有化</span>を行い、検証を終了。 今回の雨漏りをDクレームと断定し、3軒目の雨漏りとしてカウントする。<br>
+                            <br>
+                        </p>
+                        <p class="with-line">
+                            今回の雨漏りをDクレームと断定し、<span>雨漏りカウント</span>として計上する。
+                        </p>
+                        <p>
+                            以上、今回の雨漏り報告といたします。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

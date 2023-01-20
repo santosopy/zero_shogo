@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    <script src="../js_new/shogo/publicDetail.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/public_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="./sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./public.html" class="active">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span class="space">></span><span>ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/public/"><span class="space">></span><span>ゼロホームの公開</span></a>
+                <span class="space">></span><span>2012年9月（2）発生雨漏り事例に対する検証記録</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>PUBLIC</h3>
+                            <p>ゼロホームの公開</p>
+                        </div>
+                        <h4>
+                            ゼロホームでは「お客様満足度アンケート」や「クレーム・メンテナンス記録」、<br class="is_pc">「雨漏り件数」をサイト上で公開しています。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/public/sp_public_mv.jpg" />
+                    <img src="../img_new/shogo/public/public_mv.jpg" width="100%" alt="ゼロホームの公開">
+                </picture>
+            </div>
+        </section>
+        <section class="first-row a_201804">
+            <div class="row-wrap">
+                <div class="row-title">
+                    <p>2012年9月（2）発生雨漏り事例に対する検証記録</p>
+                </div>
+                <h4 class="wow fadeInUp">
+                    ゼロ･コーポレーションでは、雨漏り軒数のカウントを行い、その検証の記録を常時公開しております。
+                </h4>
+                <div class="row-step">
+                    <h5>【2011年4月25日お引渡し物件】</h5>
+                    <h6>
+                        ★下記の日時をクリックしていただくと、詳細をご覧いただけます。
+                    </h6>
+                    <div class="row-step__item wow fadeInUp">
+                        <a href="#first">
+                            <p>
+                                12.09.30 <br class="is_pc">
+                                雨漏り発生連絡
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#second">
+                            <p>
+                                12.10.16 <br class="is_pc">
+                                水掛け試験2回目
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#third">
+                            <p>
+                                12.10.18 <br class="is_pc">
+                                議論
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#fourth">
+                            <p>
+                                12.11.13 <br class="is_pc">
+                                水掛け試験3回目
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#fifth">
+                            <p>
+                                12.11.15 <br class="is_pc">
+                                まとめ
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <li id="first">
+                        <h5 class="wow fadeInUp">12.09.30　<br class="is_sp">お客様から雨漏り発生連絡、現地確認</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                お客様より、台風の際に1階リビングの4枚サッシ上枠付近より雨漏りしているとの連絡がある。<br>
+                                <br>
+                                10/2にお伺いし、雨漏り当時の状況をお客様が撮影しておられた写真で確認した。その様子から当初はサッシ本体の製品不良を疑い、外部よりサッシ上部に水掛けを行うも、水の浸入はなかった。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209_02/photo01.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                その際、雨漏り該当サッシ上部のアルミ庇と外壁の取り合い部のコーキングに隙間があることを確認したため、次にその部分に集中して水掛けを行ったところ、建物内部の窓枠上部に水のにじみを確認した。<br>
+                                <br>
+                                しかしながら、その後長時間にわたって水掛けを継続するも、お客様が撮影された状況の浸水は見られなかった。この日は原因特定を断念し、後日の検証としていったん引き上げる。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209_02/photo05.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="second">
+                        <h5 class="wow fadeInUp">12.10.16　<br class="is_sp">現場にて検証</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                前回の水掛け試験において、原因はサッシの製品不良ではなく、サッシ上部のアルミ庇と外壁の取り合いにあると推測されたため、集中して水掛けを実施、室内への浸水を確認した（クロスを一部のみめくった）。<br>
+                                <br>
+                                その後、固定ビスおよび目地部分に順番にパテを埋め込み、順次水掛けを行ったところ、サイディング目地横の固定ビス付近が原因であることを特定した。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209_02/photo03.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                また、原因箇所と思われる固定ビスが、サイディング目地に向かって若干斜めに止められていることにも留意。<br>
+                                <br>
+                                しかしながら、アルミ庇の固定方法に問題があるらしいことは明らかとなったが、どのような経路で浸水しているのかの詳細な解明には至らず、検証方法について再度検討することとして、この日は終了する。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209_02/photo02.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="third">
+                        <h5 class="wow fadeInUp">12.10.18　<br class="is_sp">営繕ミーティングにて議論</h5>
+                        <p class="wow fadeInUp only-text">
+                            2回にわたる水掛け試験および検証の経緯報告を受け、関係者で議論。<br>
+                            <br>
+                            現状の100年住宅の施工では、外壁の内側に浸水があっても、防水シート等によって室内側への雨漏りには至らない納まりになっている。<br>
+                            <br>
+                            しかしながら、今回それが起こってしまっており、その経路については内壁をいったん外して確認する必要があると判断。後日、改めて検証を行うことになる。
+                        </p>
+                    </li>
+                    <li id="fourth">
+                        <h5 class="wow fadeInUp">12.11.13　<br class="is_sp">水掛け試験3回目</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                浸水経緯の特定のため、再度現地にて検証。<br>
+                                <br>
+                                原因箇所と思われる部分の室内側のクロスおよび石膏ボードを外したところ、ビスの取り付けられていた下地の間柱に割れがあり、付近の防水シートには染みが見られた。<br>
+                                <br>
+                                該当箇所の外部より水掛け試験を行ったところ、割れ部分よりの浸水を確認した。この間柱の割れ部分にカッターを差し入れると、固定ビスに当たる。<br>
+                                <br>
+                                このことにより、アルミ庇の固定ビスが斜めに取り付けられてしまったことにより間柱が割れ、外壁サイディング目地を伝った雨水が、そのまま固定ビスを伝って間柱の割れに浸透し、内部に浸水したものと経緯を特定した。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209_02/photo04.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                修繕としては、原因となった固定ビスをいったん抜き、再度まっすぐに打ち込むと同時に、水の通り道となってしまう外壁サイディング目地部分にも念入りにコーキングを行った。<br>
+                                <br>
+                                その後、水掛けを行い浸水のないことを確認、復旧を完了した。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209_02/photo06.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="fifth">
+                        <h5 class="wow fadeInUp">12.11.15　<br class="is_sp">まとめ（営繕課および工事課ミーティングより）</h5>
+                        <p class="wow fadeInUp">
+                            今回の雨漏りは、サイディング目地を流れた雨水がアルミ庇の固定ビスを伝って、間柱の割れた部分から浸水したもの。固定ビスが斜めに入ってしまったこと、その場所がサイディング目地横であったことなど、複数の要素が重なって発生した。<br>
+                            <br>
+                            先にも記載の通り、100年住宅の施工では、万一、外壁内に雨水が浸入しても、防水シートにより室内側に浸水しない納まりとなっている。また、今回のような庇等の取り付け部についても、ビスを間柱や下地に確実に固定することにより、同じく雨水浸入が起こらないようになっている。<br>
+                            <br>
+                            しかしながら、サイディング目地は水の通り道となり、大量の水が流れるのは避けられないことを考えると、目地に近い場所へのビスの固定は非常にリスクが高いと言える。フラット面であれば浸水が起こらない程度の若干の向きの不具合でも、この場所であるがゆえに浸水が起こる可能性がある。<br>
+                            <br>
+                            ビスを真っ直ぐに止めることももちろん重要であるが、まずはサイディング目地部分へのビス固定を行わないことをルールとし、ゼロ社員への徹底、ディテールの見直し、協力業者への注意喚起を行い、まとめとする。<br>
+                            <br>
+                        </p>
+                        <p class="with-line">
+                            今回の雨漏りをDクレームと断定し、<span>雨漏りカウント</span>として計上する。
+                        </p>
+                        <p>
+                            以上、今回の雨漏り報告といたします。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

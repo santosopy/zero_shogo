@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    <script src="../js_new/shogo/publicDetail.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/public_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="./sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./public.html" class="active">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span class="space">></span><span>ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/public/"><span class="space">></span><span>ゼロホームの公開</span></a>
+                <span class="space">></span><span>2011年7月発生雨漏り事例に対する検証記録</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>PUBLIC</h3>
+                            <p>ゼロホームの公開</p>
+                        </div>
+                        <h4>
+                            ゼロホームでは「お客様満足度アンケート」や「クレーム・メンテナンス記録」、<br class="is_pc">「雨漏り件数」をサイト上で公開しています。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/public/sp_public_mv.jpg" />
+                    <img src="../img_new/shogo/public/public_mv.jpg" width="100%" alt="ゼロホームの公開">
+                </picture>
+            </div>
+        </section>
+        <section class="first-row a_201804">
+            <div class="row-wrap">
+                <div class="row-title">
+                    <p>2011年7月発生雨漏り事例に対する検証記録</p>
+                </div>
+                <h4 class="wow fadeInUp">
+                    雨漏りカウント期間から外れた検証記録です。
+                </h4>
+                <div class="row-step">
+                    <h5>【2005年6月23日お引渡し物件】</h5>
+                    <h6>
+                        ★下記の日時をクリックしていただくと、詳細をご覧いただけます。
+                    </h6>
+                    <div class="row-step__item wow fadeInUp">
+                        <a href="#first">
+                            <p>
+                                11.07.19 <br class="is_pc">
+                                雨漏り発生連絡
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#second">
+                            <p>
+                                11.07.21 <br class="is_pc">
+                                報告・議論
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#third">
+                            <p>
+                                11.08.07 <br class="is_pc">
+                                現場にて検証・修繕
+                            </p>
+                        </a>
+                        <figure>
+                            <img src="../img_new/shogo/public/a_201804/arrow_right24.png" alt="" width="24px">
+                        </figure>
+                        <a href="#fourth">
+                            <p>
+                                11.08.08 <br class="is_pc">
+                                まとめ
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <li id="first">
+                        <h5 class="wow fadeInUp">11.07.19　<br class="is_sp">お客様より雨漏り発生連絡、現地確認、水掛試験</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                前日7/18、お客様より2F洋室のサッシ上部で雨漏りとの連絡がある。<br>
+                                <br>
+                                翌日7/19にお伺いし、現地確認。<br>
+                                <br>
+                                該当箇所の壁とクロスが水を含んだような状態となっており、今回が初めての雨漏りではない様子。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201107/photo001.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                外部にまわり、該当サッシ周辺を確認したところ、サッシ直上の外壁に、釘の跡らしき穴を発見する（この釘を「<span class="orange">釘A</span>」とする）。この穴からの浸水を疑い水掛試験を実施。<br>
+                                <br>
+                                内部への浸水を確認。この部分が雨漏りの原因と確定し、この日の検証はここまでで終了。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201107/photo002.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="second">
+                        <h5 class="wow fadeInUp">11.07.21　<br class="is_sp">営繕ミーティングにて報告、議論</h5>
+                        <p class="wow fadeInUp only-text">
+                            雨漏りの原因となった「<span class="orange">釘A</span>」の穴は、建物建築時の足場を固定する部材のものと推測。<br>
+                            <br>
+                            通常は、釘Aを抜いた後、コーキング等で穴をふさぐ作業をするが、それがなされていなかったとの見解で一致。<br>
+                            <br>
+                            壁内部は通気工法となっており、サイディングの内側には防水シートが施工され、万一外壁より内側に雨水等が浸入しても部屋内への浸水はない構造になっているが、今回は「<span class="orange">釘A</span>」がシートを貫通し、そこから浸水したのではないか、といった議論がなされる。<br>
+                            <br>
+                            浸水状況の確認のため、修繕をかねて、部屋内の壁を一部解体することにする。
+                        </p>
+                    </li>
+                    <li id="third">
+                        <h5 class="wow fadeInUp">11.08.07　<br class="is_sp">現場にて検証、修繕</h5>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                原因箇所を中心に、部屋内より一部壁をめくり、状況確認。<br>
+                                <br>
+                                当初の予想と若干の相違があり、外壁からの通気層への浸水については「<span class="orange">釘A</span>」の穴からであるが、実際にはその釘がシートを貫通した穴は1ミリ程度で非常に小さく、部屋内へ浸水するものではなかった。<br>
+                                <br>
+                                しかし、その直下にあるサイディングを止めるための「<span class="orange">釘B</span>」がシートを貫通しており、上部の穴から浸入し、流れ落ちた雨水が、「<span class="orange">釘B</span>」をつたって部屋内に浸水するという経緯が判明。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201107/photo003.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="additional">
+                            <p class="wow fadeInUp">
+                                本来、胴縁の内側には下地があり、釘がシートを貫通しても浸水しにくい仕組みになっているが、今回は「<span class="orange">釘B</span>」が下地の場所をそれており、直接シート突き破っている状態となっていたため、雨漏りが起こった。<br>
+                                <br>
+                                「<span class="orange">釘A</span>」の跡をコーキングで埋めると同時に、「<span class="orange">釘B</span>」をいったん外し、その場所もコーキング処理した上で改めて正しい場所に釘を施工、および壁ボードやクロスも復旧し、現場検証および修繕を終了。
+                            </p>
+                            <div class="item">
+                                <figure class="wow fadeInUp">
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201107/photo004.jpg" width="320" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="fourth">
+                        <h5 class="wow fadeInUp">11.08.08　<br class="is_sp">まとめ（工事課ミーティングより）</h5>
+                        <p class="wow fadeInUp">
+                            ゼロの新築物件は通気工法にて施工されており、外壁の内側に防水シートを張ること等によって、<br>
+                            <br>
+                            <span class="black">万一外壁より内側に雨水が浸入しても、部屋内まで浸水することなく外部に排出される仕組み</span><br>
+                            <br>
+                            になっている。さらにゼロでは、<br>
+                            <br>
+                            <span class="black">防水シート施工後、外壁を貼るまでの間に全棟水掛試験を実施し、</span><br>
+                            <span class="black">防水シートの破れや小さな穴などのチェックも行っている</span><br>
+                            <br>
+                            しかしながら、<br>
+                            <br>
+                            <span class="black">その水掛試験終了後にどうしてもシートを貫通させなければならない工事が存在する</span><br>
+                            <br>
+                            のは事実であり、この箇所をいかに減らし、どのように防水対策をとっているかが、雨漏りを防ぐために非常に重要なポイントになる。<br>
+                            <br>
+                            今回の事例は、<br>
+                            <br>
+                            <span class="black">（1）サイディングにあけた穴を埋めていなかった</span><br>
+                            <br>
+                            という、防げるはずの一次防水の問題が大きな原因であることは間違いないが、<br>
+                            <br>
+                            <span class="black">（２）サイディング固定の釘が下地に止まっておらず防水シートを突き破ってしまった</span><br>
+                            <br>
+                            という、二次防水での問題が連動することによって、雨漏りを引き起こしてしまったケースである。<br>
+                            <br>
+                            なお、現在はサイディング固定の釘は必ず下地にとまるように施工マニュアル上で改善されており、（２）のようなケースは発生しない。しかしながら、（１）の問題点の注意喚起も兼ねて、工事ミーティングや協力業者定例会等で、足場の釘跡等の処理およびサイディング施工について再度確認を行う。<br>
+                            <br>
+                            また、これを機会として、水掛試験後に外壁に穴を開ける可能性のある工事を改めて洗い出し、それらが防水シートを貫通するか否かの検証と、貫通せざるを得ないケースについての防水対策の検討に再度取り組むこととし、まとめとする。<br>
+                            <br>
+                            以上、今回の雨漏り報告といたします。
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

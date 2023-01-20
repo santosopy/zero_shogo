@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    <script src="../js_new/shogo/publicDetail.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/public_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="./sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./public.html" class="active">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span class="space">></span><span>ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/public/"><span class="space">></span><span>ゼロホームの公開</span></a>
+                <span class="space">></span><span>カウント対象外の雨漏り検証レポート</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>PUBLIC</h3>
+                            <p>ゼロホームの公開</p>
+                        </div>
+                        <h4>
+                            ゼロホームでは「お客様満足度アンケート」や「クレーム・メンテナンス記録」、<br class="is_pc">「雨漏り件数」をサイト上で公開しています。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/public/sp_public_mv.jpg" />
+                    <img src="../img_new/shogo/public/public_mv.jpg" width="100%" alt="ゼロホームの公開">
+                </picture>
+            </div>
+        </section>
+        <section class="first-row amamori2">
+            <div class="row-wrap">
+                <div class="row-title">
+                    <p>カウント対象外の雨漏り検証レポート</p>
+                </div>
+                <h4 class="wow fadeInUp">
+                    弊社の雨漏り保証期間は10年間となっておりますが、お引渡しから10年を経て、雨漏りカウントの対象外となった過去の物件の検証レポートを、参考としてまとめております。<br>
+                    <br>
+                    カウント期間から外れた過去の検証レポートは、こちらよりご覧になれます。
+                    ※2022年2月更新
+                </h4>
+                <ul>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201910.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201910.jpg" width="145" alt="">
+                                </figure>
+                                <p>
+                                    2019年10月発生<br>
+                                    2010年6月15日お引渡し
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201601.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201601.jpg" width="145" alt="">
+                                </figure>
+                                <p>
+                                    2016年1月発生<br>
+                                    2010年1月29日お引渡し
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201309.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201309.jpg" width="145" alt="">
+                                </figure>
+                                <p>
+                                    2013年9月発生<br>
+                                    2010年6月18日お引渡し
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201209_2.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209_2.jpg" width="145" alt="">
+                                </figure>
+                                <p>
+                                    2012年9月発生<br>
+                                    2011年4月25日お引渡し
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201209.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201209.jpg" width="145" alt="">
+                                </figure>
+                                <p>2012年9月発生<br>2005年11月15日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201207.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201207.jpg" width="145" alt="">
+                                </figure>
+                                <p>2012年7月発生<br>2004年4月27日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201107.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201107.jpg" width="145" alt="">
+                                </figure>
+                                <p>2011年7月発生<br>2005年6月23日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201101.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201101.jpg" width="145" alt="">
+                                </figure>
+                                <p>2011年1月発生<br>2004年9月3日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201007.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201007.jpg" width="145" alt="">
+                                </figure>
+                                <p>2010年7月発生<br>2004年9月7日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_201002.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/201002.jpg" width="145" alt="">
+                                </figure>
+                                <p>2010年2月発生<br>2004年5月21日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_200910.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200910.jpg" width="145" alt="">
+                                </figure>
+                                <p>2009年10月発生<br>2006年4月18日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_200901.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200901.jpg" width="145" alt="">
+                                </figure>
+                                <p>2009年01月発生<br>2004年11月19日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <a href="./a_200804.html">
+                            <div class="item">
+                                <figure>
+                                    <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/amamori/200804.jpg" width="145" alt="">
+                                </figure>
+                                <p>2008年04月発生<br>2004年12月19日お引渡し</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

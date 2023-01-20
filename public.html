@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css_new/shogo/common.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="js_new/shogo/common.js"></script>
+    <script src="./js_new/shogo/publicDetail.js"></script>
     
     <link rel="stylesheet" type="text/css" href="css_new/shogo/public.css" />
     <script src="js_new/shogo/wow.js"></script>
@@ -61,8 +62,8 @@
         <section class="breadcrumb">
             <div class="breadcrumb-wrap">
                 <a href="https://zerohome.jp/"><span>TOP</span></a>
-                <a href="https://zerohome.jp/shiru/"><span>> ゼロホームを知りたい</span></a>
-                <span>> ゼロホームの公開</span>
+                <a href="https://zerohome.jp/shiru/"><span class="space">></span><span>ゼロホームを知りたい</span></a>
+                <span class="space">></span><span>ゼロホームの公開</span>
             </div>
         </section>
         <section class="main_visual">
@@ -116,7 +117,7 @@
                             <p>
                                 ゼロホームを通じて、ゼロホームの100年住宅を購入したり、ゼロホームの100年住宅仕様にて請負をご依頼いただいたすべてのお客様に、「お客様満足度アンケート」を送付し、住み心地や接客の感想といったご意見を伺っています。ご返信いただきましたアンケートは、個人情報を伏せて、当社ホームページで原紙のまま公開する他、満足度の集計結果も掲載しています。
                             </p>
-                            <a href="./customer.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <a href="./public/customer.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
                                 お客様アンケートの公開はこちら
                                 <figure>
                                     <img src="./img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
@@ -130,7 +131,7 @@
                             <p>
                                 アンケートに加え、お客様から連絡のあったクレームの記録やメンテナンスの情報もあえてオープンにしています。「負」の声も含めてすべて大切な「財産」とし、施工上の問題におけるクレームに対し、常に真摯に向き合うため、クレームの対応記録もすべてホームページ上で公開しています。
                             </p>
-                            <a href="" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <a href="./public/mainte.html" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
                                 メンテナンス記録の公開はこちら
                                 <figure>
                                     <img src="./img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
@@ -144,7 +145,7 @@
                             <p>
                                 新築住宅では、雨漏りは起こらないものと思われるかもしれませんが、実は意外に多く、全国的には約2割の軒数に発生するとも言われています。ゼロホームでは、不本意にも起こってしまった雨漏りの事例について、徹底した対応で雨漏り撲滅を目指し、検証記録も公開しています。これらのデータ公開は、お客様が正当にお住まいや住宅会社を選ぶための重要な要素であると考えております。
                             </p>
-                            <a href="" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <a href="#amamori" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
                                 雨漏り軒数の公開はこちら
                                 <figure>
                                     <img src="./img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
@@ -157,7 +158,7 @@
         </section>
         <section class="second-row">
             <div class="row-wrap">
-                <div class="row-title">
+                <div class="row-title" id="amamori">
                     <p>雨漏り撲滅のため、ゼロホームは厳しい検証と改善を行っています。</p>
                 </div>
                 <h4 class="wow fadeInUp">
@@ -194,19 +195,19 @@
                             ※「営繕課」は、2020年7月より「カスタマー事業部」に名称変更しています。
                         </h6>
                         <div class="btn">
-                            <a href="" class="btn__first wow fadeInUp" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <a href="./public/a_202110.html" class="btn__first wow fadeInUp" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
                                 2021年10月発生<br class="is_sp">雨漏り事例に対する検証の記録
                                 <figure>
                                     <img src="./img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
                                 </figure>
                             </a>
-                            <a href="" class="btn__first wow fadeInUp" data-wow-delay="0.3s" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
+                            <a href="./public/a_201804.html" class="btn__first wow fadeInUp" data-wow-delay="0.3s" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'">
                                 2018年4月発生<br class="is_sp">雨漏り事例に対する検証の記録
                                 <figure>
                                     <img src="./img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
                                 </figure>
                             </a>
-                            <a href="" class="btn__second wow fadeInUp" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
+                            <a href="./public/amamori2.html" class="btn__second wow fadeInUp" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
                                 <div>
                                     <h3>カウント対象から外れた<br class="is_sp">雨漏りの検証レポート</h3>
                                     <p class="is_pc is_onlytab">
@@ -217,7 +218,7 @@
                                     <img src="./img_new/shogo/top/arrow_right_w.png" alt="カウント対象から外れた雨漏りの検証レポート" width="13">
                                 </figure>
                             </a>
-                            <a href="" class="btn__second wow fadeInUp" data-wow-delay="0.3s" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
+                            <a href="./public/amamori.html" class="btn__second wow fadeInUp" data-wow-delay="0.3s" onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'" onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
                                 <div>
                                     <h3>「雨漏りは屋根から」と<br class="is_sp">思いませんか？</h3>
                                     <p class="is_pc is_onlytab">

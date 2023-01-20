@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    <script src="../js_new/shogo/publicDetail.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/public_detail.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="./sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./public.html" class="active">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="./staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="https://zerohome.jp/"><span>TOP</span></a>
+                <a href="https://zerohome.jp/shiru/"><span class="space">></span><span>ゼロホームを知りたい</span></a>
+                <a href="https://zerohome.jp/shiru/public/"><span class="space">></span><span>ゼロホームの公開</span></a>
+                <span class="space">></span><span>メンテナンス記録の公開</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>PUBLIC</h3>
+                            <p>ゼロホームの公開</p>
+                        </div>
+                        <h4>
+                            ゼロホームでは「お客様満足度アンケート」や「クレーム・メンテナンス記録」、<br class="is_pc">「雨漏り件数」をサイト上で公開しています。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/public/sp_public_mv.jpg" />
+                    <img src="../img_new/shogo/public/public_mv.jpg" width="100%" alt="ゼロホームの公開">
+                </picture>
+            </div>
+        </section>
+        <section class="first-row mainte">
+            <div class="row-wrap">
+                <div class="row-title">
+                    <p>メンテナンス記録の公開</p>
+                </div>
+                <h4 class="wow fadeInUp">
+                    当社では、新築住宅のお引き渡し後、定期点検を行っており、その記録は点検の都度、スピーディに当社のシステムに入力されます。また、ご入居直後および定期点検時以外のメンテナンスについても同様に処理されます。 これらの情報は、会社のデータベースとして安全に保管されるとともに、私たちはその情報をもとに常に業務の改善を図っています。 ここでは、期間を１ヶ月に区切り、その間に発生し、対応を行ったメンテナンス記録を掲載しております。なお、この取り組みは2002年10月より実施しております。<br>
+                    <br>
+                    メンテナンス記録はこちらよりご覧になれます。　　<br class="is_sp">※2023年1月13日更新
+                </h4>
+                <ul class="wow fadeInUp">
+                    <li>
+                        <a href="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/mainte/m_2208-2.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/customer/Adobe_PDF_file_icon_24x24.png" alt="PDF" class="vam"> 2022年8月発生分（333KB）（発生総数：235項目）
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/mainte/m_2209-1.pdf" target="_blank" rel="noopener noreferrer">
+                            <img src="https://zerohome.jp/wp-content/themes/zerohome/img/shiru/public/customer/Adobe_PDF_file_icon_24x24.png" alt="PDF" class="vam"> 2022年9月発生分（434KB）（発生総数：459項目）
+                        </a>
+                    </li>
+                </ul>
+                <p class="caution">
+                    ※1件について複数発生しましたメンテナンスにつきましても項目ごとに カウントしています。※処理内容、完了日が未入力の件につきましては現在処理中です。
+                </p>
+            </div>
+        </section>
+        <section class="second-row mainte">
+            <div class="row-wrap">
+                <div class="row-inner">
+                    <h3 class="wow fadeInUp">ランクについてのご説明</h3>
+                    <ul>
+                        <li class="wow fadeInUp">
+                            <h4>クレームランク</h4>
+                            <p>
+                                A調整・メンテナンス<br>
+                                Bクレーム<br>
+                                C重要なクレーム（2003年10月31日以前の着工分の雨漏りを含む）<br>
+                                D構造上のクレーム（2003年10月31日以降の着工分の雨漏りを含む） ※当社では2003年11月1日より雨漏り撲滅対策を開始しています。
+                            </p>
+                        </li>
+                        <li class="wow fadeInUp">
+                            <h4>ランク外</h4>
+                            <p>
+                                –各クレームランク及び、Mに該当しないもの。（調整等ないもの・有償工事など）<br>
+                                M当社の施工責任範囲外のクレーム
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

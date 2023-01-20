@@ -146,6 +146,9 @@ main .breadcrumb .breadcrumb-wrap a:hover {
   -moz-opacity: 0.6;
   opacity: 0.6;
 }
+main .breadcrumb .breadcrumb-wrap .space {
+  padding: 0 5px;
+}
 main .tac {
   text-align: center !important;
 }
