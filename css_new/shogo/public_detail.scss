@@ -311,11 +311,31 @@ main {
         }
     }
 
+    .public-shortcut{
+        padding: 60px 0;
+        @include media(sp){
+            padding: 42px 0;
+        }
+
+        .shortcut-inner{
+            @include wrap();
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a{
+                @include button();
+                max-width: 225px;
+            }
+        }
+    }
+
     .first-row.customer {
-        padding: 94px 0 88px;
+        padding: 0 0 88px;
 
         @include media(sp) {
-            padding: 55px 0 52px;
+            padding: 00 52px;
         }
 
         .row-wrap {
@@ -468,10 +488,10 @@ main {
     }
 
     .first-row.a_201804 {
-        padding: 94px 0 88px;
+        padding: 0 0 88px;
 
         @include media(sp) {
-            padding: 55px 0 52px;
+            padding: 00 52px;
         }
 
         .row-wrap {
@@ -738,10 +758,10 @@ main {
     }
 
     .first-row.amamori2 {
-        padding: 94px 0 88px;
+        padding: 0 0 88px;
 
         @include media(sp) {
-            padding: 55px 0 52px;
+            padding: 00 52px;
         }
 
         .row-wrap {
@@ -823,12 +843,107 @@ main {
 
     }
 
-    %first-row-mainte,
-    .first-row.mainte {
-        padding: 94px 0 0;
+    %first-row-mainte, .first-row.mainte {
+        padding: 0 0 0;
 
         @include media(sp) {
-            padding: 55px 0 0;
+            padding: 00 0;
+        }
+
+        .row-wrap {
+            @include wrap();
+            line-height: 1.8;
+
+            .row-title {
+                font-size: 24px;
+                font-family: "notosansbold";
+                padding: 1rem;
+                color: #FFFFFF;
+                background-color: #000000;
+
+                @include media(sp) {
+                    font-size: 21px;
+                    line-height: 1.5;
+                }
+            }
+
+            h4 {
+                font-size: 14px;
+                padding: 38px 0 30px;
+
+                @include media(sp) {
+                    font-size: 13px;
+                    padding: 19px 0;
+                }
+            }
+
+            ul{
+                font-size: 14px;
+                padding-bottom: 23px;
+                @include media(sp){
+                    padding-bottom: 19px;
+                    font-size: 13px;
+                }
+            }
+
+        }
+
+    }
+
+    .second-row.mainte {
+        @extend %first-row-mainte;
+        padding: 44px 0 111px;
+        @include media(sp){
+            padding: 40px 0 70px;
+        }
+
+        .row-inner{
+            border: 1px solid #000000;
+            padding: 44px;
+            @include media(sp){
+                padding: 30px 10px;
+            }
+
+            h3{
+                font-family: "notosansbold";
+                font-size: 28px;
+                padding-bottom: 13px;
+                @include media(sp){
+                    font-size: 20px;
+                }
+            }
+            ul{
+                padding: 0;
+
+                li{
+                    h4{
+                        font-family: "notosansbold";
+                        font-size: 14px;
+                        padding: 12px;
+                        text-align: center;
+                        background-color: #282F38;
+                        color: #FFFFFF;
+                    }
+                    p{
+                        padding: 18px 0 26px;
+                        font-size: 14px;
+                    }
+                    &:last-child{
+                        p{
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    %first-row-amamori,
+    .first-row.amamori {
+        padding: 0 0 0;
+
+        @include media(sp) {
+            padding: 00 0;
         }
 
         .row-wrap {
@@ -906,12 +1021,12 @@ main {
 
     }
 
-    .second-row.mainte {
-        @extend %first-row-mainte;
-        padding: 94px 0 88px;
+    .second-row.amamori {
+        @extend %first-row-amamori;
+        padding: 0 0 88px;
 
         @include media(sp) {
-            padding: 55px 0 52px;
+            padding: 00 52px;
         }
 
         ul {
