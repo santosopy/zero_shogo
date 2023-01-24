@@ -1,10 +1,14 @@
 $(function(){
 
     // main visual text
-    $(".mv_text").typed({
-        strings: ["100年安心を<br class='is_sp'>かなえる家。"],
-        typeSpeed: 80,
-        showCursor: false
+    setInterval(() => {
+        $(".mv_text h2").addClass("visible")
+    }, 1000)
+    $(".mv_text h2 span").each( (i,e) =>{
+        if(i > 0){
+            var delay = ((6*i)/100).toFixed(2).toString()+"s"
+            $(e).css("transition-delay", delay)
+        } 
     })
 
     // slider 1

@@ -98,6 +98,10 @@ header{
                 z-index: 99999999;
                 width: 100%;
                 background: #FFFFFF;
+
+                ul{
+                    border-top: 0;
+                }
             }
         }
     }
@@ -306,8 +310,8 @@ header{
         &__second{
             ul{
                 display: flex;
-                border-top: 2px solid #000000;
-                border-bottom: 2px solid #000000;
+                border-top: 1px solid #000000;
+                border-bottom: 1px solid #000000;
 
                 li{
                     font-family: "notosansbold";
@@ -439,8 +443,11 @@ footer{
             li{
                 padding: 13px 7px 0;
                 width: calc(100%/4);
-                border: 1px solid;
+                border-top: 1px solid #000000;
 
+                &:not(:last-child){
+                    border-right: 1px solid #000000;
+                }
                 &:first-child{
                     a{
                         figure{

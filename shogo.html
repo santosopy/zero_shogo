@@ -43,7 +43,24 @@
                 <source media="(max-width: 480px)" srcset="./img_new/shogo/top/sp_mainvisual.jpg" />
                 <img src="./img_new/shogo/top/mainvisual.jpg" width="100%" alt="100年安心をかなえる家。">
             </picture>
-            <h2 class="mv_text"></h2>
+            <div class="mv_text">
+                <h2>
+                    <span>1</span>
+                    <span>0</span>
+                    <span>0</span>
+                    <span>年</span>
+                    <span>安</span>
+                    <span>心</span>
+                    <span>を</span>
+                    <br class="is_sp">
+                    <span>か</span>
+                    <span>な</span>
+                    <span>え</span>
+                    <span>る</span>
+                    <span>家</span>
+                    <span>。</span>
+                </h2>
+            </div>
         </section>
         <section class="pick_up">
             <div class="title">
@@ -117,12 +134,14 @@
                             <p>ゼロホームからのお知らせ</p>
                         </div>
                         <div class="is_pc is_onlytab">
-                            <a href="" class="news_btn">
-                                お知らせ一覧を見る
-                                <figure>
-                                    <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
-                                </figure>
-                            </a>
+                            <a href="" class="news_btn" 
+                            onmouseover="this.querySelector('img').src = './img_new/shogo/top/arrow_right.png'"
+                            onmouseout="this.querySelector('img').src = './img_new/shogo/top/arrow_right_w.png'">
+                            お知らせ一覧を見る
+                            <figure>
+                                <img src="./img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
                         </div>
                     </div>
                     <ul>

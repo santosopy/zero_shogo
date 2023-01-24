@@ -81,6 +81,9 @@ header {
     width: 100%;
     background: #FFFFFF;
   }
+  header.head_sticky .above__second ul {
+    border-top: 0;
+  }
 }
 header .side {
   border-right: 1px solid #E1E1E1;
@@ -258,8 +261,8 @@ header .above__first .other_menu .side_recruit figure img {
 }
 header .above__second ul {
   display: flex;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 header .above__second ul li {
   font-family: "notosansbold";
@@ -377,7 +380,10 @@ footer .footer_fix ul {
 footer .footer_fix ul li {
   padding: 13px 7px 0;
   width: 25%;
-  border: 1px solid;
+  border-top: 1px solid #000000;
+}
+footer .footer_fix ul li:not(:last-child) {
+  border-right: 1px solid #000000;
 }
 footer .footer_fix ul li:first-child a figure {
   margin-top: -22px;

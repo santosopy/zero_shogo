@@ -87,10 +87,7 @@ main {
 main .main_visual {
   position: relative;
 }
-main .main_visual h2 {
-  font-size: 53px;
-  font-family: "Source Han Serif JP", "Noto Serif CJK JP", "游明朝体", "Yu Mincho", YuMincho, serif;
-  color: #FFFFFF;
+main .main_visual .mv_text {
   position: absolute;
   top: 0;
   width: 100%;
@@ -98,12 +95,27 @@ main .main_visual h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+main .main_visual .mv_text h2 {
+  color: #FFFFFF;
+  font-size: 53px;
+  font-family: "Source Han Serif JP", "Noto Serif CJK JP", "游明朝体", "Yu Mincho", YuMincho, serif;
   text-shadow: #000000 1px 0 10px;
+  display: flex;
+  overflow: hidden;
 }
 @media screen and (max-width: 480px) {
-  main .main_visual h2 {
+  main .main_visual .mv_text h2 {
     font-size: 46px;
   }
+}
+main .main_visual .mv_text h2.visible span {
+  transform: translate(0, 0);
+}
+main .main_visual .mv_text h2 span {
+  display: block;
+  transform: translate(0, 105%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
 }
 main .pick_up {
   padding: 65px 0 95px;
@@ -333,12 +345,19 @@ main .news .news_wrap .news_inner .news_btn {
   font-size: 13px;
   justify-content: center;
   position: relative;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
 @media screen and (max-width: 480px) {
   main .news .news_wrap .news_inner .news_btn {
     margin: 0;
     margin-top: 30px;
   }
+}
+main .news .news_wrap .news_inner .news_btn:hover {
+  background-color: #023A90;
+  color: #FFFFFF;
 }
 main .news .news_wrap .news_inner .news_btn figure {
   position: absolute;
