@@ -240,6 +240,11 @@ main .public-shortcut .shortcut-inner {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (max-width: 480px) {
+  main .public-shortcut .shortcut-inner {
+    gap: 21px;
+  }
+}
 main .public-shortcut .shortcut-inner a {
   color: #000000;
   display: inline-flex;
@@ -423,7 +428,7 @@ main .first-row.a_201804 {
 }
 @media screen and (max-width: 480px) {
   main .first-row.a_201804 {
-    padding: 0 52px;
+    padding: 0 0 52px;
   }
 }
 main .first-row.a_201804 .row-wrap {
