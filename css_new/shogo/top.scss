@@ -103,9 +103,20 @@ $blue: #023A90;
 }
 .swiper-button-prev{
     background-image: url("../../img_new/shogo/top/slider_prev.svg");
+    background-repeat: no-repeat;
 }
 .swiper-button-next{
     background-image: url("../../img_new/shogo/top/slider_next.svg");
+    background-repeat: no-repeat;
+}
+.swiper-button-prev::after, .swiper-rtl .swiper-button-next::after{
+    content: none;
+}
+.swiper-button-next::after, .swiper-rtl .swiper-button-prev::after{
+    content: none;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: auto;
 }
 
 main{
@@ -117,34 +128,72 @@ main{
 
     .main_visual{
         position: relative;
-
-        .mv_text{
+        
+        .mv_loading{
+            background-color: #000000;
             position: absolute;
-            top: 0;
             width: 100%;
             height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            z-index: 2;
+            opacity: 0.5;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+          }
+        .mv_slider{
+            width: 100%;
+            height: 100%;
             
-            h2{
-                color: #FFFFFF;
-                font-size: 53px;
-                font-family: $han;
-                text-shadow: #000000 1px 0 10px;
-                display: flex;
-                overflow: hidden;
-                @include media(sp){
-                    font-size: 46px;
-                }
-                
-                &.visible span {
-                    transform: translate(0, 0);
-                }
-                span{
-                    display: block;
-                    transform: translate(0, 105%);
-                    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+            .swiper-wrapper{
+                .swiper-slide{
+                    background-position: center;
+                    background-size: cover;
+                    
+                    img{
+                        display: block;
+                    }
+                    .mv_text{
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+                        h2{
+                            color: #FFFFFF;
+                            font-size: 53px;
+                            font-family: $han;
+                            text-shadow: #000000 1px 0 10px;
+                            display: flex;
+                            overflow: hidden;
+                            text-align: center;
+                            @include media(sp){
+                                font-size: 36px;
+                            }
+                            
+                            &.visible span {
+                                transform: translate(0, 0);
+                            }
+                            span{
+                                display: block;
+                                transform: translate(0, 105%);
+                                transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -441,6 +490,9 @@ main{
                                     flex-direction: row;
                                     gap: 21px;
                                 }
+                                @include media(sp){
+                                    gap: 15px;
+                                }
 
                                 -webkit-transition: all 0.4s ease;
                                 -moz-transition: all 0.4s ease;
@@ -485,9 +537,8 @@ main{
                                             font-family: "notosansbold";
                                             font-size: 22px;
                                             color: $blue;
-                                            
-                                            span{
-                                                font-size: 18px;
+                                            @include media(sp){
+                                                font-size: 20px;
                                             }
                                         }
                                         p{

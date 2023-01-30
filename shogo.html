@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="js_new/shogo/common.js"></script>
     
-    <link rel="stylesheet" href="css_new/shogo/swiper.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css_new/shogo/top.css" />
     <script src="js_new/shogo/top.js"></script>
     <script src="js_new/shogo/wow.js"></script>
@@ -38,28 +38,107 @@
     
     <main>
         <section class="main_visual">
-            <picture>
-                <source media="(max-width: 480px)" srcset="./img_new/shogo/top/sp_mainvisual.jpg" />
-                <img src="./img_new/shogo/top/mainvisual.jpg" width="100%" alt="100年安心をかなえる家。">
-            </picture>
-            <div class="mv_text">
-                <h2>
-                    <span>1</span>
-                    <span>0</span>
-                    <span>0</span>
-                    <span>年</span>
-                    <span>安</span>
-                    <span>心</span>
-                    <span>を</span>
-                    <br class="is_sp">
-                    <span>か</span>
-                    <span>な</span>
-                    <span>え</span>
-                    <span>る</span>
-                    <span>家</span>
-                    <span>。</span>
-                </h2>
+            <div class="mv_loading"></div>
+            <div class="swiper mv_slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img_new/shogo/top/mainvisual.jpg" width="1150" alt="100年安心をかなえる家。">
+                        <div class="mv_text">
+                            <div class="is_pc is_onlytab">
+                                <h2>
+                                    <span>1</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>年</span>
+                                    <span>安</span>
+                                    <span>心</span>
+                                    <span>を</span>
+                                    <span>か</span>
+                                    <span>な</span>
+                                    <span>え</span>
+                                    <span>る</span>
+                                    <span>家</span>
+                                    <span>。</span>
+                                </h2>
+                            </div>
+                            <div class="is_sp">
+                                <h2>
+                                    <span>1</span>
+                                    <span>0</span>
+                                    <span>0</span>
+                                    <span>年</span>
+                                    <span>安</span>
+                                    <span>心</span>
+                                    <span>を</span>
+                                </h2>
+                                <h2>
+                                    <span>か</span>
+                                    <span>な</span>
+                                    <span>え</span>
+                                    <span>る</span>
+                                    <span>家</span>
+                                    <span>。</span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img_new/shogo/top/mainvisual02.jpg" width="1150" alt="100年安心をかなえる家。">
+                        <div class="mv_text">
+                            <h2>
+                                デザインも性能も <br>
+                                こだわりの家づくり。
+                            </h2>
+                            <!-- <h2>
+                                <span>デ</span>
+                                <span>ザ</span>
+                                <span>イ</span>
+                                <span>ン</span>
+                                <span>も</span>
+                                <span>性</span>
+                                <span>能</span>
+                                <span>も</span>
+                                <br class="">
+                                <span>こ</span>
+                                <span>だ</span>
+                                <span>わ</span>
+                                <span>り</span>
+                                <span>の</span>
+                                <span>家</span>
+                                <span>づ</span>
+                                <span>く</span>
+                                <span>り</span>
+                                <span>。</span>
+                            </h2> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img_new/shogo/top/mainvisual03.jpg" width="1150" alt="100年安心をかなえる家。">
+                        <div class="mv_text">
+                            <h2>
+                                家族のしあわせが<br class="is_sp">ここに。
+                            </h2>
+                            <!-- <h2>
+                                
+                                <span>家</span>
+                                <span>族</span>
+                                <span>の</span>
+                                <span>し</span>
+                                <span>あ</span>
+                                <span>わ</span>
+                                <span>せ</span>
+                                <span>が</span>
+                                <br class="">
+                                <span>こ</span>
+                                <span>こ</span>
+                                <span>に</span>
+                                <span>。</span>
+                            </h2> -->
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </section>
         <section class="pick_up">
             <div class="title">
@@ -195,8 +274,8 @@
                                     </figure>
                                     <div class="item_text">
                                         <div class="caption">
-                                            <h3><span>家を</span>建てたい</h3>
-                                            <p>注文住宅・建て替え</p>
+                                            <h3>注文住宅・立て替え</h3>
+                                            <p>家を建てたい</p>
                                         </div>
                                         <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
                                     </div>
@@ -209,8 +288,8 @@
                                     </figure>
                                     <div class="item_text">
                                         <div class="caption">
-                                            <h3><span>家を</span>買いたい</h3>
-                                            <p>一戸建て・マンション・土地</p>
+                                            <h3>新築戸建・土地</h3>
+                                            <p>家を買いたい</p>
                                         </div>
                                         <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
                                     </div>
@@ -223,8 +302,8 @@
                                     </figure>
                                     <div class="item_text">
                                         <div class="caption">
-                                            <h3><span>家を</span>売りたい</h3>
-                                            <p>不動産買取</p>
+                                            <h3>不動産買取</h3>
+                                            <p>家を売りたい</p>
                                         </div>
                                         <img src="./img_new/shogo/top/arrow_right.png" width="13" alt="詳しくはこちら">
                                     </div>
@@ -784,6 +863,6 @@
         </script>
     </footer>
     
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

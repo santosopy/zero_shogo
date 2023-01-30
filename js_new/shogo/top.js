@@ -1,15 +1,30 @@
 $(function(){
 
     // main visual text
-    setInterval(() => {
-        $(".mv_text h2").addClass("visible")
-    }, 1000)
-    $(".mv_text h2 span").each( (i,e) =>{
-        if(i > 0){
-            var delay = ((6*i)/100).toFixed(2).toString()+"s"
-            $(e).css("transition-delay", delay)
-        } 
-    })
+    // $(window).on("load", function () {
+        setInterval(() => {
+            $(".mv_text h2").addClass("visible")
+        }, 2000)
+        
+        $(".mv_text h2 span").each( (i,e) =>{
+            if(i > 0){
+                var delay = ((6*i)/100).toFixed(2).toString()+"s"
+                $(e).css("transition-delay", delay)
+            } 
+        })
+    // })
+
+    // slider mv
+    $(".mv_loading").fadeOut(3000)
+    let mvSlider = new Swiper ('.mv_slider', {
+        loop: true,
+        effect: "fade",
+        autoplay: {
+          delay: 4000,
+        },
+        speed:1000,
+        touchReleaseOnEdges:true
+    });
 
     // slider 1
     let first = new Swiper ('.first_slider', {

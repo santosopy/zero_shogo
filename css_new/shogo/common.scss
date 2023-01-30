@@ -133,6 +133,7 @@ header{
                     align-items: center;
                     gap: 12px;
                     padding: 20px 10px;
+                    padding-left: 27px;
                     box-shadow: inset 0 0 0 0 $blue;
                     -webkit-transition: ease-out 0.4s;
                     -moz-transition: ease-out 0.4s;
@@ -146,14 +147,12 @@ header{
                     }
                     .nav_text{
                         h2{
-                            font-size: 18px;
+                            font-family: "notosansbold";
+                            font-size: 22px;
                             color: $blue;
-    
-                            span{
-                                font-size: 22px;
-                            }
                         }
                         p{
+                            font-family: "notosansbold";
                             font-size: 13px;
                             transition: color 0.3s ease;
                         }
@@ -327,12 +326,15 @@ header{
                         margin: 8px 0;
                     }
                     a{
-                        color: $blue;
-
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        
                         h2{
-                            display: flex;
-                            align-items: flex-end;
-                            word-break: keep-all;
+                            color: $blue;
+                            font-family: "notosansbold";
+                            font-size: 13px;
                         }
                     }
                 }

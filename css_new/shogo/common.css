@@ -113,6 +113,7 @@ header .side ul li a {
   align-items: center;
   gap: 12px;
   padding: 20px 10px;
+  padding-left: 27px;
   box-shadow: inset 0 0 0 0 #023A90;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
@@ -125,13 +126,12 @@ header .side ul li a .arrow {
   margin-right: 7px;
 }
 header .side ul li a .nav_text h2 {
-  font-size: 18px;
+  font-family: "notosansbold";
+  font-size: 22px;
   color: #023A90;
 }
-header .side ul li a .nav_text h2 span {
-  font-size: 22px;
-}
 header .side ul li a .nav_text p {
+  font-family: "notosansbold";
   font-size: 13px;
   transition: color 0.3s ease;
 }
@@ -278,12 +278,15 @@ header .above__second ul li.separator {
   margin: 8px 0;
 }
 header .above__second ul li a {
-  color: #023A90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 header .above__second ul li a h2 {
-  display: flex;
-  align-items: flex-end;
-  word-break: keep-all;
+  color: #023A90;
+  font-family: "notosansbold";
+  font-size: 13px;
 }
 
 footer {
