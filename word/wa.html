@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/word.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="../sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="../public.html">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="../staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="../word.html" class="active">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="../shogo.html"><span>TOP</span></a>
+                <span class="space">></span><span>建築用語集</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>WORD</h3>
+                            <p>建築用語集</p>
+                        </div>
+                        <h4>
+                            建築の専門用語は、一般的によく耳にするものから大工さんの間でしか<br class="is_pc">
+                            使われないものまで様々で、一般消費者にはわかりにくいのが実情です。<br class="is_pc">
+                            そこで、住宅の建築においてよく使われる言葉をまとめてみました。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/word/sp_word_main.jpg" />
+                    <img src="../img_new/shogo/word/word_main.jpg" width="100%" alt="建築用語集">
+                </picture>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content-wrap">
+                <div class="is_pc is_onlytab">
+                    <h5>
+                        用語説明のあとに <img src="../img_new/shogo/word/camera.svg" alt="camera"> マークのある用語には画像があります。アイコンの上にカーソルを重ねると、画像がご覧いただけます。<br>
+                        五十音別に並べていますので、下記よりお探しの言葉の行をお選び下さい。
+                    </h5>
+                </div>
+                <div class="is_sp">
+                    <h5>五十音別に並べていますので、下記よりお探しの言葉の行をお選び下さい。</h5>
+                </div>
+                <ul class="word-nav">
+                    <li id="menu01">
+                        <a href="../word.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                あ<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu02">
+                        <a href="../word/ka.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                か<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu03">
+                        <a href="../word/sa.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                さ<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu04">
+                        <a href="../word/ta.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                た<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu05">
+                        <a href="../word/na.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                な<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu06">
+                        <a href="../word/ha.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                は<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu07">
+                        <a href="../word/ma.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                ま<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu08">
+                        <a href="../word/ya.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                や<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu09">
+                        <a href="../word/ra.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                ら<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu10">
+                        <a href="../word/wa.html" class="active">
+                            <p>
+                                わ<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+               
+                <div class="">
+                
+            
+                    <!-- /本文グループ：あ =========== -->
+                    
+                    
+                    <div class="article">
+                        <h3 id="lnk01" class="h2Txt">わ</h3>
+                        <!-- start 本文：A +++ -->
+                                    
+                        <div class="cell in dot">
+                            <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                <tbody><tr>
+                                    <td class="titleTd">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                                <tbody><tr>
+                                                    <td><div class="b_font">笑う<span class="diln">（わらう）</span></div></td>
+                                                </tr>
+                                            </tbody></table>
+                                    </td>
+                                    <td width="10"></td>
+                                    <td>二つの部材を止めてある箇所が反ったりして隙間ができては、いけない所に隙間が出来てしまうこと。主に材に原因がある時にに用いる。</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                                                
+                
+                </div>
+                <!-- // END 本文グループ：あ -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>

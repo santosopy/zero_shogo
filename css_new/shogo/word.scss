@@ -1,0 +1,499 @@
+$breakpoints: ('sp': (max-width: 480px),
+    'tab': (max-width: 1024px),
+    'pc': (min-width: 1025px)) !default;
+
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+            @content;
+        }
+    }
+}
+
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp {
+    display: none;
+}
+
+@include media(sp) {
+    .is_sp {
+        display: block;
+    }
+}
+
+@include media(tab) {
+    .is_tab {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .is_onlytab {
+        display: block;
+    }
+}
+
+@include media(pc) {
+    .is_pc {
+        display: block;
+    }
+}
+
+@mixin smooth {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+@mixin wrap {
+    max-width: calc(1000px + 2rem);
+    margin: auto;
+    padding: 0 1rem;
+}
+
+@mixin title {
+    h3 {
+        font-family: 'montserratmedium';
+        font-size: 30px;
+        letter-spacing: 3px;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        font-size: 18px;
+
+        @include media(sp) {
+            font-size: 15px;
+        }
+    }
+
+    h3,
+    p {
+        line-height: 1;
+    }
+}
+
+@mixin button($w, $h, $p, $f) {
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    padding: $p;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    max-width: $w;
+    height: $h;
+    width: 100%;
+    font-family: "notosansbold";
+    font-size: $f;
+    justify-content: space-between;
+    position: relative;
+    @include smooth();
+
+    &:hover {
+        background-color: $blue;
+        color: #FFFFFF;
+    }
+
+    figure {
+        line-height: 1;
+    }
+}
+
+@font-face {
+    font-family: 'notosansbold';
+    src: url('../font/NotoSansJP-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../font/Montserrat-Medium.ttf') format('opentype');
+}
+
+$blue: #023A90;
+$gray: #B6B6B6;
+$gray2: #F5F5F5;
+$gray3: #DCDCDC;
+
+main {
+    overflow: hidden;
+
+    @include media(pc) {
+        width: calc(100% - 300px);
+        margin-left: 300px;
+    }
+
+    .submenu {
+        padding: 20px;
+        background-color: #000000;
+
+        @include media(sp) {
+            padding: 0;
+        }
+
+        .submenu-wrap {
+            @include wrap();
+
+            @include media(sp) {
+                padding: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    @media screen and (min-width: 481px) {
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        position: relative;
+
+                        &:not(:last-child)::after {
+                            content: "|";
+                            position: absolute;
+                            right: 0;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    @include media(sp) {
+                        width: 50%;
+                        padding: 14px;
+                        text-align: center;
+
+                        &:nth-child(1),
+                        &:nth-child(3),
+                        &:nth-child(5) {
+                            border-right: 1px solid #FFFFFF;
+                        }
+
+                        &:not(:nth-child(6)):not(:nth-child(5)) {
+                            border-bottom: 1px solid #FFFFFF;
+                        }
+                    }
+
+                    a {
+                        font-family: "notosansbold";
+                        font-size: 14px;
+                        color: #FFFFFF;
+                        @include smooth();
+
+                        &.active {
+                            color: $blue;
+                        }
+
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .breadcrumb {
+        padding: 14px 0;
+
+        @include media(sp) {
+            padding: 11px 0;
+        }
+
+        .breadcrumb-wrap {
+            @include wrap();
+            font-size: 11px;
+            color: $gray;
+
+            @include media(sp) {
+                font-size: 10px;
+            }
+
+            a {
+                color: $blue;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -o-transition: 0.3s;
+                transition: 0.3s;
+
+                &:hover {
+                    filter: alpha(opacity=60);
+                    -moz-opacity: 0.60;
+                    opacity: 0.60;
+                }
+            }
+            .space{
+                padding: 0 5px;
+            }
+        }
+    }
+
+    .main_visual {
+        &__text {
+            background-color: $gray2;
+            padding: 40px 0;
+
+            @include media(sp) {
+                padding: 27px 0;
+            }
+
+            .main_visual-wrap {
+                @include wrap();
+
+                .main_visual-inner {
+                    @include title();
+                    display: flex;
+                    align-items: center;
+                    gap: 50px;
+
+                    @include media(tab) {
+                        flex-direction: column;
+                        gap: 1rem;
+                        align-items: flex-start;
+                    }
+
+                    &:before {
+                        content: "";
+                        border: 1px solid #000000;
+                        align-self: stretch;
+
+                        @include media(tab) {
+                            align-self: auto;
+                            width: 3.5rem;
+                        }
+                    }
+
+                    >div {
+                        order: -1;
+                    }
+
+                    h4 {
+                        font-size: 14px;
+
+                        @include media(sp) {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__img {
+            position: relative;
+
+            &:before {
+                content: " ";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../../img_new/shogo/staff_list/bgMask.png);
+            }
+        }
+    }
+
+    .content {
+        padding: 95px 0 85px;
+
+        @include media(sp) {
+            padding: 55px 0 50px;
+        }
+
+        .content-wrap {
+            @include wrap();
+
+            h5{
+                font-size: 14px;
+                line-height: 1.8;
+                @include media(sp){
+                    font-size: 13px;
+                }
+
+                img{
+                    vertical-align: middle;
+                }
+            }
+            .word-nav{
+                padding: 32px 0;
+                display: flex;
+                gap: 8px;
+                flex-wrap: wrap;
+                @include media(sp){
+                    padding: 16px 0;
+                }
+
+                li{
+                    max-width: 91px;
+                    width: 100%;
+                    @include media(sp){
+                        max-width: 18%;
+                    }
+                    a{
+                        @include button(100%, 65px, 10px, 18px);
+                        @include media(sp){
+                            @include button(100%, 55px, 5px, 16px);
+                        }
+                        
+                        &.active{
+                            background-color: #023A90;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                &-sub{
+                    padding-top: 22px;
+                    display: flex;
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    border-top: 1px solid #000000;
+                    @include media(sp){
+                        padding-top: 14px;
+                    }
+
+                    li{
+                        max-width: 91px;
+                        width: 100%;
+                        @include media(sp){
+                            max-width: 18%;
+                        }
+
+                        a{
+                            background-color: $gray2;
+                            border: 1px solid #EBEFF6;
+                            font-size: 16px;
+                            font-family: "notosansbold";
+                            padding: 10px;
+                            width: 100%;
+                            display: block;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            height: 50px;
+                            @include media(sp){
+                                height: 55px;
+                            }
+                            
+                            &:after{
+                                content: "";
+                                background-image: url(../../img_new/shogo/top/arrow_right.png);
+                                width: 13px;
+                                height: 13px;
+                                display: block;
+                                background-size: 13px 13px;
+                                transform: rotate(90deg);
+                            }
+                        }
+                    }
+                }
+            }
+            .article{
+                padding-top: 26px;
+
+                h3{
+                    font-family: "notosansbold";
+                    font-size: 18px;
+                    color: #FFFFFF;
+                    background-color: #282F38;
+                    padding: 12px 16px;
+                }
+                .cell{
+                    padding: 25px 0 22px;
+                    border-bottom: 1px solid #EBEFF6;
+                    @include media(sp){
+                        padding: 14px 0 12px;
+                    }
+
+                    > table{
+                        font-size: 14px;
+                        @include media(sp){
+                            font-size: 13px;
+                        }
+
+                        > tbody{
+                            > tr{
+                                @include media(sp){
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+
+                                .titleTd{
+                                    font-family: "notosansbold";
+                                    width: 30%;
+                                    @include media(sp){
+                                        width: 100%;
+                                        padding-bottom: 5px;
+                                    }
+                                    
+                                    table{
+                                        tbody{
+                                            tr{
+                                                td{
+                                                    .thumbnail{
+                                                        position: relative;
+                                                        z-index: 0;
+                                                        @include media(sp){
+                                                            display: none;
+                                                        }
+                                                        
+                                                        &:hover{
+                                                            filter: alpha(opacity=100);
+                                                            -moz-opacity: 1.0;
+                                                            opacity: 1.0;
+                                                            background-color: transparent;
+                                                            z-index: 50;
+                                                            
+                                                            span {
+                                                                visibility: visible;
+                                                                top: 20px;
+                                                                left: 0px;
+                                                                
+                                                                img{
+                                                                    border-width: 0;
+                                                                    padding: 2px;
+                                                                    max-width: none;
+                                                                }
+                                                            }
+                                                        }
+                                                        img{
+                                                            vertical-align: middle;
+                                                        }
+                                                        span{
+                                                            position: absolute;
+                                                            background-color: white;
+                                                            padding: 5px;
+                                                            left: 0px;
+                                                            border: 1px double #000000;
+                                                            visibility: hidden;
+                                                            color: #000000;
+                                                            text-decoration: none;
+                                                            text-align: left;
+                                                        }
+                                                    }
+                                                    .thumbnail2{
+                                                        @extend .thumbnail;
+                                                        
+                                                        &:hover{
+                                                            span{
+                                                                top: -300px;
+                                                            }
+                                                        }
+                                                        span{
+                                                            left: -1000px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

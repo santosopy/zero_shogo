@@ -1,0 +1,462 @@
+.is_pc,
+.is_tab,
+.is_onlytab,
+.is_sp {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .is_sp {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .is_tab {
+    display: block;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .is_onlytab {
+    display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .is_pc {
+    display: block;
+  }
+}
+@font-face {
+  font-family: "notosansbold";
+  src: url("../font/NotoSansJP-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "montserratmedium";
+  src: url("../font/Montserrat-Medium.ttf") format("opentype");
+}
+main {
+  overflow: hidden;
+}
+@media screen and (min-width: 1025px) {
+  main {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+  }
+}
+main .submenu {
+  padding: 20px;
+  background-color: #000000;
+}
+@media screen and (max-width: 480px) {
+  main .submenu {
+    padding: 0;
+  }
+}
+main .submenu .submenu-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+@media screen and (max-width: 480px) {
+  main .submenu .submenu-wrap {
+    padding: 0;
+  }
+}
+main .submenu .submenu-wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 481px) {
+  main .submenu .submenu-wrap ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+  }
+  main .submenu .submenu-wrap ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: #FFFFFF;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .submenu .submenu-wrap ul li {
+    width: 50%;
+    padding: 14px;
+    text-align: center;
+  }
+  main .submenu .submenu-wrap ul li:nth-child(1), main .submenu .submenu-wrap ul li:nth-child(3), main .submenu .submenu-wrap ul li:nth-child(5) {
+    border-right: 1px solid #FFFFFF;
+  }
+  main .submenu .submenu-wrap ul li:not(:nth-child(6)):not(:nth-child(5)) {
+    border-bottom: 1px solid #FFFFFF;
+  }
+}
+main .submenu .submenu-wrap ul li a {
+  font-family: "notosansbold";
+  font-size: 14px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+main .submenu .submenu-wrap ul li a.active {
+  color: #023A90;
+}
+main .submenu .submenu-wrap ul li a:hover {
+  color: #023A90;
+}
+main .breadcrumb {
+  padding: 14px 0;
+}
+@media screen and (max-width: 480px) {
+  main .breadcrumb {
+    padding: 11px 0;
+  }
+}
+main .breadcrumb .breadcrumb-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 11px;
+  color: #B6B6B6;
+}
+@media screen and (max-width: 480px) {
+  main .breadcrumb .breadcrumb-wrap {
+    font-size: 10px;
+  }
+}
+main .breadcrumb .breadcrumb-wrap a {
+  color: #023A90;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+main .breadcrumb .breadcrumb-wrap a:hover {
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  opacity: 0.6;
+}
+main .breadcrumb .breadcrumb-wrap .space {
+  padding: 0 5px;
+}
+main .main_visual__text {
+  background-color: #F5F5F5;
+  padding: 40px 0;
+}
+@media screen and (max-width: 480px) {
+  main .main_visual__text {
+    padding: 27px 0;
+  }
+}
+main .main_visual__text .main_visual-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+main .main_visual__text .main_visual-wrap .main_visual-inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+main .main_visual__text .main_visual-wrap .main_visual-inner h3 {
+  font-family: "montserratmedium";
+  font-size: 30px;
+  letter-spacing: 3px;
+  padding-bottom: 1rem;
+}
+main .main_visual__text .main_visual-wrap .main_visual-inner p {
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  main .main_visual__text .main_visual-wrap .main_visual-inner p {
+    font-size: 15px;
+  }
+}
+main .main_visual__text .main_visual-wrap .main_visual-inner h3,
+main .main_visual__text .main_visual-wrap .main_visual-inner p {
+  line-height: 1;
+}
+@media screen and (max-width: 1024px) {
+  main .main_visual__text .main_visual-wrap .main_visual-inner {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+}
+main .main_visual__text .main_visual-wrap .main_visual-inner:before {
+  content: "";
+  border: 1px solid #000000;
+  align-self: stretch;
+}
+@media screen and (max-width: 1024px) {
+  main .main_visual__text .main_visual-wrap .main_visual-inner:before {
+    align-self: auto;
+    width: 3.5rem;
+  }
+}
+main .main_visual__text .main_visual-wrap .main_visual-inner > div {
+  order: -1;
+}
+main .main_visual__text .main_visual-wrap .main_visual-inner h4 {
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  main .main_visual__text .main_visual-wrap .main_visual-inner h4 {
+    font-size: 13px;
+  }
+}
+main .main_visual__img {
+  position: relative;
+}
+main .main_visual__img:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../img_new/shogo/staff_list/bgMask.png);
+}
+main .content {
+  padding: 95px 0 85px;
+}
+@media screen and (max-width: 480px) {
+  main .content {
+    padding: 55px 0 50px;
+  }
+}
+main .content .content-wrap {
+  max-width: calc(1000px + 2rem);
+  margin: auto;
+  padding: 0 1rem;
+}
+main .content .content-wrap h5 {
+  font-size: 14px;
+  line-height: 1.8;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap h5 {
+    font-size: 13px;
+  }
+}
+main .content .content-wrap h5 img {
+  vertical-align: middle;
+}
+main .content .content-wrap .word-nav {
+  padding: 32px 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .word-nav {
+    padding: 16px 0;
+  }
+}
+main .content .content-wrap .word-nav li {
+  max-width: 91px;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .word-nav li {
+    max-width: 18%;
+  }
+}
+main .content .content-wrap .word-nav li a {
+  color: #000000;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  max-width: 100%;
+  height: 65px;
+  width: 100%;
+  font-family: "notosansbold";
+  font-size: 18px;
+  justify-content: space-between;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+main .content .content-wrap .word-nav li a:hover {
+  background-color: #023A90;
+  color: #FFFFFF;
+}
+main .content .content-wrap .word-nav li a figure {
+  line-height: 1;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .word-nav li a {
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 55px;
+    width: 100%;
+    font-family: "notosansbold";
+    font-size: 16px;
+    justify-content: space-between;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  main .content .content-wrap .word-nav li a:hover {
+    background-color: #023A90;
+    color: #FFFFFF;
+  }
+  main .content .content-wrap .word-nav li a figure {
+    line-height: 1;
+  }
+}
+main .content .content-wrap .word-nav li a.active {
+  background-color: #023A90;
+  color: #FFFFFF;
+}
+main .content .content-wrap .word-nav-sub {
+  padding-top: 22px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  border-top: 1px solid #000000;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .word-nav-sub {
+    padding-top: 14px;
+  }
+}
+main .content .content-wrap .word-nav-sub li {
+  max-width: 91px;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .word-nav-sub li {
+    max-width: 18%;
+  }
+}
+main .content .content-wrap .word-nav-sub li a {
+  background-color: #F5F5F5;
+  border: 1px solid #EBEFF6;
+  font-size: 16px;
+  font-family: "notosansbold";
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .word-nav-sub li a {
+    height: 55px;
+  }
+}
+main .content .content-wrap .word-nav-sub li a:after {
+  content: "";
+  background-image: url(../../img_new/shogo/top/arrow_right.png);
+  width: 13px;
+  height: 13px;
+  display: block;
+  background-size: 13px 13px;
+  transform: rotate(90deg);
+}
+main .content .content-wrap .article {
+  padding-top: 26px;
+}
+main .content .content-wrap .article h3 {
+  font-family: "notosansbold";
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #282F38;
+  padding: 12px 16px;
+}
+main .content .content-wrap .article .cell {
+  padding: 25px 0 22px;
+  border-bottom: 1px solid #EBEFF6;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .article .cell {
+    padding: 14px 0 12px;
+  }
+}
+main .content .content-wrap .article .cell > table {
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .article .cell > table {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .article .cell > table > tbody > tr {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd {
+  font-family: "notosansbold";
+  width: 30%;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .article .cell > table > tbody > tr .titleTd {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail, main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2 {
+  position: relative;
+  z-index: 0;
+}
+@media screen and (max-width: 480px) {
+  main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail, main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2 {
+    display: none;
+  }
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail:hover, main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2:hover {
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  opacity: 1;
+  background-color: transparent;
+  z-index: 50;
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail:hover span, main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2:hover span {
+  visibility: visible;
+  top: 20px;
+  left: 0px;
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail:hover span img, main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2:hover span img {
+  border-width: 0;
+  padding: 2px;
+  max-width: none;
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail img, main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2 img {
+  vertical-align: middle;
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail span, main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2 span {
+  position: absolute;
+  background-color: white;
+  padding: 5px;
+  left: 0px;
+  border: 1px double #000000;
+  visibility: hidden;
+  color: #000000;
+  text-decoration: none;
+  text-align: left;
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2:hover span {
+  top: -300px;
+}
+main .content .content-wrap .article .cell > table > tbody > tr .titleTd table tbody tr td .thumbnail2 span {
+  left: -1000px;
+}/*# sourceMappingURL=word.css.map */

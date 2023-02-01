@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>無題ドキュメント</title>
+    <link
+    rel="shortcut icon"
+    href="https://zerohome.jp/wp-content/themes/zerohome/img/favicon.ico"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css_new/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js_new/shogo/common.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../css_new/shogo/word.css" />
+    <script src="../js_new/shogo/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <header>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../header.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("header").html(newData)
+                } )
+            });
+        </script>
+    </header>
+    
+    <main>
+        <section class="submenu">
+            <div class="submenu-wrap">
+                <ul>
+                    <li>
+                        <a href="../sdgs.html">SDGsへの取り組み</a>
+                    </li>
+                    <li>
+                        <a href="../public.html">公開</a>
+                    </li>
+                    <li>
+                        <a href="">取り組み</a>
+                    </li>
+                    <li>
+                        <a href="../staff_list.html">営業スタッフ紹介</a>
+                    </li>
+                    <li>
+                        <a href="">企業情報</a>
+                    </li>
+                    <li>
+                        <a href="../word.html" class="active">建築用語集</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="breadcrumb">
+            <div class="breadcrumb-wrap">
+                <a href="../shogo.html"><span>TOP</span></a>
+                <span class="space">></span><span>建築用語集</span>
+            </div>
+        </section>
+        <section class="main_visual">
+            <div class="main_visual__text">
+                <div class="main_visual-wrap">
+                    <div class="main_visual-inner">
+                        <div>
+                            <h3>WORD</h3>
+                            <p>建築用語集</p>
+                        </div>
+                        <h4>
+                            建築の専門用語は、一般的によく耳にするものから大工さんの間でしか<br class="is_pc">
+                            使われないものまで様々で、一般消費者にはわかりにくいのが実情です。<br class="is_pc">
+                            そこで、住宅の建築においてよく使われる言葉をまとめてみました。
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main_visual__img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="../img_new/shogo/word/sp_word_main.jpg" />
+                    <img src="../img_new/shogo/word/word_main.jpg" width="100%" alt="建築用語集">
+                </picture>
+            </div>
+        </section>
+        <section class="content">
+            <div class="content-wrap">
+                <div class="is_pc is_onlytab">
+                    <h5>
+                        用語説明のあとに <img src="../img_new/shogo/word/camera.svg" alt="camera"> マークのある用語には画像があります。アイコンの上にカーソルを重ねると、画像がご覧いただけます。<br>
+                        五十音別に並べていますので、下記よりお探しの言葉の行をお選び下さい。
+                    </h5>
+                </div>
+                <div class="is_sp">
+                    <h5>五十音別に並べていますので、下記よりお探しの言葉の行をお選び下さい。</h5>
+                </div>
+                <ul class="word-nav">
+                    <li id="menu01">
+                        <a href="../word.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                あ<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu02">
+                        <a href="../word/ka.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                か<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu03">
+                        <a href="../word/sa.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                さ<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu04">
+                        <a href="../word/ta.html" class="active">
+                            <p>
+                                た<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right_w.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu05">
+                        <a href="../word/na.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                な<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu06">
+                        <a href="../word/ha.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                は<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu07">
+                        <a href="../word/ma.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                ま<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu08">
+                        <a href="../word/ya.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                や<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu09">
+                        <a href="../word/ra.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                ら<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="menu10">
+                        <a href="../word/wa.html" onmouseover="this.querySelector('img').src = '../img_new/shogo/top/arrow_right_w.png'" onmouseout="this.querySelector('img').src = '../img_new/shogo/top/arrow_right.png'">
+                            <p>
+                                わ<span>行</span>
+                            </p>
+                            <figure>
+                                <img src="../img_new/shogo/top/arrow_right.png" alt="詳しくを見る" width="13">
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="word-nav-sub">
+                    <li><a href="#lnk01">た</a></li>
+                    <li><a href="#lnk02">ち</a></li>
+                    <li><a href="#lnk03">つ</a></li>
+                    <li><a href="#lnk04">て</a></li>
+                    <li><a href="#lnk05">と</a></li>
+                </ul>
+                <div class="">
+                
+            
+                    <!-- /本文グループ：あ =========== -->
+                    
+                    
+                    <div class="article">
+                        <h3 id="lnk01" class="h2Txt">た</h3>
+                                    <!-- start 本文：A +++ -->
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">大面<span class="diln">（だいめん）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>柱で室内側に向いた面のこと。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                            
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                    
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">耐力壁<span class="diln">（たいりょくへき）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>		
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>台風や地震などで建物に横からの力が加わったとき、家が歪まないように強く補強するもの。筋交いや構造用合板で構成される。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                    
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">抱<span class="diln">（だき）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>		
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>窓、出入り口などの開口の見込み寸法。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                    <p><a id="tataki"></a></p>
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">三和土<span class="diln">（たたき）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>		
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>土間、石敷きの廊下のこと。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">畳寄せ<span class="diln">（たたみよせ）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                <td align="right"><a class="thumbnail" href="javascript:void(0);"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/pict.gif" alt="画像" width="16" height="16" border="0"><span><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/tatamiyose.jpg" alt="" width="250" height="250" border="0"></span></a></td>
+                                                            </tr>
+                                                        </tbody></table>	
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>畳と壁が接する部分にできる隙間を埋める部材。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">立ち直し<span class="diln">（たちなおし）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>建前の時柱の垂直を取ることをいい、修繕の時に歪んだ建物を垂直に戻すことを「<a title="歪んだ建物をケンドで突いたりロープで引っ張り、元の状態に戻すこと。" href="../word.html#igamitsuki"><b>イガミ突き</b></a>」という。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                    
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">建方<span class="diln">（たてかた）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>		
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>骨組みの組立て。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">建前<span class="diln">（たてまえ）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>現場での骨組み作業。むねあげ(棟上)。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                    
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">縦水<span class="diln">（たてみず）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>		
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>地面に対して垂直のこと。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><a id="taruki"></a>
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">垂木<span class="diln">（たるき）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td><td align="right"><a class="thumbnail" href="javascript:void(0);"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/pict.gif" alt="画像" width="16" height="16" border="0"><span><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/taruki.jpg" alt="" width="250" height="250" border="0"></span></a></td>
+                                                                </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td><a title="屋根を葺くための下地板。" href="na.html#nojiita"><b>野地板</b></a>（屋根下地）を支える部材。勾配に沿って、<a title="垂木を支える部材。" href="ma.html#moya"><b>母屋</b></a>に掛け渡す。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                        <div class="cell in dot">
+                            <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                <tbody><tr>
+                                    <td class="titleTd">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td><div class="b_font">断熱性能等級<span style="display: block;" class="diln">（だんねつせいのうとうきゅう）</span></div></td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    <td width="10"></td>
+                                    <td>品確法（住宅の品質確保の促進等に関する法律）に規定された省エネ性能を表す基準。国土交通省が制定しており、断熱だけに限らず、断熱以外の性能も含めた「省エネ性能」を表しているため、「断熱等性能等級」とも呼ばれている。</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                                    
+                            
+                            
+                            
+                
+                </div>
+                <!-- // END 本文グループ：あ -->
+                
+                <!-- /本文グループ：い =========== -->
+                    
+                    
+                    <div class="article">
+                        <h3 id="lnk02" class="h2Txt">ち</h3>
+                        
+                <!-- start 本文：A +++ -->
+                
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">散り<span class="diln">（ちり）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td><a title="仕上げが柱面より後退して取り付けられた壁。柱の見える壁。反対語は大壁。" href="sa.html#shinkabe"><b>真壁</b></a>において、柱の表面と壁面までの寸法のこと。「ちり４分」などという。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                        <div class="cell in dot">
+                            <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                <tbody><tr>
+                                    <td class="titleTd">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td><div class="b_font">長期優良住宅<span style="display: block;" class="diln">（ちょうきゆうりょうじゅうたく）</span></div></td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    <td width="10"></td>
+                                    <td>長く快適に住める家として、「構造躯体の劣化対策、耐震性、可変性、維持管理・更新の容易性、バリアフリー性、省エネ性」などについて、一定の対策を施した住宅のこと。所管行政庁（都道府県、市区町村等）に認定申請を行えば、長期優良住宅としての認定を受けることができる。</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="cell in dot">
+                            <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                <tbody><tr>
+                                    <td class="titleTd">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td><div class="b_font">長期優良住宅認定制度<span style="display: block;" class="diln">（ちょうきゆうりょうじゅうたくにんていせいど）</span></div></td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    <td width="10"></td>
+                                    <td>「長期優良住宅の普及の促進に関する法律（長期優良住宅普及促進法）」に基づく仕組みで、長期にわたって良好な状態で使用するための措置が講じられている住宅を認定する制度。</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                            
+                            
+                
+                </div>
+            <!-- // END 本文グループ：い -->
+            
+            
+            <!-- /本文グループ：う =========== -->
+                    
+                    
+                    <div class="article">
+                        <h3 id="lnk03" class="h2Txt">つ</h3>
+                        
+            <!-- start 本文：A +++ -->
+            
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">突板<span class="diln">（つきいた）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>木材を薄くスライスしたもの。</td>
+                                            </tr>
+                                        </tbody></table>
+                        </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">突き付け<span class="diln">（つきつけ）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>木工事において、二つの材を木口を切り放しのまま接合すること。小屋の垂木や床の根太などに、この種類の仕様がある。</td>
+                                            </tr>
+                                        </tbody></table>
+                        </div>
+                            
+                                
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">妻<span class="diln">（つま）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td> 建物の長手方向の端部で棟と直角をなす壁面。ちなみに、切妻屋根とは妻側の尾根を切った形の屋根ということで、山型の屋根のこと。 </td>
+                                            </tr>
+                                        </tbody></table>
+                        </div>
+                        
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">面<span class="diln">（つら）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>表面。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+            
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">面一<span class="diln">（つらいち）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>同じ高さ、面にそろえること。ぞろとも言う。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+            
+                            
+                
+                </div>
+                <!-- // END 本文グループ：う -->
+                
+                
+                <!-- /本文グループ：え =========== -->
+                            
+                    <div class="article">
+                        <h3 id="lnk04" class="h2Txt">て</h3>
+                        
+                        <!-- start 本文：A +++ -->
+                        
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">手板<span class="diln">（ていた）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>現場用の板に書いた図面のこと。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+            
+                        <div class="cell in dot">
+                            <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                <tbody><tr>
+                                    <td class="titleTd">
+                                        <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td><div class="b_font">低炭素住宅<span class="diln">（ていたんそじゅうたく）</span></div></td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    <td width="10"></td>
+                                    <td>2012年9月に公布された「都市の低炭素化の促進に関する法律」（エコまち法）に基づき、「低炭素建築物新築等計画の認定制度」（低炭素建築物認定制度）の認定を受けた住宅。二酸化炭素の排出を抑えるための対策が取られた、環境にやさしい住宅のこと。</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">手間<span class="diln">（てま）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>工賃、施工賃金のこと。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">手元<span class="diln">（てもと）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>職人の手伝い係。てったい(手伝い)ともいう。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">照り<span class="diln">（てり）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>寺社の屋根のように真中が下に反ったかたちの呼び名。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                            
+                            
+                
+                </div>
+                <!-- // END 本文グループ：え -->
+                
+                
+                <!-- /本文グループ：お =========== -->
+                    
+                            <div class="article">
+                        <h3 id="lnk05" class="h2Txt">と</h3>
+                        
+                <!-- start 本文：A +++ -->
+                
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">戸当たり<span class="diln">（とあたり）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                <td align="right"><a class="thumbnail" href="javascript:void(0);"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/pict.gif" alt="画像" width="16" height="16" border="0"><span><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/toatari.jpg" alt="" width="250" height="250" border="0"></span></a></td>
+                                                            </tr>
+                                                        </tbody></table>	
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>戸を開いたとき、戸が壁などに当たらないようにする金具のこと。ドアストッパーとも言う。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                            
+                                
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">樋<span class="diln">（とい）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>屋根に降った雨水を集めて流す雨どいのこと。「トユ」ということもある。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                        
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                    <p><a id="touryou"></a></p>
+                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">棟梁<span class="diln">（とうりょう）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td> 大工の親方のこと。 </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">胴縁<span class="diln">（どうぶち）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                <td align="right"><a class="thumbnail" href="javascript:void(0);"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/pict.gif" alt="画像" width="16" height="16" border="0"><span><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/doubuti.jpg" alt="" width="250" height="250" border="0"></span></a></td>
+                                                            </tr>
+                                                        </tbody></table>	
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>透湿・防水シートと外壁の間に風が流れる道をつくり、壁内の湿気を外部へ放出するための通気層をつくる部材。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">通柱<span class="diln">（とおしばしら）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                <td align="right"><a class="thumbnail" href="javascript:void(0);"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/pict.gif" alt="画像" width="16" height="16" border="0"><span><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/hashira.jpg" alt="" width="250" height="250" border="0"></span></a></td>
+                                                            </tr>
+                                                        </tbody></table>	
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>各階を貫通して立てる柱。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">通り<span class="diln">（とおり）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>図面におけるＸ,Ｙ軸線のこと、また単に真っ直ぐな線上のこと。「通りがいい」 </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">通庭<span class="diln">（とおりにわ）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>入り口から裏へ続く<a title="土間、石敷きの廊下のこと。" href="#tataki"><b>三和土</b></a>（たたき）の通路。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                        <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">戸袋<span class="diln">（とぶくろ）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table></td>
+                                                                <td align="right"><a class="thumbnail2" href="javascript:void(0);"><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/pict.gif" alt="画像" width="16" height="16" border="0"><span><img src="https://zerohome.jp/wp-content/themes/zerohome/img/word/tobukuro.jpg" alt="" width="250" height="250" border="0"></span></a></td>
+                                                            </tr>
+                                                        </tbody></table>	
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>普段、雨戸が収納されているスペースのこと。</td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">留め<span class="diln">（とめ）</span></div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td>枠や長押等二本の木が直角に交わる部分をそれぞれ半分づつ45度の角度で切り取って接合すること。 </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                                    
+                            <div class="cell in dot">
+                                        <table width="100%" cellspacing="2" cellpadding="0" border="0">
+                                            <tbody><tr>
+                                                <td class="titleTd">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody><tr>
+                                                                <td><div class="b_font">とんぼ</div></td>
+                                                            </tr>
+                                                        </tbody></table>
+                                                </td>
+                                                <td width="10"></td>
+                                                <td> 柱の垂直をみる六ツ割材に貫材の切れ端を半分に割って付けた物に下振りを吊るす。また、整地する場合、基準高を示す遣り方の一種。形がトンボに見えることから。 </td>
+                                            </tr>
+                                        </tbody></table>
+                                    </div>
+                            
+                            
+                
+                </div>
+                <!-- // END 本文グループ：お -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <script>
+            $(function(){
+                $.ajax({
+                    type: "GET",
+                    url: "../footer.html"
+                }).done( data => {
+                    var newData = data.replaceAll('./img_new', '../img_new')
+                    $("footer").html(newData)
+                } )
+            });
+        </script>
+    </footer>
+    
+</body>
+</html>
