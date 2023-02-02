@@ -87,11 +87,18 @@ header {
 }
 header .side {
   border-right: 1px solid #E1E1E1;
+  overflow-y: scroll;
+  padding-bottom: 10px;
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 @media screen and (max-width: 1024px) {
   header .side {
     display: none;
   }
+}
+header .side::-webkit-scrollbar { /* Hide scrollbar for Chrome, Safari and Opera */
+  display: none;
 }
 header .side .logo {
   text-align: center;

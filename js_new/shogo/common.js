@@ -9,6 +9,14 @@ $(function () {
             $("header").removeClass("head_sticky")
         }
     })
+    
+    // side header
+    function MenuScroll() {
+        var hsize = $(window).height()
+        $(".side").css("cssText", `height:${hsize}px;`)
+    }
+    MenuScroll()
+    $(window).on('load resize', MenuScroll)
 
     // backtotop
     $(window).scroll(function () {

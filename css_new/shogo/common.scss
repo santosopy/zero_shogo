@@ -108,9 +108,17 @@ header{
 
     .side{    
         border-right: 1px solid #E1E1E1;
+        overflow-y:scroll;
+        padding-bottom: 10px;
+        -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+        scrollbar-width: none;  /* Hide scrollbar for Firefox */
         @include media(tab){
             display: none;
         }    
+
+        &::-webkit-scrollbar { /* Hide scrollbar for Chrome, Safari and Opera */
+            display: none;
+        }
         .logo{
             text-align: center;
             padding: 50px 10px 40px;
